@@ -251,7 +251,7 @@ LittlerootTown_EventScript_FatMan::
 	end
 
 LittlerootTown_EventScript_Boy::
-	msgbox LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC
+	msgbox LittlerootTown_Text_IAmTheCreatorOfThisROMHack, MSGBOX_NPC
 	end
 
 LittlerootTown_EventScript_Twin::
@@ -962,12 +962,13 @@ LittlerootTown_Text_CanUsePCToStoreItems:
 	.string "and POKéMON.\p"
 	.string "The power of science is staggering!$"
 
-LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "PROF. BIRCH spends days in his LAB\n"
-	.string "studying, then he'll suddenly go out in\l"
-	.string "the wild to do more research…\p"
-	.string "When does PROF. BIRCH spend time\n"
-	.string "at home?$"
+LittlerootTown_Text_IAmTheCreatorOfThisROMHack:
+	.string "{PLAYER}, I am the creator of this\n"
+	.string "ROM hack, I hope you enjoy what I have\l"
+	.string "done with the balancing.\p"
+	.string "If you want to, talk with me at\n"
+	.string "discord.gg/sXHRMTQY, all the cool kids\l"
+	.string "hang out there.$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
 	.string "Um, um, um!\p"
