@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_MART_EMPLOYEE, 2
 .set LOCALID_FOOTPRINTS_MAN, 3
 .set LOCALID_RIVAL, 4
@@ -399,118 +400,68 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
 
-OldaleTown_EventScript_StarterBox::
-	lockall
-	msgbox OldaleTown_EventScript_StarterBox_Text_0, MSGBOX_DEFAULT
-	multichoice 25, 0, 114, 1
-	closemessage
-	compare VAR_RESULT, 0
-	goto_if_eq OldaleTown_EventScript_StarterBox_2
-	compare VAR_RESULT, 1
-	goto_if_eq OldaleTown_EventScript_StarterBox_3
-	compare VAR_RESULT, 2
-	goto_if_eq OldaleTown_EventScript_StarterBox_4
-	compare VAR_RESULT, 3
-	goto_if_eq OldaleTown_EventScript_StarterBox_5
-	compare VAR_RESULT, 4
-	goto_if_eq OldaleTown_EventScript_StarterBox_6
-	compare VAR_RESULT, 5
-	goto_if_eq OldaleTown_EventScript_StarterBox_7
-OldaleTown_EventScript_StarterBox_1:
-	fadescreen FADE_TO_BLACK
-	removeobject 5
-	delay 20
-	fadescreen FADE_FROM_BLACK
-	msgbox OldaleTown_EventScript_StarterBox_Text_7
-	setflag FLAG_UNUSED_0x020
-	waitmessage
-	releaseall
-	return
 
-OldaleTown_EventScript_StarterBox_2:
-	givemon SPECIES_BULBASAUR, 5, ITEM_ORAN_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox OldaleTown_EventScript_StarterBox_Text_1
-	waitmessage
-	call NicknamePartyMon
-	goto OldaleTown_EventScript_StarterBox_1
+`
+script OldaleTown_EventScript_StarterBox {
+    lockall
+    msgbox("It looks like a POKéMON is in here,\nmaybe it's a...", MSGBOX_DEFAULT)
+    multichoice(25, 0, 114, 1)
+    closemessage
+	if (var(VAR_RESULT) == 0){
+        givemon(SPECIES_BULBASAUR, 5, ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received BULBSAUR!")
+        waitmessage
+        call(NicknamePartyMon)
+    }
+    elif (var(VAR_RESULT) == 1){
+        givemon(SPECIES_CHARMANDER, 5, ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received CHARMANDER!")
+        waitmessage
+        call(NicknamePartyMon)
+    }
+    elif (var(VAR_RESULT) == 2){
+        givemon(SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received CYNDAQUIL!")
+        waitmessage
+        call(NicknamePartyMon)
+    }
+	elif (var(VAR_RESULT) == 3){
+        givemon(SPECIES_TOTODILE, 5, ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received TOTODILE!")
+        waitmessage
+        call(NicknamePartyMon)
+    }
+	elif (var(VAR_RESULT) == 4){
+        givemon(SPECIES_TREECKO, 5, ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received TREECKO!")
+        waitmessage
+        call(NicknamePartyMon)
+    }
+	elif (var(VAR_RESULT) == 5){
+        givemon(SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY)
+        playfanfare(MUS_OBTAIN_ITEM)
+        msgbox("{PLAYER} received MUDKIP!")
+        waitmessage
+        call(NicknamePartyMon)
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(5)
+    delay(20)
+    fadescreen(FADE_FROM_BLACK)
+    msgbox("I'll make sure to take care of\nthis POKéMON.")
+    setflag(FLAG_UNUSED_0x020)
+    waitmessage
+    releaseall
+}
 
-OldaleTown_EventScript_StarterBox_3:
-	givemon SPECIES_CHARMANDER, 5, ITEM_ORAN_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox OldaleTown_EventScript_StarterBox_Text_2
-	waitmessage
-	call NicknamePartyMon
-	goto OldaleTown_EventScript_StarterBox_1
-
-OldaleTown_EventScript_StarterBox_4:
-	givemon SPECIES_CYNDAQUIL, 5, ITEM_ORAN_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox OldaleTown_EventScript_StarterBox_Text_3
-	waitmessage
-	call NicknamePartyMon
-	goto OldaleTown_EventScript_StarterBox_1
-
-OldaleTown_EventScript_StarterBox_5:
-	givemon SPECIES_TOTODILE, 5, ITEM_ORAN_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox OldaleTown_EventScript_StarterBox_Text_4
-	waitmessage
-	call NicknamePartyMon
-	goto OldaleTown_EventScript_StarterBox_1
-
-OldaleTown_EventScript_StarterBox_6:
-	givemon SPECIES_TREECKO, 5, ITEM_ORAN_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox OldaleTown_EventScript_StarterBox_Text_5
-	waitmessage
-	call NicknamePartyMon
-	goto OldaleTown_EventScript_StarterBox_1
-
-OldaleTown_EventScript_StarterBox_7:
-	givemon SPECIES_MUDKIP, 5, ITEM_ORAN_BERRY
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox OldaleTown_EventScript_StarterBox_Text_6
-	waitmessage
-	call NicknamePartyMon
-	goto OldaleTown_EventScript_StarterBox_1
-
-
-NicknamePartyMon::
-	msgbox NicknamePartyMon_Text_0, MSGBOX_YESNO
-	compare VAR_RESULT, YES
-	goto_if_eq NicknamePartyMon_1
-	return
-
-NicknamePartyMon_1:
-	call Common_EventScript_GetGiftMonPartySlot
-	call Common_EventScript_NameReceivedPartyMon
-	return
-
-
-OldaleTown_EventScript_StarterBox_Text_0:
-	.string "It looks like a POKéMON is in here,\nmaybe it's a...$"
-
-OldaleTown_EventScript_StarterBox_Text_1:
-	.string "{PLAYER} received BULBSAUR!$"
-
-OldaleTown_EventScript_StarterBox_Text_2:
-	.string "{PLAYER} received CHARMANDER!$"
-
-OldaleTown_EventScript_StarterBox_Text_3:
-	.string "{PLAYER} received CYNDAQUIL!$"
-
-OldaleTown_EventScript_StarterBox_Text_4:
-	.string "{PLAYER} received TOTODILE!$"
-
-OldaleTown_EventScript_StarterBox_Text_5:
-	.string "{PLAYER} received TREECKO!$"
-
-OldaleTown_EventScript_StarterBox_Text_6:
-	.string "{PLAYER} received MUDKIP!$"
-
-OldaleTown_EventScript_StarterBox_Text_7:
-	.string "I'll make sure to take care of\nthis POKéMON.$"
-
-NicknamePartyMon_Text_0:
-	.string "Give a nickname?$"
+script NicknamePartyMon{
+    msgbox("Give a nickname?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)}
+    }

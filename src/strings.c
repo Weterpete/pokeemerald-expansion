@@ -1824,3 +1824,10 @@ const u8 gText_Answer[] = _("ANSWER");
 const u8 gText_PokeBalls[] = _("POKé BALLS");
 const u8 gText_Berry[] = _("BERRY");
 const u8 gText_Berries[] = _("BERRIES");
+
+const u8 gText_ChooseCharmander[] = _("CHARMANDER");
+const u8 gText_ChooseBulbasaur[] = _("BULBASAUR");
+const u8 gText_ChooseCyndaquil[] = _("CYNDAQUIL");
+const u8 gText_ChooseTotodile[] = _("TOTODILE");
+const u8 gText_ChooseTreecko[] = _("TREECKO");
+const u8 gText_ChooseMudkip[] = _("MUDKIP");

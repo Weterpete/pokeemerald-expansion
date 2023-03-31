@@ -3023,6 +3023,12 @@ extern const u8 gText_Summary2[];
 extern const u8 gText_PkmnForSwap[];
 extern const u8 gText_SamePkmnInPartyAlready[];
 extern const u8 gText_Cancel3[];
+extern const u8 gText_ChooseCharmander[];
+extern const u8 gText_ChooseBulbasaur[];
+extern const u8 gText_ChooseCyndaquil[];
+extern const u8 gText_ChooseTotodile[];
+extern const u8 gText_ChooseTreecko[];
+extern const u8 gText_ChooseMudkip[];
 
 // Naming Screen
 extern const u8 gText_MoveOkBack[];
