@@ -73,8 +73,21 @@ enum RandomTag
 
 #define RandomPercentage(tag, t) \
     ({ \
-        const u8 weights[] = { 100 - t, t }; \
-        RandomWeightedArray(tag, 100, ARRAY_COUNT(weights), weights); \
+        u32 r; \
+        if (t <= 0) \
+        { \
+            r = FALSE; \
+        } \
+        else if (t >= 100) \
+        { \
+            r = TRUE; \
+        } \
+        else \
+        { \
+          const u8 weights[] = { 100 - t, t }; \
+          r = RandomWeightedArray(tag, 100, ARRAY_COUNT(weights), weights); \
+        } \
+        r; \
     })
 
 u32 RandomUniform(enum RandomTag, u32 lo, u32 hi);

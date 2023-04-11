@@ -169,7 +169,7 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_WEEDLE"
               },
               {
                 "min_level": 5,
@@ -184,12 +184,12 @@
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_CATERPIE"
               },
               {
                 "min_level": 5,
                 "max_level": 7,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_CATERPIE"
               },
               {
                 "min_level": 5,

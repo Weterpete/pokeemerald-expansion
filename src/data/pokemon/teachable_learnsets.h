@@ -8263,6 +8263,7 @@ static const u16 sMisdreavusTeachableLearnset[] = {
 
 static const u16 sUnownTeachableLearnset[] = {
     MOVE_HIDDEN_POWER,
+    MOVE_SECRET_POWER,
     MOVE_UNAVAILABLE,
 };
 

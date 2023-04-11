@@ -465,9 +465,8 @@ Route116_Text_TrainerTipsBToStopEvolution:
 
 Route116_Text_TrainerTipsBagHasPockets:
 	.string "TRAINER TIPS\p"
-	.string "Your BAG has several POCKETS.\p"
-	.string "Items you obtain are automatically\n"
-	.string "placed in the appropriate POCKETS.\p"
-	.string "No TRAINER can afford to be without\n"
-	.string "a BAG of their own.$"
+	.string "Keep reading the DOCUMENTATION.\p"
+	.string "You might find more elaborately\n"
+	.string "hidden items like that FIRE STONE.\p"
+	.string "Have fun with your new STEELIX!$"
 

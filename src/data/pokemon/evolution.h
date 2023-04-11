@@ -56,7 +56,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_TENTACOOL]             = {{EVO_LEVEL, 30, SPECIES_TENTACRUEL}},
     [SPECIES_GEODUDE]               = {{EVO_LEVEL, 25, SPECIES_GRAVELER}},
     [SPECIES_GRAVELER]              = {{EVO_LEVEL, 38, SPECIES_GOLEM}},
-    [SPECIES_PONYTA]                = {{EVO_LEVEL, 40, SPECIES_RAPIDASH}},
+    [SPECIES_PONYTA]                = {{EVO_LEVEL, 37, SPECIES_RAPIDASH}},
     [SPECIES_SLOWPOKE]              = {{EVO_LEVEL, 37, SPECIES_SLOWBRO},
                                        {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}},
     [SPECIES_SLOWBRO]               = {{EVO_MEGA_EVOLUTION, ITEM_SLOWBRONITE, SPECIES_SLOWBRO_MEGA}},

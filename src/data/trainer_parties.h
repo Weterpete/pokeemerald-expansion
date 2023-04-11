@@ -6366,12 +6366,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_AmyAndLiv2[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_GinaAndMia1[] = {
     {
     .iv = 0,
-    .lvl = 6,
-    .species = SPECIES_WINGULL,
+    .lvl = 10,
+    .species = SPECIES_MEOWTH_ALOLAN,
     },
     {
     .iv = 0,
-    .lvl = 6,
+    .lvl = 10,
     .species = SPECIES_SANDSHREW_ALOLAN,
     }
 };
