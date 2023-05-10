@@ -1,4 +1,4 @@
-GraniteCave_1F_MapScripts::
+raw `GraniteCave_1F_MapScripts::
 	.byte 0
 
 GraniteCave_1F_EventScript_Hiker::
@@ -37,13 +37,16 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "But, to use it, you need the GYM BADGE\n"
 	.string "from DEWFORD's POKéMON GYM.$"
 
-ObstructingGraniteMagmaGrunt::
-	lockall
-	faceplayer
-	msgbox GraniteGruntInTheWay, MSGBOX_NPC
-	releaseall
-	return
 
+`
 
-GraniteGruntInTheWay::
-	.string "I was told not to let anyone pass!\pBut maybe if they beat the gym\nleader in this town I could make\lan exception.\pMy POKEMON aren't that strong,\nafter all.$"
+script ObstructingGraniteMagmaGrunt {
+    lockall
+    faceplayer
+    msgbox(GraniteGruntInTheWay, MSGBOX_NPC)
+    releaseall
+}
+
+text GraniteGruntInTheWay {
+    "I was told not to let anyone pass!\pBut maybe if they beat the gym\nleader in this town I could make\lan exception.\pMy POKEMON aren't that strong,\nafter all."
+}

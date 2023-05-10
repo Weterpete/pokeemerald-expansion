@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_DAYCARE_MAN, 3
 
 Route117_MapScripts::
@@ -206,55 +207,45 @@ Route117_Text_DayCareSign:
 	.string "POKéMON DAY CARE\n"
 	.string "“Let us raise your POKéMON.”$"
 
-Route117_Trigger_SecondMeeting_Sorrel::
-	lockall
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	applymovement 25, SorrelGetToPlayer
-	waitmovement 0
-	msgbox Sorrel_Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_MELINA, Sorrel_Outro
-	msgbox SecondMeetingSorrel_Leave, MSGBOX_NPC
+`
+script Route117_Trigger_SecondMeeting_Sorrel {
+    lockall
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+    applymovement(25, SorrelGetToPlayer)
+	waitmovement(0)
+	msgbox(Sorrel_Intro, MSGBOX_DEFAULT)
+    trainerbattle_no_intro(TRAINER_MELINA, Sorrel_Outro)
+	msgbox(SecondMeetingSorrel_Leave, MSGBOX_NPC)
 	waitmessage
-	applymovement 25, SorrelGetAway
-	waitmovement 0
-	removeobject 25
-	setflag FLAG_UNUSED_0x023
-	setvar VAR_UNUSED_0x4083, 1
+	applymovement(25, SorrelGetAway)
+	waitmovement(0)
+	removeobject(25)
+	setflag(FLAG_UNUSED_0x023)
+	setvar(VAR_UNUSED_0x4083, 1)
 	releaseall
-	return
+}
 
+text Sorrel_Intro {
+	"Sorrel: You there!\nI've seen you before.\pWell I did make a promise.\pTime for a grass-whooping!"
+}
 
-SorrelGetToPlayer:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_down
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	step_end
+text Sorrel_Outro {
+	"Damn! My houseplants aren't gonna\nlike this."
+}
 
-SorrelGetAway:
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	step_end
+movement SorrelGetToPlayer {
+    walk_right * 5
+    walk_down * 3
+    walk_right * 2
+}
 
-Sorrel_Intro::
-	.string "Sorrel: You there!\nI've seen you before.\pWell I did make a promise.\pTime for a grass-whooping!$"
+movement SorrelGetAway {
+	walk_left * 3
+	walk_down * 3 
+	walk_left * 1
+	walk_down * 3
+}
 
-Sorrel_Outro::
-	.string "Damn! My houseplants aren't gonna\nlike this.$"
-
-SecondMeetingSorrel_Leave::
-	.string "You might have defeated me, but my\nteammates won't be so forgiving.\pOff to nowhere!$"
+text SecondMeetingSorrel_Leave {
+	"You might have defeated me, but my\nteammates won't be so forgiving.\pOff to nowhere!"
+}

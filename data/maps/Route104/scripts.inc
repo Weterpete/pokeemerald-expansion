@@ -1170,3 +1170,45 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+Route104_Trigger_FirstMeeting_FakeEliteFour::
+	lockall
+	applymovement 35, GoForward
+	applymovement 36, GoForward
+	applymovement 37, GoForward
+	applymovement 38, GoForward
+	waitmovement 0
+	msgbox FirstMeeting, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	applymovement 35, LeaveFirstMeeting
+	applymovement 36, LeaveFirstMeeting
+	applymovement 37, LeaveFirstMeeting
+	applymovement 38, LeaveFirstMeeting
+	waitmovement 0
+	removeobject 35
+	removeobject 36
+	removeobject 37
+	removeobject 38
+	setflag FLAG_UNUSED_0x021
+	setvar VAR_UNUSED_0x404E, 1
+	releaseall
+	return
+
+
+GoForward:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+LeaveFirstMeeting:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+FirstMeeting::
+	.string "Aha! A traveler!\pTerrance: We are the ELITE FAUX...\nit's a working title.\pAlecia: But don't be fooled, kiddo, we\ncan still pack quite the punch.\pArthur: One day we'll defeat and\nreplace the ELITE FOUR!\pSorrel: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!$"

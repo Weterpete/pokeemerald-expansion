@@ -1090,9 +1090,9 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_UNOWN_EMARK]                  = { .size = MON_COORDS_SIZE(24, 40), .y_offset = 15 },
     [SPECIES_UNOWN_QMARK]                  = { .size = MON_COORDS_SIZE(24, 40), .y_offset = 13 },
     // Castform
-    [SPECIES_CASTFORM_SUNNY]               = { .size = MON_COORDS_SIZE(40, 48), .y_offset =  9 },
-    [SPECIES_CASTFORM_RAINY]               = { .size = MON_COORDS_SIZE(32, 48), .y_offset =  9 },
-    [SPECIES_CASTFORM_SNOWY]               = { .size = MON_COORDS_SIZE(40, 56), .y_offset =  8 },
+    [SPECIES_CASTFORM_SUNNY]               = { .size = MON_COORDS_SIZE(40, 48), .y_offset = 17 },
+    [SPECIES_CASTFORM_RAINY]               = { .size = MON_COORDS_SIZE(32, 48), .y_offset = 17 },
+    [SPECIES_CASTFORM_SNOWY]               = { .size = MON_COORDS_SIZE(40, 56), .y_offset = 17 },
     // Deoxys
     [SPECIES_DEOXYS_ATTACK]                = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_DEOXYS_DEFENSE]               = { .size = MON_COORDS_SIZE(56, 64), .y_offset =  0 },
