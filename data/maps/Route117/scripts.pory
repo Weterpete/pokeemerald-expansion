@@ -211,15 +211,15 @@ Route117_Text_DayCareSign:
 script Route117_Trigger_SecondMeeting_Sorrel {
     lockall
 	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
-    applymovement(25, SorrelGetToPlayer)
+    applymovement(24, SorrelGetToPlayer)
 	waitmovement(0)
 	msgbox(Sorrel_Intro, MSGBOX_DEFAULT)
     trainerbattle_no_intro(TRAINER_MELINA, Sorrel_Outro)
 	msgbox(SecondMeetingSorrel_Leave, MSGBOX_NPC)
 	waitmessage
-	applymovement(25, SorrelGetAway)
+	applymovement(24, SorrelGetAway)
 	waitmovement(0)
-	removeobject(25)
+	removeobject(24)
 	setflag(FLAG_UNUSED_0x023)
 	setvar(VAR_UNUSED_0x4083, 1)
 	releaseall

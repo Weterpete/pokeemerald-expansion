@@ -51,7 +51,7 @@ Route110_EventScript_ItemRareCandy::
 	end
 
 Route110_EventScript_ItemDireHit::
-	finditem ITEM_DIRE_HIT
+	finditem ITEM_SUN_STONE
 	end
 
 Route110_EventScript_ItemElixir::

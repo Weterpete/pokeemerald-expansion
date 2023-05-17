@@ -476,6 +476,12 @@ Route109_EventScript_Elijah::
 	msgbox Route109_Text_ElijahPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route109_EventScript_ExitTrigger::
+	lock
+	setflag FLAG_UNUSED_0x022
+	release
+	end
+
 DewfordTown_Text_BrineyLandedInSlateportDeliverGoods:
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "We've made land in SLATEPORT!\p"

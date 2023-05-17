@@ -19,12 +19,10 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_MAGNET
+	.2byte ITEM_SILVER_POWDER
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_NONE
 	release
 	end

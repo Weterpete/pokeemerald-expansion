@@ -1,4 +1,4 @@
-MauvilleCity_Gym_MapScripts::
+raw `MauvilleCity_Gym_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MauvilleCity_Gym_OnLoad
 	.byte 0
 
@@ -419,28 +419,30 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 	.string "Come see me with two or more\n"
 	.string "POKéMON, all right?$"
 
-ObstructingMauvilleLass::
-	lockall
-	faceplayer
-	msgbox MauvilleLassInstructions, MSGBOX_DEFAULT
-	applymovement 8, FaceUpwards
-	releaseall
-	return
+`
 
+script ObstructingMauvilleLass {
+    lockall
+    faceplayer
+    msgbox(MauvilleLassInstructions, MSGBOX_DEFAULT)
+    applymovement(8, FaceUpwards)
+    releaseall
+}
 
-FaceUpwards:
-	face_up
-	step_end
+text MauvilleLassInstructions {
+    "Did you want to battle WATTSON?\pSorry, but he's busy fighting me at\nthe moment.\pWe'll be done in about the time it\ntakes to jog to VERDANTURF and back."
+}
 
-PikachuOfWattson::
-	lockall
-	msgbox AngryPika, MSGBOX_DEFAULT
-	releaseall
-	return
+movement FaceUpwards {
+    face_up
+}
 
+script PikachuOfWattson {
+    lockall
+    msgbox(AngryPika, MSGBOX_DEFAULT)
+    releaseall
+}
 
-MauvilleLassInstructions::
-	.string "Did you want to battle WATTSON?\pSorry, but he's busy fighting me at\nthe moment.\pWe'll be done in about the time it\ntakes to jog to VERDANTURF and back.$"
-
-AngryPika::
-	.string "Pi-ka!$"
+text AngryPika {
+    "Pi-ka!"
+}
