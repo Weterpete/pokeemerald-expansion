@@ -578,13 +578,12 @@ Route119_Text_DontGoNearWeatherInstitute:
 	.string "WEATHER INSTITUTE.$"
 
 Route119_Text_ThoughtFlyByCatchingBirdMons:
-	.string "I thought you FLY by catching a whole\n"
-	.string "flock of BIRD POKéMON, and then\l"
-	.string "hanging on to them somehow.\p"
-	.string "But it turns out there's an HM move\n"
-	.string "called FLY!\p"
-	.string "I wish I'd known about that a long\n"
-	.string "time ago…$"
+	.string "This is RYDEL's home.\p"
+	.string "No, I don't know why he lives around\n"
+	.string "grass too tall for bicycles.\p"
+	.string "Maybe he secretly hates them, and\n"
+	.string "prefers WINGULLS?\p"
+	.string "I guess we'll never know.$"
 
 Route119_Text_TallGrassSnaresBikeTires:
 	.string "Tch…\n"

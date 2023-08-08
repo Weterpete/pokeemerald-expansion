@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_VICTOR, 1
 .set LOCALID_VICTORIA, 2
 .set LOCALID_VIVI, 3
@@ -732,90 +733,80 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
-Route111_ArthurBattle::
+
+`
+
+script Route111_ArthurBattle {
 	lockall
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	msgbox Arthur_Norman_Argue, MSGBOX_DEFAULT
-	applymovement 50, Arthur_Turn
-	playse SE_PIN
-	waitmovement 0
-	msgbox Arthur_Battle_Start, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_RHETT, Arthur_Outro
-	msgbox Arthur_Defeat, MSGBOX_DEFAULT
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+	msgbox(Arthur_Norman_Argue, MSGBOX_DEFAULT)
+	applymovement(50, Arthur_Turn)
+	playse(SE_PIN)
+	waitmovement(0)
+	msgbox(Arthur_Battle_Start, MSGBOX_DEFAULT)
+    trainerbattle_no_intro(TRAINER_RHETT, Arthur_Outro)
+	msgbox(Arthur_Defeat, MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Step_Backwards_Two
-	applymovement 50, Arthur_Leave
-	waitmovement 0
-	msgbox Norman_Thanks, MSGBOX_DEFAULT
+	applymovement(OBJ_EVENT_ID_PLAYER, Step_Backwards_Two)
+	applymovement(50, Arthur_Leave)
+	waitmovement(0)
+	msgbox(Norman_Thanks, MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 51, Norman_Leave
-	waitmovement 0
-	removeobject 50
-	removeobject 51
-	setflag FLAG_UNUSED_0x025
+	applymovement(51, Norman_Leave)
+	waitmovement(0)
+	removeobject(50)
+	removeobject(51)
+	setflag(FLAG_UNUSED_0x025)
 	releaseall
-	return
+}
 
+text Arthur_Norman_Argue {
+	"ARTHUR: C'mon Norman! I know you have\nconnections with the league.\pNORMAN: But I can't just get anyone an\ninterview for the ELITE 4!\lNo matter how much you threaten me."
+}
 
-Arthur_Turn:
+text Arthur_Battle_Start {
+	"It's you! I heard you beat SORREL!\pWell 1/4 is as far as you'll get!\nYou can't screw up our plans!"
+}
+
+text Arthur_Outro {
+	"What could I be doing wrong with\nmy team?\pIs it the whole BUG-TYPE thing?"
+}
+
+text Arthur_Defeat {
+	"ARTHUR: Well damn.\pI can't stick around here, can I?\pBut you still haven't seen the last of me!"
+}
+
+text Norman_Thanks {
+	"NORMAN: Thanks kiddo.\pI didn't have my strongest Pokemon on\nme, so I ended up losing to that wannabe.\pYou have 4 BADGES now do you?\pCome see me at the gym in that case."
+}
+
+movement Arthur_Turn {
 	face_player
 	emote_exclamation_mark
-	step_end
+}
 
-Step_Backwards_Two:
-	walk_left
-	walk_left
+movement Step_Backwards_Two {
+	walk_left * 2
 	face_right
-	step_end
+}
 
-Arthur_Leave:
-	walk_down
-	walk_left
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
+movement Arthur_Leave {
+	walk_down * 1
+	walk_left * 1
+	walk_down * 1
+	walk_left * 4
+	walk_down * 1
+	walk_left * 6
+}
 
-Norman_Leave:
-	walk_left
-	walk_down
-	walk_left
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
-
-Arthur_Norman_Argue::
-	.string "ARTHUR: C'mon Norman! I know you have\nconnections with the league.\pNORMAN: But I can't just get anyone an\ninterview for the ELITE 4!\lNo matter how much you threaten me.$"
-
-Arthur_Battle_Start::
-	.string "It's you! I heard you beat SORREL!\pWell 1/4 is as far as you'll get!\nYou can't screw up our plans!$"
-
-Arthur_Outro::
-	.string "What could I be doing wrong with\nmy team?\pIs it the whole BUG-TYPE thing?$"
-
-Arthur_Defeat::
-	.string "ARTHUR: Well damn.\pI can't stick around here, can I?\pBut you still haven't seen the last of me!$"
-
-Norman_Thanks::
-	.string "NORMAN: Thanks kiddo.\pI didn't have my strongest Pokemon on\nme, so I ended up losing to that wannabe.\pYou have 4 BADGES now do you?\pCome see me at the gym in that case.$"
+movement Norman_Leave {
+	walk_left * 1
+	walk_down * 1
+	walk_left * 1
+	walk_down * 1
+	walk_left * 4
+	walk_down * 1
+	walk_left * 6
+}

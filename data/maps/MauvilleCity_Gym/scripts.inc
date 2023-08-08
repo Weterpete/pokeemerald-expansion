@@ -429,11 +429,12 @@ ObstructingMauvilleLass::
 
 
 FaceUpwards:
-	face_up
+	face_away_player
 	step_end
 
 PikachuOfWattson::
 	lockall
+	playmoncry SPECIES_PIKACHU, CRY_MODE_NORMAL
 	msgbox AngryPika, MSGBOX_DEFAULT
 	releaseall
 	return

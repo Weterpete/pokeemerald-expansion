@@ -1980,20 +1980,21 @@ Route114_Text_CharlotteDefeat:
 Route114_Text_CharlottePostBattle:
 	.string "I don't want a POKéMON that's\n"
 	.string "just cute.\p"
-	.string "I adore cute ones that have a quirk\n"
-	.string "or two!$"
+	.string "I adore cute ones that have evil\n"
+	.string "deep in their souls!$"
 
 Route114_Text_AngelinaIntro:
-	.string "Have you made your POKéMON evolve\n"
-	.string "very much?$"
+	.string "MAGMA ADMIN TABITHA is so dreamy,\n"
+	.string "do you agree?$"
 
 Route114_Text_AngelinaDefeat:
 	.string "Oh, I see.\n"
-	.string "That's good to know.$"
+	.string "You don't know fashion anyway.$"
 
 Route114_Text_AngelinaPostBattle:
-	.string "Some POKéMON change so much when\n"
-	.string "they evolve, it's startling!$"
+	.string "COURTNEY is cute too though.\p"
+	.string "I wonder if this warrants self-\n"
+	.string "reflection?$"
 
 Route115_Text_TimothyIntro:
 	.string "Hm…\n"
@@ -2208,14 +2209,14 @@ Route116_Text_JosePostBattle:
 
 Route116_Text_JaniceIntro:
 	.string "Let me teach you how strong my\n"
-	.string "adorable POKéMON is!$"
+	.string "arid POKéMON are!$"
 
 Route116_Text_JaniceDefeat:
 	.string "You're a notch above me…$"
 
 Route116_Text_JanicePostBattle:
-	.string "POKéMON that possess cuteness and\n"
-	.string "power, that's ideal, I think.$"
+	.string "POKéMON that possess evilness and\n"
+	.string "power, that's ideal, MAXIE says.$"
 
 Route116_Text_JerryIntro:
 	.string "We learn all sorts of things at the\n"
@@ -2827,16 +2828,16 @@ Route119_Text_CatherinePostRematch:
 	.string "rely on you.$"
 
 Route119_Text_HughIntro:
-	.string "The vast sky holds untold promise!\p"
+	.string "The vast sea holds untold promise!\p"
 	.string "Nothing can compare to the sheer\n"
-	.string "exhilaration of flight!$"
+	.string "exhilaration of swimming!$"
 
 Route119_Text_HughDefeat:
 	.string "Down and out!$"
 
 Route119_Text_HughPostBattle:
-	.string "My BIRD POKéMON made my dreams of\n"
-	.string "flying come true!$"
+	.string "My EVIL POKéMON made my dreams of\n"
+	.string "swimming come true!$"
 
 Route119_Text_PhilIntro:
 	.string "I'll show you the true potential of me\n"

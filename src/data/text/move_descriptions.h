@@ -974,7 +974,7 @@ static const u8 sSunnyDayDescription[] = _(
 
 static const u8 sCrunchDescription[] = _(
     "Crunches with sharp fangs.\n"
-    "May lower Defense.");
+    "May lower Sp. Def.");
 
 static const u8 sMirrorCoatDescription[] = _(
     "Counters the foe's special\n"
@@ -994,7 +994,7 @@ static const u8 sAncientPowerDescription[] = _(
 
 static const u8 sShadowBallDescription[] = _(
     "Hurls a black blob that may\n"
-    "lower the foe's Sp. Def.");
+    "lower the foe's Defense.");
 
 static const u8 sFutureSightDescription[] = _(
     "Heightens inner power to\n"
@@ -1238,11 +1238,11 @@ static const u8 sCrushClawDescription[] = _(
 
 static const u8 sBlastBurnDescription[] = _(
     "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "user hurt by recoil.");
 
 static const u8 sHydroCannonDescription[] = _(
     "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "user hurt by recoil.");
 
 static const u8 sMeteorMashDescription[] = _(
     "Fires a meteor-like punch.\n"
@@ -1270,7 +1270,7 @@ static const u8 sAirCutterDescription[] = _(
 
 static const u8 sOverheatDescription[] = _(
     "Allows a full-power attack,\n"
-    "but sharply lowers Sp. Atk.");
+    "but also hurts the user.");
 
 static const u8 sOdorSleuthDescription[] = _(
     "Negates the foe's efforts\n"
@@ -1330,7 +1330,7 @@ static const u8 sSheerColdDescription[] = _(
 
 static const u8 sMuddyWaterDescription[] = _(
     "Attacks with muddy water.\n"
-    "May lower accuracy.");
+    "May lower speed.");
 
 static const u8 sBulletSeedDescription[] = _(
     "Shoots 2 to 5 seeds in a row\n"
@@ -1362,7 +1362,7 @@ static const u8 sDragonClawDescription[] = _(
 
 static const u8 sFrenzyPlantDescription[] = _(
     "Powerful, but leaves the\n"
-    "user immobile the next turn.");
+    "user hurt by recoil.");
 
 static const u8 sBulkUpDescription[] = _(
     "Bulks up the body to boost\n"
@@ -1662,7 +1662,7 @@ static const u8 sBraveBirdDescription[] = _(
 
 static const u8 sEarthPowerDescription[] = _(
     "Makes the ground erupt with\n"
-    "power. May lower Sp. Def.");
+    "power. May lower Defense.");
 
 static const u8 sSwitcherooDescription[] = _(
     "Swaps items with the foe\n"
@@ -1718,7 +1718,7 @@ static const u8 sMirrorShotDescription[] = _(
 
 static const u8 sFlashCannonDescription[] = _(
     "Releases a blast of light\n"
-    "that may lower Sp. Def.");
+    "that may lower Defense.");
 
 static const u8 sRockClimbDescription[] = _(
     "A charging attack that may\n"
@@ -1734,7 +1734,7 @@ static const u8 sTrickRoomDescription[] = _(
 
 static const u8 sDracoMeteorDescription[] = _(
     "Casts comets onto the foe.\n"
-    "Harshly lowers the Sp. Atk.");
+    "The user gets hurt too.");
 
 static const u8 sDischargeDescription[] = _(
     "Zaps the foes with electri-\n"
@@ -1749,8 +1749,8 @@ static const u8 sCrossPoisonDescription[] = _(
     "foe and do critical damage.");
 
 static const u8 sGunkShotDescription[] = _(
-    "Shoots filthy garbage at\n"
-    "the foe. May also poison.");
+    "Shoots poisonous garbage at\n"
+    "the foe. Hurts the user.");
 
 static const u8 sIronHeadDescription[] = _(
     "Slams the foe with a hard\n"

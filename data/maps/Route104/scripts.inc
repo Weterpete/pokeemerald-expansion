@@ -262,7 +262,7 @@ Route104_EventScript_ExpertF::
 	faceplayer
 	goto_if_set FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104, Route104_EventScript_ReceivedBerry
 	msgbox Route104_Text_PlantBerriesInSoilTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_CHESTO_BERRY, 100
+	giveitem ITEM_CHESTO_BERRY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_CHESTO_BERRY_ROUTE_104
 	msgbox Route104_Text_TrainersOftenMakeMonHoldBerries, MSGBOX_DEFAULT
@@ -1173,6 +1173,7 @@ Route104_Text_BrendanPostBattle:
 
 Route104_Trigger_FirstMeeting_FakeEliteFour::
 	lockall
+	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	applymovement 35, GoForward
 	applymovement 36, GoForward
 	applymovement 37, GoForward
@@ -1192,6 +1193,7 @@ Route104_Trigger_FirstMeeting_FakeEliteFour::
 	removeobject 38
 	setflag FLAG_UNUSED_0x021
 	setvar VAR_UNUSED_0x404E, 1
+	playbgm MUS_ROUTE104, 0
 	releaseall
 	return
 
@@ -1211,4 +1213,4 @@ LeaveFirstMeeting:
 	step_end
 
 FirstMeeting::
-	.string "Aha! A traveler!\pTerrance: We are the ELITE FAUX...\nit's a working title.\pAlecia: But don't be fooled, kiddo, we\ncan still pack quite the punch.\pArthur: One day we'll defeat and\nreplace the ELITE FOUR!\pSorrel: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!$"
+	.string "Aha! A traveler!\pTERRANCE: We are the ELITE FAUX...\nit's a working title.\pALECIA: But don't be fooled, kiddo, we\ncan still pack quite the punch.\pARTHUR: One day we'll defeat and\nreplace the ELITE FOUR!\pSORREL: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!$"

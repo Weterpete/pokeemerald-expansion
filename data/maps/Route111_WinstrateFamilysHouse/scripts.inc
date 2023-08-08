@@ -20,9 +20,12 @@ Route111_WinstrateFamilysHouse_EventScript_Victoria::
 	setvar VAR_0x8008, LOCALID_VICTORIA
 	goto_if_set FLAG_RECEIVED_MACHO_BRACE, Route111_WinstrateFamilysHouse_EventScript_ReceivedMachoBrace
 	msgbox Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace, MSGBOX_DEFAULT
-	giveitem ITEM_MACHO_BRACE
-	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	givemon SPECIES_EEVEE, 5, ITEM_STARF_BERRY
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route111_WinstrateFamilyHouse_EventScript_EeveeGift
+	waitmessage
 	setflag FLAG_RECEIVED_MACHO_BRACE
+	call NicknamePartyMon
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 
@@ -61,6 +64,9 @@ Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection::
 	release
 	end
 
+Route111_WinstrateFamilyHouse_EventScript_EeveeGift:
+	.string "{PLAYER} received EEVEE!$"
+
 Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou:
 	.string "You're the first TRAINER I've seen who\n"
 	.string "deploys POKéMON so masterfully.\p"
@@ -70,12 +76,14 @@ Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou:
 	.string "challenge, I'll have you know.$"
 
 Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace:
-	.string "We use this MACHO BRACE to more\n"
-	.string "effectively strengthen our POKéMON\l"
-	.string "in training.\p"
+	.string "We have this EEVEE but nothing to do\n"
+	.string "with it.\l"
+	.string "...\l"
+	.string "...\p"
+	.string "Don't ask why.\p"
 	.string "Since you've beaten all of us here,\n"
 	.string "I don't know if you need it, but we\l"
-	.string "would like you to have our MACHO BRACE.$"
+	.string "would like you to have our EEVEE.$"
 
 Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles:
 	.string "When it comes to POKéMON battles,\n"
@@ -104,4 +112,3 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
 	.string "POKéMON LEAGUE CHAMPION by now.\p"
 	.string "Knowing my grandson, he could be the\n"
 	.string "CHAMPION already!$"
-

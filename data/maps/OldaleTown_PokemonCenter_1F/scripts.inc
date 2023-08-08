@@ -46,10 +46,18 @@ OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC:
 	.string "to use it, too.$"
 
 OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat:
-	.string "POKéMON CENTERS are great!\p"
-	.string "You can use their services as much\n"
-	.string "as you like, and it's all for free.\l"
-	.string "You never have to worry!$"
+	.string "Do you know?\p"
+	.string "You can check your POKéMON's IVs on\n"
+	.string "summary screen in just one easy click?\l"
+	.string "It's so simple!\p"
+	.string "All you need to do is press the R Button\n"
+	.string "and they'll show up.\p"
+	.string "You can also press the L Button to see\n"
+	.string "EVs, but they don't do anything in this\l"
+	.string "game. It's cool like that.\p"
+	.string "To see your real stats again, all you\n"
+	.string "need to do is press START. Presto!\p"
+	.string "It's really that convenient.$"
 
 OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable:
 	.string "The POKéMON WIRELESS CLUB on\n"

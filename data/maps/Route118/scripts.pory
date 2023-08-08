@@ -1,4 +1,4 @@
-.set LOCALID_STEVEN, 19
+raw `.set LOCALID_STEVEN, 19
 
 Route118_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route118_OnTransition
@@ -299,12 +299,14 @@ Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 	.string "{UP_ARROW} ROUTE 119$"
 
-Route118_RoadBlockGuys::
-	lockall
-	msgbox CantGoThroughTo119, MSGBOX_NPC
-	releaseall
-	return
+`
 
+script Route118_RoadBlockGuys {
+    lockall
+    msgbox(CantGoThroughTo119,MSGBOX_NPC)
+    releaseall
+}
 
-CantGoThroughTo119::
-	.string "Hey!\nIt's too dangerous to go through here.\pMeteorological anomalies from the\nWEATHER INSTITUTE are bad enough,\lbut there's also a strange electrical\lcurrent coming from what appears to be\la cave on ROUTE 110 that could make it\lworse.\pI recommend turning back now.$"
+text CantGoThroughTo119 {
+    "Hey!\nIt's too dangerous to go through here.\pMeteorological anomalies from the\nWEATHER INSTITUTE are bad enough,\lbut there's also a strange electrical\lcurrent coming from what appears to be\la cave on ROUTE 110 that could make it\lworse.\pI recommend turning back now."
+}

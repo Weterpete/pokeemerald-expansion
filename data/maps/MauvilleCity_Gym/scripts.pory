@@ -434,11 +434,12 @@ text MauvilleLassInstructions {
 }
 
 movement FaceUpwards {
-    face_up
+    face_away_player
 }
 
 script PikachuOfWattson {
     lockall
+	playmoncry(SPECIES_PIKACHU, CRY_MODE_NORMAL)
     msgbox(AngryPika, MSGBOX_DEFAULT)
     releaseall
 }

@@ -251,7 +251,7 @@ SorrelGetAway:
 	step_end
 
 Sorrel_Intro::
-	.string "Sorrel: You there!\nI've seen you before.\pWell I did make a promise.\pTime for a grass-whooping!$"
+	.string "SORREL: You there!\nI've seen you before.\pWell I did make a promise.\pTime for a grass-whooping!$"
 
 Sorrel_Outro::
 	.string "Damn! My houseplants aren't gonna\nlike this.$"

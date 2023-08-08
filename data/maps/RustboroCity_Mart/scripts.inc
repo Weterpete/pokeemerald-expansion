@@ -25,6 +25,9 @@ RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
+	.2byte ITEM_MIRACLE_SEED
+	.2byte ITEM_CHARCOAL
+	.2byte ITEM_MYSTIC_WATER
 	.2byte ITEM_RARE_CANDY
 	.2byte ITEM_NONE
 	release

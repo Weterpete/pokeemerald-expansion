@@ -226,7 +226,7 @@ script Route117_Trigger_SecondMeeting_Sorrel {
 }
 
 text Sorrel_Intro {
-	"Sorrel: You there!\nI've seen you before.\pWell I did make a promise.\pTime for a grass-whooping!"
+	"SORREL: You there!\nI've seen you before.\pWell I did make a promise.\pTime for a grass-whooping!"
 }
 
 text Sorrel_Outro {

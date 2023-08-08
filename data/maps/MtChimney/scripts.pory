@@ -1,4 +1,4 @@
-.set LOCALID_ARCHIE, 1
+raw `.set LOCALID_ARCHIE, 1
 .set LOCALID_MAXIE, 2
 .set LOCALID_TABITHA, 3
 .set LOCALID_MAGMA_GRUNT_2, 22
@@ -842,24 +842,24 @@ MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 	.string "I'm overdressed for these parts.$"
 
-MtChimney_EventScript_Tabitha::
-	trainerbattle_single TRAINER_TABITHA_MT_CHIMNEY, MtChimney_Text_TabithaIntro, MtChimney_Text_TabithaDefeat
-	msgbox MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE
-	end
+`
 
+script MtChimney_EventScript_Tabitha {
+    trainerbattle_single(TRAINER_TABITHA_MT_CHIMNEY, MtChimney_Text_TabithaIntro, MtChimney_Text_TabithaDefeat)
+    msgbox(MtChimney_Text_TabithaPostBattle, MSGBOX_AUTOCLOSE)
+    end
+}
 
-MtChimney_ResetWeather::
-	lockall
-	setweather WEATHER_VOLCANIC_ASH
-	doweather
-	releaseall
-	return
+script MtChimney_ResetWeather {
+    lockall
+    setweather(WEATHER_VOLCANIC_ASH)
+    doweather
+    releaseall
+}
 
-
-MtChimney_ActivateSandstorm::
-	lockall
-	setweather WEATHER_SANDSTORM
-	doweather
-	releaseall
-	return
-
+script MtChimney_ActivateSandstorm {
+    lockall
+    setweather(WEATHER_SANDSTORM)
+    doweather
+    releaseall
+}

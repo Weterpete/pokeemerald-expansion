@@ -70,6 +70,13 @@ Route119_WeatherInstitute_1F_EventScript_Grunt4::
 	msgbox Route119_WeatherInstitute_1F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+WeatherInstitute_ActivateRain::
+	lockall
+	setweather WEATHER_RAIN
+	doweather
+	releaseall
+	return
+
 Route119_WeatherInstitute_1F_Text_Grunt1Intro:
 	.string "The BOSS got interested in\n"
 	.string "the research they have going here,\l"

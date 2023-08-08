@@ -65,7 +65,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_MAGNEZONE}},
 #endif
     [SPECIES_DODUO]                 = {{EVO_LEVEL, 31, SPECIES_DODRIO}},
-    [SPECIES_SEEL]                  = {{EVO_LEVEL, 34, SPECIES_DEWGONG}},
+    [SPECIES_SEEL]                  = {{EVO_LEVEL, 28, SPECIES_DEWGONG}},
     [SPECIES_GRIMER]                = {{EVO_LEVEL, 38, SPECIES_MUK}},
     [SPECIES_SHELLDER]              = {{EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}},
     [SPECIES_GASTLY]                = {{EVO_LEVEL, 25, SPECIES_HAUNTER}},

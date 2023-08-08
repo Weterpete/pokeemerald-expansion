@@ -2937,7 +2937,7 @@ static s16 AI_DoubleBattle(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
             case EFFECT_SKILL_SWAP:
                 if (AI_DATA->abilities[battlerAtk] != AI_DATA->abilities[BATTLE_PARTNER(battlerAtk)] && !attackerHasBadAbility)
                 {
-                    if (AI_DATA->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_TRUANT)
+                    if (AI_DATA->abilities[BATTLE_PARTNER(battlerAtk)] == ABILITY_TRUANT,ABILITY_SPEED_BOOST)
                     {
                         RETURN_SCORE_PLUS(10);
                     }
