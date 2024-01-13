@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_WOMAN_1, 19
 .set LOCALID_MAN_1, 20
 
@@ -759,56 +760,39 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "POKéMON as soon as we arrived.\p"
 	.string "I mean, we are totally happy!$"
 
-LilycoveCity_MtPyreOpen::
-	lockall
-	playbgm MUS_ENCOUNTER_AQUA, 0
-	applymovement 2, LilycoveGruntGetToPlayer
-	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, TurnLeft
-	msgbox MtPyreIsOpen, MSGBOX_DEFAULT
+`
+
+script LilycoveCity_MtPyreOpen {
+    lockall
+	playbgm(MUS_ENCOUNTER_AQUA, 0)
+    applymovement(2, LilycoveGruntGetToPlayer)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, TurnLeft)
+	msgbox(MtPyreIsOpen, MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 2, LilycoveGruntGetAway
-	waitmovement 0
-	removeobject 2
-	setflag FLAG_UNUSED_0x026
-	setvar VAR_UNUSED_0x4091, 1
-	playbgm MUS_LILYCOVE, 0
+	applymovement(2, LilycoveGruntGetAway)
+	waitmovement(0)
+	removeobject(2)
+	setflag(FLAG_UNUSED_0x026)
+	setvar(VAR_UNUSED_0x4091, 1)
+    playbgm(MUS_LILYCOVE, 0)
 	releaseall
-	return
+}
 
-
-TurnLeft:
+movement TurnLeft {
 	face_left
-	step_end
+}
 
-LilycoveGruntGetToPlayer:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	step_end
+movement LilycoveGruntGetToPlayer {
+    walk_down * 7
+    walk_right * 7
+}
 
-LilycoveGruntGetAway:
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	step_end
+text MtPyreIsOpen {
+    "Haha! You fool! You fell victim to one\nof the classic blunders!\p“Never get involved in a-”\nno that's wrong.\pWell anyway, while you were distracted\ngetting to LILYCOVE, TEAM AQUA has\ltaken over MT. PYRE!\pGood luck stoppinng us now!\pHAHAHAHA!"
+}
 
-MtPyreIsOpen::
-	.string "Haha! You fool! You fell victim to one\nof the classic blunders!\p“Never get involved in a-”\nno that's wrong.\pWell anyway, while you were distracted\ngetting to LILYCOVE, TEAM AQUA has\ltaken over MT. PYRE!\pGood luck stoppinng us now!\pHAHAHAHA!$"
+movement LilycoveGruntGetAway {
+    walk_left * 8
+}

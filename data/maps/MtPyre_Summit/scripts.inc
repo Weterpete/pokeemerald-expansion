@@ -430,17 +430,19 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM MAGMA goons got\n"
-	.string "here ahead of us!\p"
-	.string "We can't fall behind!$"
+	.string "You, {PLAYER}, we've met before.\p"
+	.string "You may have helped best MAXIE in the\n"
+	.string "past, but that doesn't mean you're not\l"
+	.string "still meddlesome now.\p"
+	.string "Eat blubber, you scalawag!$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "I thought you were one of the MAGMAS\n"
-	.string "who happened to come back…$"
+	.string "I thought you were just some lassie\n"
+	.string "who was in over their head…$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
 	.string "Yeah, so you are strong…\n"
-	.string "But there're a lot of us!$"
+	.string "But our plan is still in motion!$"
 
 MtPyre_Summit_Text_Grunt2Intro:
 	.string "Hah!\n"
@@ -483,21 +485,22 @@ MtPyre_Summit_Text_Grunt4Intro:
 
 MtPyre_Summit_Text_Grunt4Defeat:
 	.string "If you want to join TEAM AQUA that\n"
-	.string "badly, we can consider it…$"
+	.string "badly, we can consider it$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
 	.string "We have a great combination going\n"
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
+	.string "MATT: TEAM MAGMA's MAXIE got ahead\n"
 	.string "of us, but we also got what we wanted.\p"
 	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
+	.string "We, TEAM AQUA…\l"
+	.string "… now have it in our possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
-	.string "Okay, TEAM!\n"
-	.string "We're pulling out!$"
+	.string "Okay, ARCHIE!\n"
+	.string "Let's pull out!$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "Oh, no…\n"

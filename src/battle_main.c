@@ -393,6 +393,7 @@ const struct TrainerMoney gTrainerMoneyTable[] =
     {TRAINER_CLASS_HIKER, 10},
     {TRAINER_CLASS_YOUNG_COUPLE, 8},
     {TRAINER_CLASS_WINSTRATE, 10},
+    {TRAINER_CLASS_WANNABE, 0},
     {0xFF, 5}, // Any trainer class not listed above uses this
 };
 
@@ -417,7 +418,7 @@ static const u16 sTrainerBallTable[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_FISHERMAN] = ITEM_DIVE_BALL,
 #endif
     [TRAINER_CLASS_SWIMMER_F] = ITEM_DIVE_BALL,
-    [TRAINER_CLASS_COOLTRAINER_2] = ITEM_ULTRA_BALL,
+    [TRAINER_CLASS_MOURNER] = ITEM_ULTRA_BALL,
     [TRAINER_CLASS_MAGMA_LEADER] = ITEM_MASTER_BALL,
 };
 #endif

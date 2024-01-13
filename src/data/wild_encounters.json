@@ -2019,12 +2019,12 @@
               {
                 "min_level": 14,
                 "max_level": 16,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_ZUBAT"
               },
               {
                 "min_level": 14,
                 "max_level": 16,
-                "species": "SPECIES_DUNSPARCE"
+                "species": "SPECIES_ZUBAT"
               }
             ]
           }
@@ -2078,22 +2078,22 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_LICKITUNG"
               }
             ]
           }
@@ -2477,22 +2477,22 @@
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 15,
                 "max_level": 17,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_LICKITUNG"
               }
             ]
           },
@@ -3234,12 +3234,12 @@
               {
                 "min_level": 12,
                 "max_level": 14,
-                "species": "SPECIES_SNEASEL"
+                "species": "SPECIES_GRIMER"
               },
               {
                 "min_level": 12,
                 "max_level": 14,
-                "species": "SPECIES_GLIGAR"
+                "species": "SPECIES_KOFFING"
               }
             ]
           },
@@ -4620,37 +4620,37 @@
               {
                 "min_level": 17,
                 "max_level": 19,
+                "species": "SPECIES_PORYGON"
+              },
+              {
+                "min_level": 17,
+                "max_level": 19,
                 "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_DUNSPARCE"
               },
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_MAWILE"
-              },
-              {
-                "min_level": 17,
-                "max_level": 19,
-                "species": "SPECIES_SABLEYE"
+                "species": "SPECIES_LICKITUNG"
               }
             ]
           }

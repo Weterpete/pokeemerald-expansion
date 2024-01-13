@@ -151,7 +151,7 @@ Route117_EventScript_ItemGreatBall::
 	end
 
 Route117_EventScript_ItemRevive::
-	finditem ITEM_THUNDER_STONE
+	finditem ITEM_MOON_STONE
 	end
 
 Route118_EventScript_ItemHyperPotion::

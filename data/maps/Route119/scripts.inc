@@ -64,10 +64,14 @@ Route119_EventScript_RivalEncounter::
 	end
 
 Route119_EventScript_PlayMayMusic::
+	setweather WEATHER_SUNNY
+	doweather
 	playbgm MUS_ENCOUNTER_MAY, TRUE
 	return
 
 Route119_EventScript_PlayBrendanMusic::
+	setweather WEATHER_SUNNY
+	doweather
 	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
 	return
 
@@ -95,6 +99,8 @@ Route119_EventScript_BattleMayMudkip::
 	end
 
 Route119_EventScript_DefeatedMay::
+	setweather WEATHER_ROUTE119_CYCLE
+	doweather
 	msgbox Route119_Text_MayPresentForYou, MSGBOX_DEFAULT
 	call Route119_EventScript_GiveFlyHM
 	msgbox Route119_Text_MayExplainFly, MSGBOX_DEFAULT
@@ -125,6 +131,8 @@ Route119_EventScript_BattleBrendanMudkip::
 	end
 
 Route119_EventScript_DefeatedBrendan::
+	setweather WEATHER_ROUTE119_CYCLE
+	doweather
 	msgbox Route119_Text_BrendanIllGiveYouThis, MSGBOX_DEFAULT
 	call Route119_EventScript_GiveFlyHM
 	msgbox Route119_Text_BrendanExplainFly, MSGBOX_DEFAULT

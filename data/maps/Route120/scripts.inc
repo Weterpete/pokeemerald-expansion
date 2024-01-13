@@ -430,3 +430,12 @@ Route120_Text_RouteSignFortree:
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 	.string "{LEFT_ARROW} ROUTE 120$"
+
+Route120_RoadBlockGuys::
+	lockall
+	msgbox DancingForNoReason, MSGBOX_NPC
+	releaseall
+	return
+
+DancingForNoReason::
+	.string "Today, we're dancing for no reason.\nSomeday, we'll disappear for no reason.$"
