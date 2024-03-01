@@ -180,6 +180,13 @@
       "elevation": 3,
       "dest_map": "MAP_LAVARIDGE_TOWN_POKEMON_CENTER_1F",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_MAGMA_HIDEOUT_4F",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
@@ -224,7 +231,7 @@
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "LavaridgeTown_EventScript_TownSign"
+      "script": "LavaridgeTown_EventScript_WarpSign"
     },
     {
       "type": "sign",
@@ -257,6 +264,14 @@
       "elevation": 3,
       "item": "ITEM_ICE_HEAL",
       "flag": "FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LavaridgeTown_EventScript_WarpSign"
     }
   ]
 }

@@ -240,8 +240,8 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_MANECTRIC]             = {{EVO_MEGA_EVOLUTION, ITEM_MANECTITE, SPECIES_MANECTRIC_MEGA}},
     [SPECIES_NUMEL]                 = {{EVO_LEVEL, 33, SPECIES_CAMERUPT}},
     [SPECIES_CAMERUPT]              = {{EVO_MEGA_EVOLUTION, ITEM_CAMERUPTITE, SPECIES_CAMERUPT_MEGA}},
-    [SPECIES_SPHEAL]                = {{EVO_LEVEL, 32, SPECIES_SEALEO}},
-    [SPECIES_SEALEO]                = {{EVO_LEVEL, 44, SPECIES_WALREIN}},
+    [SPECIES_SPHEAL]                = {{EVO_LEVEL, 20, SPECIES_SEALEO}},
+    [SPECIES_SEALEO]                = {{EVO_LEVEL, 39, SPECIES_WALREIN}},
     [SPECIES_CACNEA]                = {{EVO_LEVEL, 32, SPECIES_CACTURNE}},
     [SPECIES_SNORUNT]               = {{EVO_LEVEL, 42, SPECIES_GLALIE},
                                     #if P_GEN_4_POKEMON == TRUE

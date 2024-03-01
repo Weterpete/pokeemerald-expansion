@@ -487,11 +487,11 @@ MtPyre_2F_EventScript_ItemUltraBall::
 	end
 
 MtPyre_3F_EventScript_ItemSuperRepel::
-	finditem ITEM_SUPER_REPEL
+	finditem ITEM_PETAYA_BERRY
 	end
 
 MtPyre_4F_EventScript_ItemSeaIncense::
-	finditem ITEM_SEA_INCENSE
+	finditem ITEM_LIECHI_BERRY
 	end
 
 MtPyre_5F_EventScript_ItemLaxIncense::

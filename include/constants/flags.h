@@ -49,7 +49,7 @@
 #define FLAG_UNUSED_0x025    0x25 // Arthur 1
 #define FLAG_UNUSED_0x026    0x26 // Lilycove info Grunt
 #define FLAG_UNUSED_0x027    0x27 // Pyre Gauntlet Check
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
+#define FLAG_UNUSED_0x028    0x28 // Magma Pory PC
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
@@ -88,7 +88,7 @@
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
 #define FLAG_UNUSED_0x04D    0x4D // Unused Flag
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_UNUSED_0x04F    0x4F // Force Shiny
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50

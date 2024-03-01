@@ -268,6 +268,10 @@ LavaridgeTown_EventScript_TownSign::
 	msgbox LavaridgeTown_Text_TownSign, MSGBOX_SIGN
 	end
 
+LavaridgeTown_EventScript_WarpSign::
+	msgbox LavaridgeTown_Text_WarpSign, MSGBOX_SIGN
+	end
+
 LavaridgeTown_EventScript_GymSign::
 	msgbox LavaridgeTown_Text_GymSign, MSGBOX_SIGN
 	end
@@ -397,6 +401,11 @@ LavaridgeTown_Text_TownSign:
 	.string "LAVARIDGE TOWN\p"
 	.string "“POKéMON CENTER HOT SPRINGS\n"
 	.string "An excellent place for relaxing!”$"
+
+LavaridgeTown_Text_WarpSign:
+	.string "We don't think this used to be here…\p"
+	.string "But your guess is as good as mine,\n"
+	.string "buddy.$"
 
 LavaridgeTown_Text_GymSign:
 	.string "LAVARIDGE TOWN POKéMON GYM\n"

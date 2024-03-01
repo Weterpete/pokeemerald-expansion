@@ -78,7 +78,8 @@ script MtPyre_GhostEncounter {
     playmoncry(SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER)
     delay(40)
 	waitmoncry
-    setwildbattle(SPECIES_MISDREAVUS, 50, ITEM_TM30)
+	setflag(FLAG_UNUSED_0x04F)
+    setwildbattle(SPECIES_MISDREAVUS, 50, ITEM_SALAC_BERRY)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
 	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){
@@ -94,12 +95,14 @@ script MtPyre_GhostEncounter {
 		call(RanAway_Wild_Pokemon)
 	}
 	waitmessage
+	clearflag(FLAG_UNUSED_0x04F)
+	setflag(FLAG_ITEM_MT_PYRE_6F_TM30)
 	releaseall
 }
 
 script DefeatedOrCaptured_Wild_Pokemon {
 	fadescreen(FADE_TO_BLACK)
-	removeobject(9)
+	removeobject(2)
 	fadescreen(FADE_FROM_BLACK)
 	return
 }
@@ -109,7 +112,7 @@ script RanAway_Wild_Pokemon {
 	msgbox("Reavuss…", MSGBOX_AUTOCLOSE)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)
-	removeobject(9)
+	removeobject(2)
 	fadescreen(FADE_FROM_BLACK)
 	msgbox("The MISDREAVUS flew away ethereally.")
 	return

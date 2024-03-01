@@ -11,6 +11,37 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 	msgbox MagmaHideout_3F_1R_Text_Grunt16PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+MagmaHideout_3R_1R_EventScript_PoryPC::
+	lockall
+	setvar VAR_UNUSED_0x409D, 1
+	msgbox PoryPC_Intro, MSGBOX_DEFAULT
+	goto EventScript_PC
+	releaseall
+	end
+
+PoryPC_Trigger::
+	lockall
+	playmoncry SPECIES_PORYGON2, CRY_MODE_NORMAL
+	msgbox PoryPC_Broke, MSGBOX_DEFAULT
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	removeobject 5
+	setflag FLAG_UNUSED_0x028
+	delay 20
+	fadescreen FADE_FROM_BLACK
+	setvar VAR_UNUSED_0x409D, 2
+	releaseall
+	end
+
+PoryPC_Intro:
+	.string "This PORYGON2 looks volatile, but like\n"
+	.string "it could be used as a PC.$"
+
+PoryPC_Broke:
+	.string "Oh, no!\p"
+	.string "It broke. You won't be able to use it\n"
+	.string "again.$"
+
 MagmaHideout_3F_1R_Text_Grunt9Intro:
 	.string "What did I do to deserve this guard\n"
 	.string "posting?\p"
