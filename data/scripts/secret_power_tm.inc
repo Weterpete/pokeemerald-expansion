@@ -73,28 +73,32 @@ Route111_EventScript_NoRoomForSecretPower::
 
 Route111_Movement_SecretPowerManExit:
 	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
 	walk_left
 	walk_left
 	walk_left
 	walk_left
-	walk_down
-	walk_down
+	walk_left
+	walk_left
 	step_end
 
 Route111_Movement_SecretPowerManExitNorth:
 	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
 	walk_left
 	walk_left
 	walk_left
-	walk_down
-	walk_down
+	walk_left
+	walk_left
+	walk_left
 	step_end

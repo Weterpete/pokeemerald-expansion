@@ -50,7 +50,7 @@
 #define FLAG_UNUSED_0x026    0x26 // Lilycove info Grunt
 #define FLAG_UNUSED_0x027    0x27 // Pyre Gauntlet Check
 #define FLAG_UNUSED_0x028    0x28 // Magma Pory PC
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_UNUSED_0x029    0x29 // Alecia 1
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag

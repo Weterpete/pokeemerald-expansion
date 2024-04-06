@@ -201,8 +201,8 @@ static const u8 sSupersonicDescription[] = _(
     "that may confuse the foe.");
 
 static const u8 sSonicBoomDescription[] = _(
-    "Launches shock waves that\n"
-    "always inflict 20 HP damage.");
+    "Inflicts damage identical\n"
+    "to the user's level.");
 
 static const u8 sDisableDescription[] = _(
     "Psychically disables one of\n"
@@ -601,8 +601,8 @@ static const u8 sFlashDescription[] = _(
     "light that cuts accuracy.");
 
 static const u8 sPsywaveDescription[] = _(
-    "Attacks with a psychic\n"
-    "wave of varying intensity.");
+    "Inflicts damage identical\n"
+    "to the user's level.");
 
 static const u8 sSplashDescription[] = _(
     "It's just a splash...\n"
@@ -1114,7 +1114,7 @@ static const u8 sIngrainDescription[] = _(
 
 static const u8 sSuperpowerDescription[] = _(
     "Boosts strength sharply,\n"
-    "but lowers abilities.");
+    "but also hurts the user.");
 
 static const u8 sMagicCoatDescription[] = _(
     "Reflects special effects\n"
@@ -1426,7 +1426,7 @@ static const u8 sDoomDesireDescription[] = _(
 
 static const u8 sPsychoBoostDescription[] = _(
     "Allows a full-power attack,\n"
-    "but sharply lowers Sp. Atk.");
+    "but also hurts the user.");
 
 static const u8 sRoostDescription[] = _(
     "Restores the user's HP by\n"

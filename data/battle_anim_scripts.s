@@ -14364,6 +14364,8 @@ Move_COACHING::
 Move_FLIP_TURN::
 Move_TRIPLE_AXEL::
 Move_DUAL_WINGBEAT::
+	goto Move_WING_ATTACK
+
 Move_SCORCHING_SANDS::
 	end @to do
 

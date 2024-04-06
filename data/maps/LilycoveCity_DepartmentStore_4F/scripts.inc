@@ -25,9 +25,8 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkLeft::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_AttackTMs:
-	.2byte ITEM_TM38  @ Fire Blast
-	.2byte ITEM_TM25  @ Thunder
-	.2byte ITEM_TM14  @ Blizzard
+	.2byte ITEM_TM01  @ Focus Punch
+	.2byte ITEM_TM22  @ Solar Beam
 	.2byte ITEM_TM15  @ Hyper Beam
 	.2byte ITEM_NONE
 	release

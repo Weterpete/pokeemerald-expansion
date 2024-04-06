@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_GRUNT_1, 10
 .set LOCALID_GRUNT_2, 11
 .set LOCALID_GRUNT_3, 12
@@ -433,22 +434,25 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 	.string "mentored WALLACE.$"
 
-ObstructingMossdeepLapras::
-	lockall
-	playmoncry SPECIES_LAPRAS, CRY_MODE_NORMAL
-	msgbox WrittenLaprasCry, MSGBOX_DEFAULT
-	releaseall
-	return
+`
 
+script ObstructingMossdeepLapras {
+    lockall
+	playmoncry(SPECIES_LAPRAS, CRY_MODE_NORMAL)
+    msgbox(WrittenLaprasCry, MSGBOX_DEFAULT)
+    releaseall
+}
 
-MossdeepCity_ConcernedCitizen::
-	msgbox MossdeepCity_Text_ConcernedCitizen, MSGBOX_NPC
-	releaseall
-	end
+text WrittenLaprasCry {
+    "Laaaa…\nPa-praaaa!"
+}
 
+script MossdeepCity_ConcernedCitizen {
+    msgbox(MossdeepCity_Text_ConcernedCitizen, MSGBOX_NPC)
+    releaseall
+    end
+}
 
-WrittenLaprasCry::
-	.string "Laaaa…\nPa-praaaa!$"
-
-MossdeepCity_Text_ConcernedCitizen::
-	.string "Are you trying to get into the gym?\nGood luck with that.\pThis LAPRAS made it's way over here\nfrom SHOAL CAVE.\pI have a feeling this was the work of\nsome bad actor.\lMaybe you want to check it out?\pHead down to SHOAL CAVE's deepest and\ncoldest room where LAPRAS usually\lhangs out and check if anything is\lout-of-the-ordinary.\pThanks for the big help!$"
+text MossdeepCity_Text_ConcernedCitizen {
+    "Are you trying to get into the gym?\nGood luck with that.\pThis LAPRAS made it's way over here\nfrom SHOAL CAVE.\pI have a feeling this was the work of\nsome bad actor.\lMaybe you want to check it out?\pHead down to SHOAL CAVE's deepest and\ncoldest room where LAPRAS usually\lhangs out and check if anything is\lout-of-the-ordinary.\pThanks for the big help!"
+}

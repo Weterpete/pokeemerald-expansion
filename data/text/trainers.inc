@@ -3676,84 +3676,84 @@ Route124_Text_ChadPostBattle:
 	.string "again…$"
 
 Route124_Text_LilaIntro:
-	.string "LILA: Sigh…\p"
+	.string "JOJO: Sigh…\p"
 	.string "Here I am in the sea, but who's with me?\n"
 	.string "My little brother!\p"
 	.string "Let's battle so I won't have to dwell\n"
 	.string "on that!$"
 
 Route124_Text_LilaDefeat:
-	.string "LILA: ROY! It's your fault we lost!\n"
+	.string "JOJO: SAM! It's your fault we lost!\n"
 	.string "You're in for it later!$"
 
 Route124_Text_LilaPostBattle:
-	.string "LILA: Sigh…\p"
+	.string "JOJO: Sigh…\p"
 	.string "If only it wasn't my little brother\n"
 	.string "next to me, but a nice boyfriend…$"
 
 Route124_Text_LilaNotEnoughMons:
-	.string "LILA: You're planning to battle us?\n"
+	.string "JOJO: You're planning to battle us?\n"
 	.string "Not unless you have two POKéMON.$"
 
 Route124_Text_RoyIntro:
-	.string "ROY: My big sister is tough at POKéMON!\p"
+	.string "SAM: My big sister is tough at POKéMON!\p"
 	.string "Don't cry when you lose!$"
 
 Route124_Text_RoyDefeat:
-	.string "ROY: Uh-oh…\n"
+	.string "SAM: Uh-oh…\n"
 	.string "My big sister will chew me out…$"
 
 Route124_Text_RoyPostBattle:
-	.string "ROY: My big sister is really scary\n"
+	.string "SAM: My big sister is really scary\n"
 	.string "when she gets angry.\p"
 	.string "That's why she doesn't have a\n"
 	.string "boyfriend.$"
 
 Route124_Text_LilaRoyRegister:
-	.string "ROY: Will you battle with us again?\n"
+	.string "SAM: Will you battle with us again?\n"
 	.string "But take it easy next time, okay?$"
 
 Route124_Text_RoyNotEnoughMons:
-	.string "ROY: Did you want to battle us?\n"
+	.string "SAM: Did you want to battle us?\n"
 	.string "Bring two POKéMON, then.$"
 
 Route124_Text_LilaRematchIntro:
-	.string "LILA: Sigh…\p"
+	.string "JOJO: Sigh…\p"
 	.string "Here I am in the sea, but who's with me?\n"
 	.string "My little brother!\p"
 	.string "Oh, hi, it's been a while. Let's battle\n"
 	.string "so I won't have to dwell on things!$"
 
 Route124_Text_LilaRematchDefeat:
-	.string "LILA: ROY!\n"
+	.string "JOJO: SAM!\n"
 	.string "It's your fault we lost again!\p"
 	.string "We're having a training session later!$"
 
 Route124_Text_LilaPostRematch:
-	.string "LILA: Sigh…\p"
+	.string "JOJO: Sigh…\p"
 	.string "If I had a nice boyfriend, we'd beat\n"
 	.string "anyone with lovely combinations…$"
 
 Route124_Text_LilaRematchNotEnoughMons:
-	.string "LILA: You're planning to battle us?\n"
+	.string "JOJO: You're planning to battle us?\n"
 	.string "Not unless you have two POKéMON.$"
 
 Route124_Text_RoyRematchIntro:
-	.string "ROY: If we lose, I'll catch heck.\n"
+	.string "SAM: If we lose, I'll catch heck.\n"
 	.string "I'm going to go totally all out!$"
 
 Route124_Text_RoyRematchDefeat:
-	.string "ROY: Uh-oh…\n"
+	.string "SAM: Uh-oh…\n"
 	.string "My big sister will chew me out again.$"
 
 Route124_Text_RoyPostRematch:
-	.string "ROY: My big sister is really scary\n"
+	.string "SAM: My big sister is really scary\n"
 	.string "when she gets angry.\p"
 	.string "She's going to make me train really\n"
 	.string "hard with POKéMON later…$"
 
 Route124_Text_RoyRematchNotEnoughMons:
-	.string "ROY: Did you want to battle us?\n"
+	.string "SAM: Did you want to battle us?\n"
 	.string "Bring two POKéMON, then.$"
 
 Route124_Text_DeclanIntro:
@@ -3861,36 +3861,36 @@ Route125_Text_ErnestRematchPostBattle:
 	.string "high tide to low tide. Don't forget!$"
 
 Route125_Text_KimIntro:
-	.string "KIM: A funny old man lives in the\n"
+	.string "BON: A funny old man lives in the\n"
 	.string "SHOAL CAVE. Someone told me.\l"
 	.string "Are you going to see him, too?$"
 
 Route125_Text_KimDefeat:
-	.string "KIM: I thought we would win.$"
+	.string "BON: I thought we would win.$"
 
 Route125_Text_KimPostBattle:
-	.string "KIM: A funny old man lives in the\n"
+	.string "BON: A funny old man lives in the\n"
 	.string "SHOAL CAVE, doesn't he?\p"
 	.string "Let's go see him, IRIS!$"
 
 Route125_Text_KimNotEnoughMons:
-	.string "KIM: No, no, no! You need two POKéMON,\n"
+	.string "BON: No, no, no! You need two POKéMON,\n"
 	.string "or it's just no good!$"
 
 Route125_Text_IrisIntro:
-	.string "IRIS: KIM, can you tell me what we're\n"
+	.string "MARC: BON, can you tell me what we're\n"
 	.string "looking for out here?$"
 
 Route125_Text_IrisDefeat:
-	.string "IRIS: Oh, we came sort of close.$"
+	.string "MARC: Oh, we came sort of close.$"
 
 Route125_Text_IrisPostBattle:
-	.string "IRIS: KIM, are we really going into\n"
+	.string "MARC: BON, are we really going into\n"
 	.string "the SHOAL CAVE?\l"
 	.string "We'll get all wet.$"
 
 Route125_Text_IrisNotEnoughMons:
-	.string "IRIS: Oh, we could never, ever do\n"
+	.string "MARC: Oh, we could never, ever do\n"
 	.string "anything like a 2-on-1 battle.$"
 
 Route125_Text_PresleyIntro:
@@ -4059,17 +4059,17 @@ Route127_Text_DonnyPostBattle:
 	.string "better?$"
 
 Route127_Text_JonahIntro:
-	.string "Through fishing, I have attained a\n"
-	.string "state of becalmed serenity…\p"
-	.string "Please, allow me to demonstrate…$"
+	.string "Hey!\p"
+	.string "You're in the way of my precious yacht!\n"
+	.string "And I had been practicing my serenity…$"
 
 Route127_Text_JonahDefeat:
 	.string "Though I have lost, my heart remains\n"
 	.string "calm…$"
 
 Route127_Text_JonahPostBattle:
-	.string "It matters not that I catch nothing.\n"
-	.string "The line remains in the water…$"
+	.string "It matters not that I lost my view.\n"
+	.string "My stocks remains in the green…$"
 
 Route127_Text_HenryIntro:
 	.string "Whoops! Don't tell me I snagged\n"

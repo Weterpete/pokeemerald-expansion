@@ -1,3 +1,4 @@
+raw `
 Route123_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route123_OnTransition
 	.byte 0
@@ -196,13 +197,12 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
-Route123_ConfusedRoadblockGrunt::
-	lockall
-	faceplayer
-	msgbox Route123_ConfusedRoadblockGrunt_Text_0, MSGBOX_NPC
-	releaseall
-	return
 
+`
 
-Route123_ConfusedRoadblockGrunt_Text_0:
-	.string "Fufufu, can't you see?\nWe've taken over LILYCOVE CITY!\pWhat do you mean this isn't LILYCOVE?\pOh no, not again.\nI've always been bad with directions…$"
+script Route123_ConfusedRoadblockGrunt {
+    lockall
+    faceplayer
+    msgbox("Fufufu, can't you see?\nWe've taken over LILYCOVE CITY!\pWhat do you mean this isn't LILYCOVE?\pOh no, not again.\nI've always been bad with directions…", MSGBOX_NPC)
+    releaseall
+}
