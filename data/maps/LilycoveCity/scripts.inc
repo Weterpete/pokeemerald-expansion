@@ -558,7 +558,7 @@ LilycoveCity_Text_ChanceToDoBigThings:
 	.string "But being on TEAM AQUA, I know I'll get\n"
 	.string "the chance to do big things!\p"
 	.string "Wh-who are you?!\n"
-	.string "I was just talking to Zeek!$"
+	.string "I was just talking to Spencer!$"
 
 LilycoveCity_Text_DontGoNearCaveInCove:
 	.string "Hey, you!\p"
