@@ -1001,7 +1001,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_RATICATE_ALOLAN]              = { .size = MON_COORDS_SIZE(64, 48), .y_offset =  8 },
     [SPECIES_RAICHU_ALOLAN]                = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  6 },
     [SPECIES_SANDSHREW_ALOLAN]             = { .size = MON_COORDS_SIZE(56, 40), .y_offset =  7 },
-    [SPECIES_SANDSLASH_ALOLAN]             = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  6 },
+    [SPECIES_SANDSLASH_ALOLAN]             = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  3 },
     [SPECIES_VULPIX_ALOLAN]                = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  5 },
     [SPECIES_NINETALES_ALOLAN]             = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  5 },
     [SPECIES_DIGLETT_ALOLAN]               = { .size = MON_COORDS_SIZE(40, 48), .y_offset = 14 },
