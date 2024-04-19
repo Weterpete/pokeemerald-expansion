@@ -1040,7 +1040,7 @@ const struct MonCoords gMonBackPicCoords[] =
  // Hisuian Forms
     [SPECIES_GROWLITHE_HISUIAN]            = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  8 },
     [SPECIES_ARCANINE_HISUIAN]             = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
-    [SPECIES_VOLTORB_HISUIAN]              = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 10 },
+    [SPECIES_VOLTORB_HISUIAN]              = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 14 },
     [SPECIES_ELECTRODE_HISUIAN]            = { .size = MON_COORDS_SIZE(64, 40), .y_offset =  7 },
     [SPECIES_TYPHLOSION_HISUIAN]           = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  2 },
     [SPECIES_QWILFISH_HISUIAN]             = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  6 },
