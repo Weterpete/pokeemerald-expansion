@@ -989,7 +989,7 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_DIGLETT_ALOLAN]               = { .size = MON_COORDS_SIZE(32, 40), .y_offset = 19 },
     [SPECIES_DUGTRIO_ALOLAN]               = { .size = MON_COORDS_SIZE(48, 48), .y_offset = 11 },
     [SPECIES_MEOWTH_ALOLAN]                = { .size = MON_COORDS_SIZE(48, 48), .y_offset =  8 },
-    [SPECIES_PERSIAN_ALOLAN]               = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  4 },
+    [SPECIES_PERSIAN_ALOLAN]               = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  3 },
     [SPECIES_GEODUDE_ALOLAN]               = { .size = MON_COORDS_SIZE(48, 32), .y_offset = 17 },
     [SPECIES_GRAVELER_ALOLAN]              = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  8 },
     [SPECIES_GOLEM_ALOLAN]                 = { .size = MON_COORDS_SIZE(56, 64), .y_offset =  1 },
