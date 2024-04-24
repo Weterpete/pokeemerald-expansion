@@ -1019,7 +1019,7 @@ const struct MonCoords gMonBackPicCoords[] =
     [SPECIES_MEOWTH_GALARIAN]              = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  8 },
     [SPECIES_PONYTA_GALARIAN]              = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  4 },
     [SPECIES_RAPIDASH_GALARIAN]            = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  6 },
-    [SPECIES_SLOWPOKE_GALARIAN]            = { .size = MON_COORDS_SIZE(64, 40), .y_offset = 13 },
+    [SPECIES_SLOWPOKE_GALARIAN]            = { .size = MON_COORDS_SIZE(64, 40), .y_offset = 14 },
     [SPECIES_SLOWBRO_GALARIAN]             = { .size = MON_COORDS_SIZE(64, 48), .y_offset =  9 },
     [SPECIES_FARFETCHD_GALARIAN]           = { .size = MON_COORDS_SIZE(64, 48), .y_offset =  8 },
     [SPECIES_WEEZING_GALARIAN]             = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
