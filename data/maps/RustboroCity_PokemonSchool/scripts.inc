@@ -81,7 +81,7 @@ RustboroCity_PokemonSchool_EventScript_Teacher::
 	call_if_eq VAR_FACING, DIR_EAST, RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsEast
 	call_if_eq VAR_FACING, DIR_WEST, RustboroCity_PokemonSchool_EventScript_TeacherCheckOnStudentsWest
 	msgbox RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw, MSGBOX_DEFAULT
-	giveitem ITEM_QUICK_CLAW
+	giveitem ITEM_FLAME_ORB, 2
 	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
@@ -245,7 +245,7 @@ RustboroCity_PokemonSchool_Text_ExplainFreeze:
 
 RustboroCity_PokemonSchool_Text_StudentsWhoDontStudyGetQuickClaw:
 	.string "Students who don't study get a little\n"
-	.string "taste of my QUICK CLAW.\p"
+	.string "taste of my FLAME ORB.\p"
 	.string "Whether or not you are a good student \n"
 	.string "will be evident from the way you use\l"
 	.string "this item.$"

@@ -24,6 +24,9 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_WOOD_MAIL
 	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
 	.2byte ITEM_NONE
 	release
 	end

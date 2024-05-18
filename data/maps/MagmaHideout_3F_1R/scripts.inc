@@ -37,6 +37,10 @@ PoryPC_Intro:
 	.string "This PORYGON2 looks volatile, but like\n"
 	.string "it could be used as a PC.$"
 
+PoryPC_GoodVersion:
+	.string "This PORYGON2 looks helpful, like it\n"
+	.string "could be used as a PC.$"
+
 PoryPC_Broke:
 	.string "Oh, no!\p"
 	.string "It broke. You won't be able to use it\n"

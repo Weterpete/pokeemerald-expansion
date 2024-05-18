@@ -768,33 +768,37 @@ struct
     u8 fixedIV;
     u8 level;
     u8 nature;
+    u16 heldItem;
     u8 evs[NUM_STATS];
     u16 moves[MAX_MON_MOVES];
 } static const sStevenMons[MULTI_PARTY_SIZE] =
 {
     {
-        .species = SPECIES_METANG,
+        .species = SPECIES_METAGROSS,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 42,
+        .level = 60,
         .nature = NATURE_BRAVE,
-        .evs = {0, 252, 252, 0, 6, 0},
-        .moves = {MOVE_LIGHT_SCREEN, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_METAL_CLAW}
+        .heldItem = ITEM_SHUCA_BERRY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_SHADOW_BALL}
     },
     {
-        .species = SPECIES_SKARMORY,
+        .species = SPECIES_CRADILY,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 43,
-        .nature = NATURE_IMPISH,
-        .evs = {252, 0, 0, 0, 6, 252},
-        .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING}
+        .level = 58,
+        .nature = NATURE_MODEST,
+        .heldItem = ITEM_TANGA_BERRY,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .moves = {MOVE_GIGA_DRAIN, MOVE_EARTH_POWER, MOVE_RECOVER, MOVE_MIRROR_COAT}
     },
     {
-        .species = SPECIES_AGGRON,
+        .species = SPECIES_DEOXYS_DEFENSE,
         .fixedIV = MAX_PER_STAT_IVS,
-        .level = 44,
-        .nature = NATURE_ADAMANT,
-        .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+        .level = 59,
+        .nature = NATURE_SASSY,
+        .heldItem = ITEM_LEFTOVERS,
+        .evs = {0, 0, 0, 0, 0, 0},
+        .moves = {MOVE_PSYCHIC, MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_RECOVER}
     }
 };
 
@@ -3007,6 +3011,7 @@ static void FillPartnerParty(u16 trainerId)
     u32 friendship;
     u16 monId;
     u32 otID;
+    u16 heldItem;
     u8 trainerName[(PLAYER_NAME_LENGTH * 3) + 1];
     s32 ball = -1;
     SetFacilityPtrsGetLevel();
@@ -3037,6 +3042,7 @@ static void FillPartnerParty(u16 trainerId)
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_NAME, gTrainers[TRAINER_STEVEN].trainerName);
             j = MALE;
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
+            SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_HELD_ITEM, &sStevenMons[i].heldItem);
             CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + i]);
         }
     }

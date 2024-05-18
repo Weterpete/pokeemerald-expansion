@@ -1383,7 +1383,7 @@ const struct Item gItems[] =
     {
         .name = _("EXP.CANDY S"),
         .itemId = ITEM_EXP_CANDY_S,
-        .price = 240,
+        .price = 160,
         .holdEffectParam = EXP_800,
         .description = sExpCandySDesc,
         .pocket = POCKET_ITEMS,
@@ -1396,7 +1396,7 @@ const struct Item gItems[] =
     {
         .name = _("EXP.CANDY M"),
         .itemId = ITEM_EXP_CANDY_M,
-        .price = 1000,
+        .price = 600,
         .holdEffectParam = EXP_3000,
         .description = sExpCandyMDesc,
         .pocket = POCKET_ITEMS,

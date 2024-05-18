@@ -29,6 +29,9 @@ RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_CHARCOAL
 	.2byte ITEM_MYSTIC_WATER
 	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
 	.2byte ITEM_NONE
 	release
 	end

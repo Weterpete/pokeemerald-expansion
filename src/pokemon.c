@@ -2322,6 +2322,9 @@ const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_FEEBAS - 1]        = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
     [SPECIES_MILOTIC - 1]       = ANIM_CIRCULAR_STRETCH_TWICE,
     [SPECIES_CASTFORM - 1]      = ANIM_H_SLIDE_WOBBLE,
+    [SPECIES_CASTFORM_RAINY - 1]      = ANIM_H_SLIDE_WOBBLE,
+    [SPECIES_CASTFORM_SNOWY - 1]      = ANIM_H_SLIDE_WOBBLE,
+    [SPECIES_CASTFORM_SUNNY - 1]      = ANIM_H_SLIDE_WOBBLE,
     [SPECIES_KECLEON - 1]       = ANIM_FLICKER_INCREASING,
     [SPECIES_SHUPPET - 1]       = ANIM_V_SLIDE_WOBBLE,
     [SPECIES_BANETTE - 1]       = ANIM_CIRCULAR_STRETCH_TWICE,
@@ -2356,7 +2359,7 @@ const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_GROUDON - 1]       = ANIM_V_SHAKE,
     [SPECIES_RAYQUAZA - 1]      = ANIM_H_SHAKE,
     [SPECIES_JIRACHI - 1]       = ANIM_RISING_WOBBLE,
-    [SPECIES_DEOXYS - 1]        = ANIM_GROW_VIBRATE,
+    [SPECIES_DEOXYS - 1]        = ANIM_H_PIVOT,
 
     // Gen 4
     [SPECIES_TURTWIG - 1]       = ANIM_V_SQUISH_AND_BOUNCE,
@@ -2885,9 +2888,9 @@ const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_SNEASLER - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_OVERQWIL - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_ENAMORUS - 1]      = ANIM_V_SQUISH_AND_BOUNCE,
-    [SPECIES_DEOXYS_ATTACK - 1]          = ANIM_GROW_VIBRATE,
-    [SPECIES_DEOXYS_DEFENSE - 1]         = ANIM_GROW_VIBRATE,
-    [SPECIES_DEOXYS_SPEED - 1]           = ANIM_GROW_VIBRATE,
+    [SPECIES_DEOXYS_ATTACK - 1]          = ANIM_H_PIVOT,
+    [SPECIES_DEOXYS_DEFENSE - 1]         = ANIM_H_PIVOT,
+    [SPECIES_DEOXYS_SPEED - 1]           = ANIM_H_PIVOT,
 
     //Gen 4 Forms
     [SPECIES_BURMY_SANDY_CLOAK - 1]      = ANIM_V_STRETCH,
@@ -3666,13 +3669,16 @@ void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
 {
     u32 personality;
     u32 otId;
+    u32 value;
 
-    do
-    {
-        otId = Random32();
-        personality = Random32();
-    }
-    while (GetGenderFromSpeciesAndPersonality(species, personality) != MON_MALE);
+    u32 shinyValue;
+        do
+        {
+            // Choose random OT IDs until one that results in a non-shiny Pokémon
+            value = Random32();
+            shinyValue = GET_SHINY_VALUE(value, personality);
+        } while (shinyValue > SHINY_ODDS);
+        
     CreateMon(mon, species, level, USE_RANDOM_IVS, TRUE, personality, OT_ID_PRESET, otId);
 }
 

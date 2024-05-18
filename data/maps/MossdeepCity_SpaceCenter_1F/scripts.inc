@@ -17,12 +17,12 @@ MossdeepCity_SpaceCenter_1F_OnTransition:
 MossdeepCity_SpaceCenter_1F_EventScript_MoveObjectsForTeamMagma::
 	setobjectxyperm LOCALID_SAILOR, 1, 9
 	setobjectmovementtype LOCALID_SAILOR, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_WOMAN, 0, 8
-	setobjectmovementtype LOCALID_WOMAN, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_OLD_MAN, 1, 6
-	setobjectmovementtype LOCALID_OLD_MAN, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_SCIENTIST_1, 3, 4
-	setobjectmovementtype LOCALID_SCIENTIST_1, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_WOMAN, 0, 9
+	setobjectmovementtype LOCALID_WOMAN, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm LOCALID_OLD_MAN, 12, 9
+	setobjectmovementtype LOCALID_OLD_MAN, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm LOCALID_SCIENTIST_1, 13, 6
+	setobjectmovementtype LOCALID_SCIENTIST_1, MOVEMENT_TYPE_FACE_LEFT
 	setobjectmovementtype LOCALID_SCIENTIST_2, MOVEMENT_TYPE_FACE_RIGHT
 	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardLeft
 	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown

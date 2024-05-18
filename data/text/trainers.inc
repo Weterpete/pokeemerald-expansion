@@ -157,7 +157,7 @@ Route103_Text_LivRematchNotEnoughPokemon:
 	.string "It's not fair if you don't!$"
 
 Route103_Text_AndrewIntro:
-	.string "Gah! My fishing line's all snarled up!\n"
+	.string "Gah! My study focus is all messed up!\n"
 	.string "I'm getting frustrated and mean!\l"
 	.string "That's it! Battle me!$"
 
@@ -3997,8 +3997,8 @@ Route126_Text_PabloPostRematch:
 	.string "You have to come back again!$"
 
 Route126_Text_LeonardoIntro:
-	.string "I couldn't even swim last year,\n"
-	.string "but now I'm a decent SWIMMER.\p"
+	.string "I couldn't even be evil last year,\n"
+	.string "but now I'm a decent GRUNT.\p"
 	.string "I think I'm capable of anything now.$"
 
 Route126_Text_LeonardoDefeat:
@@ -4009,18 +4009,20 @@ Route126_Text_LeonardoPostBattle:
 	.string "If you practice at something,\n"
 	.string "you will get better at it.\p"
 	.string "You're young--don't be afraid to\n"
-	.string "try all sorts of things!$"
+	.string "try all sorts of things, even organized\l"
+	.string "crime!$"
 
 Route126_Text_IsobelIntro:
 	.string "If seawater gets up your nose,\n"
-	.string "doesn't it feel terrible?$"
+	.string "doesn't it feel terrible?\p"
+	.string "That's why we need to get rid of it!$"
 
 Route126_Text_IsobelDefeat:
 	.string "Ack! Why, you…\n"
-	.string "Glub!$"
+	.string "Drat!$"
 
 Route126_Text_IsobelPostBattle:
-	.string "Ooh, I choked on some water!\n"
+	.string "Ooh, I choked on some dirt!\n"
 	.string "It's bitter! It's salty!!$"
 
 Route126_Text_SiennaIntro:

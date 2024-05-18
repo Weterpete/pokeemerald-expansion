@@ -140,6 +140,14 @@ MtChimney_EventScript_NotEnoughMoney::
 	release
 	end
 
+MtChimney_EventScript_PoryPC::
+	lockall
+	setvar VAR_UNUSED_0x409D, 1
+	msgbox PoryPC_GoodVersion, MSGBOX_DEFAULT
+	goto EventScript_PC
+	releaseall
+	end
+
 MtChimney_Movement_ArchieApproachPlayerEast:
 	walk_up
 	walk_up

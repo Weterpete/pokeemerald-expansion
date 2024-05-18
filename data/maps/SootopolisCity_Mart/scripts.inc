@@ -19,9 +19,10 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_SHADOW_MAIL
+	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
 	.2byte ITEM_NONE
 	release
 	end

@@ -1314,7 +1314,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .effect = EFFECT_PARALYZE,
         .power = 0,
         .type = TYPE_GRASS,
-        .accuracy = 100,
+        .accuracy = 90,
         .pp = 30,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
@@ -3078,7 +3078,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PROTECT] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .priority = 4,
+            .priority = 3,
         #else
             .priority = 3,
         #endif
@@ -3335,7 +3335,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_DETECT] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .priority = 4,
+            .priority = 3,
         #else
             .priority = 3,
         #endif
@@ -3453,7 +3453,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ENDURE] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .priority = 4,
+            .priority = 3,
         #else
             .priority = 3,
         #endif
@@ -4151,7 +4151,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_EXTREME_SPEED] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .priority = 2,
+            .priority = 1,
         #else
             .priority = 1,
         #endif
@@ -4287,7 +4287,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FAKE_OUT] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_5
-            .priority = 3,
+            .priority = 1,
             .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SHEER_FORCE_BOOST,
         #elif B_UPDATED_MOVE_DATA == GEN_4
             .priority = 1,
@@ -4534,7 +4534,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_FOLLOW_ME] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .priority = 2,
+            .priority = 3,
         #else
             .priority = 3,
         #endif
@@ -6014,7 +6014,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_PSYCHO_BOOST] =
     {
         .effect = EFFECT_RECOIL_33,
-        .power = 140,
+        .power = 130,
         .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 5,
@@ -8040,7 +8040,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_RAGE_POWDER] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_6
-            .priority = 2,
+            .priority = 3,
         #else
             .priority = 3,
         #endif
@@ -8456,7 +8456,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     [MOVE_ALLY_SWITCH] =
     {
         #if B_UPDATED_MOVE_DATA >= GEN_7
-            .priority = 2,
+            .priority = 1,
         #else
             .priority = 1,
         #endif
@@ -10378,7 +10378,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .pp = 10,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 2,
+        .priority = 1,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
