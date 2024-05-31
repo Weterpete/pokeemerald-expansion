@@ -514,6 +514,13 @@ LittlerootTown_ProfessorBirchsLab_EventScript_GivePokedex::
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_HeardYouBeatRivalTakePokedex, MSGBOX_DEFAULT
 	call LittlerootTown_ProfessorBirchsLab_EventScript_ReceivePokedex
 	msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_ITEM
+	message LittlerootTown_ProfessorBirchsLab_Text_PokedexUpgradedToNational
+	waitmessage
+	waitfanfare
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_NatDexDetails, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_RIVAL, LittlerootTown_ProfessorBirchsLab_Movement_RivalApproachPlayer
 	waitmovement 0
@@ -999,3 +1006,9 @@ LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:
 	.string "we meet. I'll be waiting!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
+
+LittlerootTown_ProfessorBirchsLab_Text_NatDexDetails:
+	.string "And that there is the NATIONAL POKéDEX\n"
+	.string "upgrade!\p"
+	.string "POKéMON from all over live in HOENN\n"
+	.string "nowadays, so it only makes sense.$"

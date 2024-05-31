@@ -794,6 +794,27 @@ void DrawMainBattleBackground(void)
                 LoadCompressedPalette(gBattleTerrainPalette_StadiumWallace, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                 return;
             }
+            else if (gTrainerBattleOpponent_A == TRAINER_ARCHIE)
+            {
+                LZDecompressVram(gBattleTerrainTiles_Water, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleTerrainTilemap_Water, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_Kyogre, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
+            else if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+            {
+                LZDecompressVram(gBattleTerrainTiles_Cave, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleTerrainTilemap_Cave, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_Groudon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
+            else if (gTrainerBattleOpponent_A == TRAINER_SIENNA)
+            {
+                LZDecompressVram(gBattleTerrainTiles_Rayquaza, (void *)(BG_CHAR_ADDR(2)));
+                LZDecompressVram(gBattleTerrainTilemap_Rayquaza, (void *)(BG_SCREEN_ADDR(26)));
+                LoadCompressedPalette(gBattleTerrainPalette_Rayquaza, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                return;
+            }
         }
 
         switch (GetCurrentMapBattleScene())
@@ -1187,6 +1208,24 @@ void DrawBattleEntryBackground(void)
                 LZDecompressVram(gBattleTerrainAnimTilemap_Building, (void *)(BG_SCREEN_ADDR(28)));
                 return;
             }
+            else if (gTrainerBattleOpponent_A == TRAINER_ARCHIE)
+            {
+                LZDecompressVram(gBattleTerrainAnimTiles_Underwater, (void *)(BG_CHAR_ADDR(1)));
+                LZDecompressVram(gBattleTerrainAnimTilemap_Underwater, (void *)(BG_SCREEN_ADDR(28)));
+                return;
+            }
+            else if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+            {
+                LZDecompressVram(gBattleTerrainAnimTiles_Cave, (void *)(BG_CHAR_ADDR(1)));
+                LZDecompressVram(gBattleTerrainAnimTilemap_Cave, (void *)(BG_SCREEN_ADDR(28)));
+                return;
+            }
+            else if (gTrainerBattleOpponent_A == TRAINER_SIENNA)
+            {
+                LZDecompressVram(gBattleTerrainAnimTiles_Rayquaza, (void *)(BG_CHAR_ADDR(1)));
+                LZDecompressVram(gBattleTerrainAnimTilemap_Rayquaza, (void *)(BG_SCREEN_ADDR(28)));
+                return;
+            }
         }
 
         if (GetCurrentMapBattleScene() == MAP_BATTLE_SCENE_NORMAL)
@@ -1240,6 +1279,21 @@ bool8 LoadChosenBattleElement(u8 caseId)
                 else if (trainerClass == TRAINER_CLASS_CHAMPION)
                 {
                     LZDecompressVram(gBattleTerrainTiles_Stadium, (void *)(BG_CHAR_ADDR(2)));
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_ARCHIE)
+                {
+                    LZDecompressVram(gBattleTerrainTiles_Water, (void *)(BG_CHAR_ADDR(2)));
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+                {
+                    LZDecompressVram(gBattleTerrainTiles_Cave, (void *)(BG_CHAR_ADDR(2)));
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_SIENNA)
+                {
+                    LZDecompressVram(gBattleTerrainTiles_Rayquaza, (void *)(BG_CHAR_ADDR(2)));
                     break;
                 }
             }
@@ -1304,6 +1358,21 @@ bool8 LoadChosenBattleElement(u8 caseId)
                     LZDecompressVram(gBattleTerrainTilemap_Stadium, (void *)(BG_SCREEN_ADDR(26)));
                     break;
                 }
+                else if (gTrainerBattleOpponent_A == TRAINER_ARCHIE)
+                {
+                    LZDecompressVram(gBattleTerrainTilemap_Water, (void *)(BG_SCREEN_ADDR(26)));
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+                {
+                    LZDecompressVram(gBattleTerrainTilemap_Cave, (void *)(BG_SCREEN_ADDR(26)));
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_SIENNA)
+                {
+                    LZDecompressVram(gBattleTerrainTilemap_Rayquaza, (void *)(BG_SCREEN_ADDR(26)));
+                    break;
+                }
             }
 
             switch (GetCurrentMapBattleScene())
@@ -1364,6 +1433,21 @@ bool8 LoadChosenBattleElement(u8 caseId)
                 else if (trainerClass == TRAINER_CLASS_CHAMPION)
                 {
                     LoadCompressedPalette(gBattleTerrainPalette_StadiumWallace, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_ARCHIE)
+                {
+                    LoadCompressedPalette(gBattleTerrainPalette_Kyogre, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_MAXIE_MAGMA_HIDEOUT)
+                {
+                    LoadCompressedPalette(gBattleTerrainPalette_Groudon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                    break;
+                }
+                else if (gTrainerBattleOpponent_A == TRAINER_SIENNA)
+                {
+                    LoadCompressedPalette(gBattleTerrainPalette_Rayquaza, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
                     break;
                 }
             }

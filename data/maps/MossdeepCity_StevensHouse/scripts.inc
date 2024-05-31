@@ -49,7 +49,6 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	applymovement LOCALID_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
 	waitmovement 0
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
-	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
 	setvar VAR_STEVENS_HOUSE_STATE, 2
 	releaseall
 	end
@@ -168,14 +167,22 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "When you want to come back up, use\n"
 	.string "DIVE again.\p"
 	.string "In some places, it won't be possible\n"
-	.string "for you to surface, though.$"
+	.string "for you to surface, though.\p"
+	.string "Do you remember how MAXIE had LATIAS\n"
+	.string "under his control?\p"
+	.string "It turns out from what I heard that\n"
+	.string "ARCHIE is similarly seeking LATIOS.\p"
+	.string "He's either chasing LATIOS on\n"
+	.string "ROUTE 123 or ROUTE 134. I'm not sure.\p"
+	.string "I trust your judgment to determine\n"
+	.string "where he is. Good luck {PLAYER}.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "STEVEN: Apparently, there's an\n"
-	.string "underwater cavern between\l"
-	.string "MOSSDEEP and SOOTOPOLIS.\p"
-	.string "You know, the one that CAPT. STERN\n"
-	.string "found in his submarine.$"
+	.string "STEVEN: Check either ROUTE 123 or\n"
+	.string "ROUTE 134 for ARCHIE and LATIOS.\p"
+	.string "Either one could be correct.\p"
+	.string "But I know it's not easy to chase a\n"
+	.string "wanted criminal mastermind.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 	.string "{PLAYER} checked the POKé BALL.\p"

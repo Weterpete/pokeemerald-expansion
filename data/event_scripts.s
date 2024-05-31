@@ -1061,3 +1061,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/Route111_NoMirageTower/scripts.inc"
+
+	.include "data/maps/Route131_SkyPillar/scripts.inc"
+
+	.include "data/maps/SootopolisCity_LegendsBattle/scripts.inc"

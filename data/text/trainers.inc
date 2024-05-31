@@ -3934,15 +3934,16 @@ Route126_Text_BarryPostBattle:
 	.string "Look! Feast your eyes on this physique!$"
 
 Route126_Text_DeanIntro:
-	.string "This towering white mountain of rock\n"
-	.string "is SOOTOPOLIS CITY.$"
+	.string "Even if you beat me, you couldn't stop\n"
+	.string "TEAM AQUA at this point!$"
 
 Route126_Text_DeanDefeat:
-	.string "I was done in?$"
+	.string "No! Too strong!\n"
+	.string "My ICE-type POKéMON!$"
 
 Route126_Text_DeanPostBattle:
-	.string "I can't find the entrance to\n"
-	.string "SOOTOPOLIS. Where could it be?$"
+	.string "Losing again after all my training hurts\n"
+	.string "more than all the times before…$"
 
 Route126_Text_NikkiIntro:
 	.string "Ufufufufu!\n"
@@ -3957,15 +3958,15 @@ Route126_Text_NikkiPostBattle:
 	.string "disappear in a wave of despair…$"
 
 Route126_Text_BrendaIntro:
-	.string "Hello, kiddo!\n"
-	.string "Want a battle with me?$"
+	.string "Watch it, kiddo!\n"
+	.string "You're in over your head here.$"
 
 Route126_Text_BrendaDefeat:
 	.string "Oh, noooooh!$"
 
 Route126_Text_BrendaPostBattle:
-	.string "I love frolicking with POKéMON in\n"
-	.string "the sea like this!$"
+	.string "Maybe you're not so weak…\p"
+	.string "I just hope this doesn't get me fired.$"
 
 Route126_Text_PabloIntro:
 	.string "Check out this sculpted body!\n"

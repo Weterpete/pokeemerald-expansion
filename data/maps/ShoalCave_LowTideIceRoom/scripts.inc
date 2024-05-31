@@ -11,6 +11,8 @@ ShoalCave_LowTideIceRoom_Alecia::
 	waitmessage
 	closemessage
 	playse SE_BALL_THROW
+	waitse
+	playse SE_BALL_OPEN
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_UNUSED_0x029
 	removeobject 2
@@ -20,7 +22,7 @@ ShoalCave_LowTideIceRoom_Alecia::
 
 
 Alecia_Intro::
-	.string "What's that, kiddo?\nOh yes, I did direct that LAPRAS to\lblock the gym.\pARTHUR's approach of directly hassling\nthe GYM LEADER built up bad blood.\pIn my opinion, it would be better to\ncreate a problem and solve it to become\la hero in the citizens' eyes.\pI suppose you'll want to be battle me\nnow to thwart my plan.\pSo be it.$"
+	.string "ALECIA: What's that, kiddo?\nOh yes, I did direct that LAPRAS to\lblock the gym.\pARTHUR's approach of directly hassling\nthe GYM LEADER built up bad blood.\pIn my opinion, it would be better to\ncreate a problem and solve it to become\la hero in the citizens' eyes.\pI suppose you'll want to be battle me\nnow to thwart my plan.\pSo be it.$"
 
 Alecia_Defeat::
 	.string "RATTATAS!\nYou cleansed my toxins!$"

@@ -507,7 +507,10 @@ MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "STEVEN: Whew, that was too tense.\n"
 	.string "{PLAYER}{KUN}, thank you.\p"
-	.string "I have something to give you as\n"
+	.string "LATIAS…\n"
+	.string "How did MAXIE get her?\l"
+	.string "I need to look into this soon…\p"
+	.string "Oh! And I have something to give you as\n"
 	.string "thanks for your support.\p"
 	.string "Please come see me at home\n"
 	.string "after this.\p"

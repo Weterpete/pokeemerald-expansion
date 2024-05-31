@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_RAYQUAZA_SLEEPING, 1
 
 SkyPillar_Top_MapScripts::
@@ -183,73 +184,67 @@ SkyPillar_Top_Movement_CameraPanDown:
 SkyPillar_Top_Text_RayquazaFlewOff:
 	.string "The awakened RAYQUAZA flew off…$"
 
-SkyPillar_Top_Trigger_SecondMeeting_Terrance_LeftTrigger::
-	lockall
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	applymovement OBJ_EVENT_ID_PLAYER, TerranceEvent_GoRight
-	waitmovement 0
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
-	goto SkyPillar_Top_Trigger_SecondMeeting_Terrance
-	return
+`
 
+script SkyPillar_Top_Trigger_SecondMeeting_Terrance_LeftTrigger {
+    lockall
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+    applymovement(OBJ_EVENT_ID_PLAYER, TerranceEvent_GoRight)
+    waitmovement(0)
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_NORTH)
+    goto(SkyPillar_Top_Trigger_SecondMeeting_Terrance)
+}
 
-SkyPillar_Top_Trigger_SecondMeeting_Terrance::
-	lockall
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	applymovement 3, TerranceMovement_Opening
-	waitmovement 0
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_WEST
-	msgbox Terrance_Intro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SIENNA, Terrance_Defeat
-	msgbox Terrance_Outro, MSGBOX_DEFAULT
-	applymovement OBJ_EVENT_ID_PLAYER, TerranceEvent_GoUp
-	waitmovement 0
-	applymovement 3, TerranceMovement_Leaving
-	waitmovement 0
-	playse SE_EXIT
-	removeobject 3
-	setflag FLAG_UNUSED_0x02E
-	setvar VAR_UNUSED_0x40A8, 1
-	releaseall
-	return
+script SkyPillar_Top_Trigger_SecondMeeting_Terrance {
+    lockall
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+    applymovement(3, TerranceMovement_Opening)
+    waitmovement(0)
+    turnobject(OBJ_EVENT_ID_PLAYER, DIR_WEST)
+    msgbox(Terrance_Intro, MSGBOX_DEFAULT)
+    trainerbattle_no_intro(TRAINER_SIENNA, Terrance_Defeat)
+    msgbox(Terrance_Outro, MSGBOX_DEFAULT)
+    applymovement(OBJ_EVENT_ID_PLAYER, TerranceEvent_GoUp)
+    waitmovement(0)
+    applymovement(3, TerranceMovement_Leaving)
+    waitmovement(0)
+    playse(SE_EXIT)
+    removeobject(3)
+    setflag(FLAG_UNUSED_0x02E)
+    setvar(VAR_UNUSED_0x40A8, 1)
+    releaseall
+}
 
+text Terrance_Intro {
+    "TERRANCE: What?\nWhere'd you come from?\pMy plan was flawless!\nCapture RAYQUAZA and use it to force\lthe ELITE 4 to let us join!\pBut it won't listen to me because of\nthis weather chaos.\pFrankly, I'm sick of all these damn\ninterruptions.\lGet out of my way, kid."
+}
 
-TerranceEvent_GoRight:
-	walk_right
-	face_up
-	step_end
+text Terrance_Defeat {
+    "All four of us, bested by you?\nOf all people!?"
+}
 
-TerranceMovement_Opening:
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	face_right
-	step_end
+text Terrance_Outro {
+    "Alright, alright.\nSave the world or whatever.\pWe're not giving up just because of\nthis, but we'll stop with our antics.\pGood luck on your next GYM BADGE, you'll\nneed it."
+}
 
-TerranceEvent_GoUp:
-	walk_up
-	face_down
-	step_end
+movement TerranceEvent_GoRight {
+    walk_right
+    face_up
+}
 
-TerranceMovement_Leaving:
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	step_end
+movement TerranceMovement_Opening {
+    walk_down
+    walk_left * 3
+    walk_down * 4
+    face_right
+}
 
-Terrance_Intro::
-	.string "TERRANCE: What?\nWhere'd you come from?\pMy plan was flawless!\nCapture RAYQUAZA and use it to force\lthe ELITE 4 to let us join!\pBut it won't listen to me because of\nthis weather chaos.\pFrankly, I'm sick of all these damn\ninterruptions.\lGet out of my way, kid.$"
+movement TerranceEvent_GoUp {
+    walk_up
+    face_down
+}
 
-Terrance_Defeat::
-	.string "All four of us, bested by you?\nOf all people!?$"
-
-Terrance_Outro::
-	.string "Alright, alright.\nSave the world or whatever.\pWe're not giving up just because of\nthis, but we'll stop with our antics.\pGood luck on your next GYM BADGE, you'll\nneed it.$"
+movement TerranceMovement_Leaving {
+   walk_right * 5
+   walk_up
+}

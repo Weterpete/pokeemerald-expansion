@@ -23,14 +23,14 @@ SeafloorCavern_Room4_Text_Grunt3PostBattle:
 	.string "I'm not afraid. Don't get me wrong!$"
 
 SeafloorCavern_Room4_Text_Grunt4Intro:
-	.string "Who are you?\n"
-	.string "Where do you think you're going?$"
+	.string "Turns out that my problem wasn't warp\n"
+	.string "panels at all! It was being a man.$"
 
 SeafloorCavern_Room4_Text_Grunt4Defeat:
-	.string "I failed to win!$"
+	.string "And Shelly was so supportive…$"
 
 SeafloorCavern_Room4_Text_Grunt4PostBattle:
-	.string "My partner forgot the map in that\n"
-	.string "submarine!\p"
-	.string "How's that for being useless?$"
+	.string "Dressing like this feels so much better\n"
+	.string "than before!\p"
+	.string "Losing doesn't, though. You punk.$"
 

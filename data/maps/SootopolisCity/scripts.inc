@@ -1308,7 +1308,7 @@ SootopolisCity_EventScript_Wallace::
 
 SootopolisCity_EventScript_GiveWaterfall::
 	msgbox SootopolisCity_Text_ThankYouForHelpAcceptThis, MSGBOX_DEFAULT
-	giveitem ITEM_HM07
+	giveitem ITEM_OLD_AMBER
 	setflag FLAG_RECEIVED_HM07
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
@@ -1708,15 +1708,15 @@ SootopolisCity_Text_ThankYouForHelpAcceptThis:
 	.string "Please accept it.$"
 
 SootopolisCity_Text_ExplainWaterfallGoToGym:
-	.string "That HIDDEN MACHINE contains\n"
-	.string "WATERFALL.\p"
-	.string "If you have the RAIN BADGE, a POKéMON\n"
-	.string "that has learned that HM move can\l"
-	.string "force its way up waterfalls.\p"
-	.string "And where does one get the RAIN BADGE?\n"
+	.string "That ancient fossil contains\n"
+	.string "AERODACTYL.\p"
+	.string "If you go to RUSTBORO, a researcher can\n"
+	.string "revive it for you to get a powerful\l"
+	.string "ROCK-type POKéMON.\p"
+	.string "And where can one use that POKéMON?\n"
 	.string "You know, don't you?\p"
-	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
+	.string "That's right! You use it to beat the\n"
+	.string "SOOTOPOLIS GYM LEADER.\p"
 	.string "When you're all set to go, step through\n"
 	.string "that door.$"
 

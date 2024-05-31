@@ -1,3 +1,4 @@
+raw`
 Route134_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route134_OnResume
 	.byte 0
@@ -51,64 +52,54 @@ Route134_EventScript_Kelvin::
 	msgbox Route134_Text_KelvinPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route134_Archie::
+`
+
+script Route134_Archie {
 	lockall
-	playbgm MUS_ENCOUNTER_AQUA, 0
-	applymovement OBJ_EVENT_ID_PLAYER, ArchieEvent134_PlayerForward
-	waitmovement 0
-	msgbox Route134_Archie_Text_0, MSGBOX_DEFAULT
+	playbgm(MUS_ENCOUNTER_AQUA, 0)
+	applymovement(OBJ_EVENT_ID_PLAYER, ArchieEvent134_PlayerForward)
+	waitmovement(0)
+	msgbox("ARCHIE: Fufufu…\pMy plan is going swimmingly, pardon the\npun.\pLATIOS!\nBecome mine!", MSGBOX_DEFAULT)
 	waitmessage
-	fadescreen FADE_TO_BLACK
-	playse SE_BALL_THROW
+	fadescreen(FADE_TO_BLACK)
+	playse(SE_BALL_THROW)
 	waitse
-	delay 40
-	playse SE_BALL
+	delay(40)
+	playse(SE_BALL)
 	waitse
-	delay 40
-	playse SE_BALL
+	delay(40)
+	playse(SE_BALL)
 	waitse
-	delay 40
-	playse SE_BALL
+	delay(40)
+	playse(SE_BALL)
 	waitse
-	delay 40
-	playse SE_RG_BALL_CLICK
+	delay(40)
+	playse(SE_RG_BALL_CLICK)
 	waitse
-	delay 20
-	removeobject 13
-	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
-	fadescreen FADE_FROM_BLACK
-	delay 20
-	turnobject 12, DIR_SOUTH
-	msgbox Route134_Archie_Text_1, MSGBOX_DEFAULT
+	delay(20)
+	removeobject(13)
+	setflag(FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT)
+	fadescreen(FADE_FROM_BLACK)
+	delay(20)
+	turnobject(12, DIR_SOUTH)
+	msgbox("Did you really think you would catch\nme?\pThe great pirate of TEAM AQUA, ARCHIE,\nwould never falter like that.\pWith both the RED ORB and LATIOS, I'm\noff to make HOENN a utopia!", MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 12, ArchieEvent_ArchieOut134
-	waitmovement 0
-	playse SE_M_FLY
-	removeobject 12
-	setflag FLAG_UNUSED_0x02D
-	setflag FLAG_UNUSED_0x02B
-	setvar VAR_UNUSED_0x40A1, 1
-	playbgm MUS_ROUTE122, 0
+	applymovement(12, ArchieEvent_ArchieOut134)
+	waitmovement(0)
+    playse(SE_M_FLY)
+	removeobject(12)
+	setflag(FLAG_UNUSED_0x02D)
+    setflag(FLAG_UNUSED_0x02B)
+	setvar(VAR_UNUSED_0x40A1, 1)
+	playbgm(MUS_ROUTE122, 0)
 	releaseall
-	return
+}
 
+movement ArchieEvent134_PlayerForward {
+	walk_up * 2
+}
 
-ArchieEvent134_PlayerForward:
-	walk_up
-	walk_up
-	step_end
-
-ArchieEvent_ArchieOut134:
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
-
-Route134_Archie_Text_0:
-	.string "ARCHIE: Fufufu…\pMy plan is going swimmingly, pardon the\npun.\pLATIOS!\nBecome mine!$"
-
-Route134_Archie_Text_1:
-	.string "Did you really think you would catch\nme?\pThe great pirate of TEAM AQUA, ARCHIE,\nwould never falter like that.\pWith both the RED ORB and LATIOS, I'm\noff to make HOENN a utopia!$"
+movement ArchieEvent_ArchieOut134 {
+	walk_up * 5
+}

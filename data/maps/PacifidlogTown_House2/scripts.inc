@@ -10,11 +10,7 @@ PacifidlogTown_House2_EventScript_FanClubYoungerBrother::
 	call_if_set FLAG_MET_FANCLUB_YOUNGER_BROTHER, PacifidlogTown_House2_EventScript_MonAssessment
 	call_if_unset FLAG_MET_FANCLUB_YOUNGER_BROTHER, PacifidlogTown_House2_EventScript_FirstMonAssessment
 	setflag FLAG_MET_FANCLUB_YOUNGER_BROTHER
-	specialvar VAR_RESULT, GetLeadMonFriendshipScore
-	goto_if_ge VAR_RESULT, FRIENDSHIP_150_TO_199, PacifidlogTown_House2_EventScript_GiveReturn
-	specialvar VAR_RESULT, GetLeadMonFriendshipScore
-	goto_if_ge VAR_RESULT, FRIENDSHIP_50_TO_99, PacifidlogTown_House2_EventScript_PutInEffort
-	goto PacifidlogTown_House2_EventScript_GiveFrustration
+	goto PacifidlogTown_House2_EventScript_GiveReturn
 	end
 
 PacifidlogTown_House2_EventScript_UpdateFanClubTMFlag::
@@ -38,7 +34,7 @@ PacifidlogTown_House2_EventScript_ClearReceivedFanClubTM::
 
 PacifidlogTown_House2_EventScript_GiveReturn::
 	msgbox PacifidlogTown_House2_Text_AdoringPokemonTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM27
+	giveitem ITEM_TM17
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK
 	special SetPacifidlogTMReceivedDay
@@ -53,7 +49,7 @@ PacifidlogTown_House2_EventScript_PutInEffort::
 
 PacifidlogTown_House2_EventScript_GiveFrustration::
 	msgbox PacifidlogTown_House2_Text_ViciousPokemonTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_TM21
+	giveitem ITEM_TM17
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_FANCLUB_TM_THIS_WEEK
 	special SetPacifidlogTMReceivedDay
@@ -119,10 +115,10 @@ PacifidlogTown_House2_Text_ViciousPokemonTakeThis:
 	.string "deserves a TM like this.$"
 
 PacifidlogTown_House2_Text_ExplainReturnFrustration:
-	.string "If a POKéMON likes you a lot, RETURN's\n"
-	.string "power is enhanced.\p"
-	.string "If it doesn't like you, FRUSTRATION's\n"
-	.string "power goes up.$"
+	.string "If your POKéMON is being targeted,\n"
+	.string "PROTECT will block all damage.\p"
+	.string "It's very useful in DOUBLE BATTLES\n"
+	.string "like in MOSSDEEP GYM.$"
 
 PacifidlogTown_House2_Text_GetGoodTMInXDays:
 	.string "Oh, yes. In about {STR_VAR_1} or so days,\n"

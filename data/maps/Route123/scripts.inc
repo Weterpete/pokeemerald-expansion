@@ -196,13 +196,125 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
-Route123_ConfusedRoadblockGrunt::
+Route123_RoadBlock::
 	lockall
 	faceplayer
-	msgbox Route123_ConfusedRoadblockGrunt_Text_0, MSGBOX_NPC
+	goto_if_set FLAG_RECEIVED_HM08, Route123_RoadBlock_2
+	msgbox Route123_RoadBlock_Text_5, MSGBOX_NPC
+Route123_RoadBlock_1:
+	waitmessage
+	releaseall
+	return
+
+Route123_RoadBlock_2:
+	msgbox Route123_RoadBlock_Text_0, MSGBOX_NPC
+	goto_if_set FLAG_UNUSED_0x02C, Route123_RoadBlock_5
+	msgbox Route123_RoadBlock_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq Route123_RoadBlock_8
+	msgbox Route123_RoadBlock_Text_4, MSGBOX_NPC
+	goto Route123_RoadBlock_1
+
+Route123_RoadBlock_5:
+	msgbox Route123_RoadBlock_Text_1, MSGBOX_NPC
+	goto Route123_RoadBlock_1
+
+Route123_RoadBlock_8:
+	msgbox Route123_RoadBlock_Text_3, MSGBOX_NPC
+	fadescreen FADE_TO_BLACK
+	playse SE_WARP_OUT
+	removeobject 44
+	setflag FLAG_UNUSED_0x02B
+	setflag FLAG_UNUSED_0x02C
+	delay 40
+	fadescreen FADE_FROM_BLACK
+	goto Route123_RoadBlock_1
+
+
+Route123_Archie::
+	lockall
+	playbgm MUS_ENCOUNTER_AQUA, 0
+	applymovement OBJ_EVENT_ID_PLAYER, ArchieEvent123_PlayerForward
+	waitmovement 0
+	msgbox Route123_Archie_Text_0, MSGBOX_DEFAULT
+	waitmessage
+	fadescreen FADE_TO_BLACK
+	playse SE_BALL_THROW
+	waitse
+	delay 40
+	playse SE_BALL
+	waitse
+	delay 40
+	playse SE_BALL
+	waitse
+	delay 40
+	playse SE_BALL
+	waitse
+	delay 40
+	playse SE_RG_BALL_CLICK
+	waitse
+	delay 20
+	removeobject 46
+	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
+	fadescreen FADE_FROM_BLACK
+	delay 20
+	turnobject 45, DIR_SOUTH
+	msgbox Route123_Archie_Text_1, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	applymovement 45, ArchieEvent_ArchieOut123
+	waitmovement 0
+	playse SE_M_FLY
+	removeobject 45
+	setflag FLAG_UNUSED_0x02D
+	setflag FLAG_UNUSED_0x02A
+	setvar VAR_UNUSED_0x40A1, 1
+	playbgm MUS_ROUTE122, 0
 	releaseall
 	return
 
 
-Route123_ConfusedRoadblockGrunt_Text_0:
-	.string "Fufufu, can't you see?\nWe've taken over LILYCOVE CITY!\pWhat do you mean this isn't LILYCOVE?\pOh no, not again.\nI've always been bad with directions…$"
+ArchieEvent123_PlayerForward:
+	walk_up
+	walk_up
+	step_end
+
+ArchieEvent_ArchieOut123:
+	walk_down
+	walk_down
+	walk_right
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Route123_RoadBlock_Text_0:
+	.string "I saw some pirate guy run down by here.\nCan you chase after him?\lIt'd be a huge favor.$"
+
+Route123_RoadBlock_Text_1:
+	.string "Oh, wait, sorry.\nI just heard he was spotted somewhere\lelse.\pBetter check there.$"
+
+Route123_RoadBlock_Text_2:
+	.string "So do you wanna come this way?\pYou won't have time to check somewhere\nelse if you do.$"
+
+Route123_RoadBlock_Text_3:
+	.string "Great! I'll get out of your way then.$"
+
+Route123_RoadBlock_Text_4:
+	.string "Alright, but keep searching.\pHe might be on ROUTE 133, if you want to\ncheck there.$"
+
+Route123_RoadBlock_Text_5:
+	.string "Excuse me, this route isn't open at the\nmoment. There's a blackout.\pSUNNYSHORE and LUMIOSE are having\nsimilar experiences.$"
+
+Route123_Archie_Text_0:
+	.string "ARCHIE: Fufufu…\pMy plan is going swimmingly, pardon the\npun.\pLATIOS!\nBecome mine!$"
+
+Route123_Archie_Text_1:
+	.string "Did you really think you would catch\nme?\pThe great pirate of TEAM AQUA, ARCHIE,\nwould never falter like that.\pWith both the RED ORB and LATIOS, I'm\noff to make HOENN a utopia!$"
