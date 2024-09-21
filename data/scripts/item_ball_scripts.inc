@@ -91,7 +91,7 @@ Route113_EventScript_ItemHyperPotion::
 	end
 
 Route114_EventScript_ItemRareCandy::
-	finditem ITEM_RARE_CANDY
+	finditem ITEM_FOCUS_SASH
 	end
 
 Route114_EventScript_ItemProtein::
@@ -383,11 +383,11 @@ MeteorFalls_1F_1R_EventScript_ItemTM23::
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemFullHeal::
-	finditem ITEM_FULL_HEAL
+	finditem ITEM_HELIX_FOSSIL
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemMoonStone::
-	finditem ITEM_MOON_STONE
+	finditem ITEM_DOME_FOSSIL
 	end
 
 MeteorFalls_1F_1R_EventScript_ItemPPUP::
@@ -607,15 +607,15 @@ VictoryRoad_1F_EventScript_ItemMaxElixir::
 	end
 
 VictoryRoad_1F_EventScript_ItemPPUp::
-	finditem ITEM_PP_UP
+	finditem ITEM_CHOICE_SPECS
 	end
 
 VictoryRoad_B1F_EventScript_ItemTM29::
-	finditem ITEM_TM29
+	finditem ITEM_CHOICE_BAND
 	end
 
 VictoryRoad_B1F_EventScript_ItemFullRestore::
-	finditem ITEM_FULL_RESTORE
+	finditem ITEM_PP_MAX
 	end
 
 VictoryRoad_B2F_EventScript_ItemFullHeal::

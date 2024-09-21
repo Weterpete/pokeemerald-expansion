@@ -237,6 +237,16 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 	release
 	end
 
+MeteorFalls_1F_1R_EventScript_Ditto::
+	playmoncry SPECIES_DITTO, CRY_MODE_NORMAL
+	msgbox MeteorFalls_1F_1R_Text_Ditto, MSGBOX_DEFAULT
+	release
+	end
+
+MeteorFalls_1F_1R_Text_Ditto:
+	.string "Ditto!\n"
+	.string "Dit-ditto!$"
+
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
 	.string "Hehehe!\p"
 	.string "With this METEORITE, that thing in\n"

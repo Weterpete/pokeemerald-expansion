@@ -94,7 +94,8 @@ IslandCave_EventScript_Regice::
 	playmoncry SPECIES_REGICE, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_REGICE, 40
+	setflag FLAG_UNUSED_0x04F
+	setwildbattle SPECIES_REGICE, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate
@@ -104,6 +105,7 @@ IslandCave_EventScript_Regice::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, IslandCave_EventScript_RanFromRegice
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IslandCave_EventScript_RanFromRegice
 	setflag FLAG_DEFEATED_REGICE
+	clearflag FLAG_UNUSED_0x04F
 	release
 	end
 

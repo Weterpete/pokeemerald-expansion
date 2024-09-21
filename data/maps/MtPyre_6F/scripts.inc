@@ -119,7 +119,7 @@ DefeatedOrCaptured_Wild_Pokemon::
 
 
 RanAway_Wild_Pokemon::
-	playmoncry SPECIES_KYOGRE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER
 	msgbox RanAway_Wild_Pokemon_Text_0, MSGBOX_AUTOCLOSE
 	delay 20
 	fadescreen FADE_TO_BLACK

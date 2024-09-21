@@ -129,6 +129,16 @@ Route115_EventScript_Marlene::
 	msgbox Route115_Text_MarlenePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route115_EventScript_RegiStatue::
+	msgbox Route115_Text_RegiStatue, MSGBOX_DEFAULT
+	setflag FLAG_ITEM_ROUTE_115_HEAL_POWDER
+	release
+	end
+
+Route115_Text_RegiStatue:
+	.string "Go! Find the kings in METEOR FALLS.\n"
+	.string "Nothing guards them any longer.$"
+
 Route115_Text_NeverKnowWhenCavePokemonWillAppear:
 	.string "Exploring a cave isn't like walking\n"
 	.string "on a road.\p"

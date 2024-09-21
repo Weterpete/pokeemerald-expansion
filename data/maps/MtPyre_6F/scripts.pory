@@ -108,7 +108,7 @@ script DefeatedOrCaptured_Wild_Pokemon {
 }
  
 script RanAway_Wild_Pokemon {
-	playmoncry(SPECIES_KYOGRE, CRY_MODE_ENCOUNTER)
+	playmoncry(SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER)
 	msgbox("Reavuss…", MSGBOX_AUTOCLOSE)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)

@@ -7720,6 +7720,12 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PIKE_QUEEN:
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
+        case TRAINER_MICHELLE:
+        case TRAINER_MITCHELL:
+            return MUS_RG_VS_TRAINER;
+        case TRAINER_KOICHI:
+        case TRAINER_GARRISON:
+            return MUS_RG_VS_GYM_LEADER;
         default:
             return MUS_VS_TRAINER;
         }
