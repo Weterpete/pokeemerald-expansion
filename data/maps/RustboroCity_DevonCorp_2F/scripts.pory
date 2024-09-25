@@ -1,3 +1,4 @@
+raw`
 .set LOCALID_FOSSIL_SCIENTIST, 5
 
 RustboroCity_DevonCorp_2F_MapScripts::
@@ -378,162 +379,145 @@ RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
 	.string "One couldn't ask for a better\n"
 	.string "environment as an engineer.$"
 
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter::
-	lockall
-	faceplayer
-	goto_if_eq VAR_FOSSIL_RESURRECTION_STATE, 2, RustboroCity_DevonCorp_2F_EventScript_Ready
-	goto_if_eq VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_StillRegenerating
-	msgbox RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_DEFAULT
-	msgbox RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils, MSGBOX_DEFAULT
-	multichoice 25, 0, MULTI_FOSSIL, 0
-	closemessage
-	compare VAR_RESULT, 0
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_2
-	compare VAR_RESULT, 1
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_3
-	compare VAR_RESULT, 2
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_4
-	compare VAR_RESULT, 3
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_5
-	compare VAR_RESULT, 4
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_6
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1:
-	release
+`
+
+script RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter {
+    lockall
+    faceplayer
+    goto_if_eq(VAR_FOSSIL_RESURRECTION_STATE, 2, RustboroCity_DevonCorp_2F_EventScript_Ready)
+	goto_if_eq(VAR_FOSSIL_RESURRECTION_STATE, 1, RustboroCity_DevonCorp_2F_EventScript_StillRegenerating)
+    msgbox(RustboroCity_DevonCorp_2F_Text_WantToBringFossilBackToLife, MSGBOX_DEFAULT)
+    msgbox(RustboroCity_DevonCorp_2F_Text_DevelopDeviceToResurrectFossils, MSGBOX_DEFAULT)
+    multichoice(25, 0, MULTI_FOSSIL, 0)
+    closemessage
+    if(var(VAR_RESULT) == 0){
+        checkitem(ITEM_ROOT_FOSSIL)
+        if(var(VAR_RESULT) == TRUE){
+            bufferitemname(STR_VAR_1, ITEM_ROOT_FOSSIL)
+            msgbox(RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT)
+	        removeitem(ITEM_ROOT_FOSSIL)
+	        setvar(VAR_FOSSIL_RESURRECTION_STATE, 1)
+	        setvar(VAR_WHICH_FOSSIL_REVIVED, 1)
+        }
+		else{
+			msgbox(RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT)
+		}
+    }
+    elif(var(VAR_RESULT) == 1){
+        checkitem(ITEM_CLAW_FOSSIL)
+        if(var(VAR_RESULT) == TRUE){
+            bufferitemname(STR_VAR_1, ITEM_CLAW_FOSSIL)
+            msgbox(RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT)
+	        removeitem(ITEM_CLAW_FOSSIL)
+	        setvar(VAR_FOSSIL_RESURRECTION_STATE, 1)
+	        setvar(VAR_WHICH_FOSSIL_REVIVED, 2)
+        }
+		else{
+			msgbox(RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT)
+		}
+    }
+    elif(var(VAR_RESULT) == 2){
+        checkitem(ITEM_HELIX_FOSSIL)
+        if(var(VAR_RESULT) == TRUE){
+            bufferitemname(STR_VAR_1, ITEM_HELIX_FOSSIL)
+            msgbox(RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT)
+	        removeitem(ITEM_HELIX_FOSSIL)
+	        setvar(VAR_FOSSIL_RESURRECTION_STATE, 1)
+	        setvar(VAR_WHICH_FOSSIL_REVIVED, 3)
+        }
+		else{
+			msgbox(RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT)
+		}
+    }
+    elif(var(VAR_RESULT) == 3){
+        checkitem(ITEM_DOME_FOSSIL)
+        if(var(VAR_RESULT) == TRUE){
+            bufferitemname(STR_VAR_1, ITEM_DOME_FOSSIL)
+            msgbox(RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT)
+	        removeitem(ITEM_DOME_FOSSIL)
+	        setvar(VAR_FOSSIL_RESURRECTION_STATE, 1)
+	        setvar(VAR_WHICH_FOSSIL_REVIVED, 4)
+        }
+		else{
+			msgbox(RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT)
+		}
+    }
+    elif(var(VAR_RESULT) == 4){
+        checkitem(ITEM_OLD_AMBER)
+        if(var(VAR_RESULT) == TRUE){
+            bufferitemname(STR_VAR_1, ITEM_OLD_AMBER)
+            msgbox(RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT)
+	        removeitem(ITEM_OLD_AMBER)
+	        setvar(VAR_FOSSIL_RESURRECTION_STATE, 1)
+	        setvar(VAR_WHICH_FOSSIL_REVIVED, 5)
+        }
+		else{
+			msgbox(RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT)
+		}
+    }
+	else{
+		msgbox(RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT)
+	}
+    release
 	end
+}
 
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_2:
-	checkitem ITEM_ROOT_FOSSIL
-	compare VAR_RESULT, TRUE
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_13
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_3:
-	checkitem ITEM_CLAW_FOSSIL
-	compare VAR_RESULT, TRUE
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_16
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_4:
-	checkitem ITEM_HELIX_FOSSIL
-	compare VAR_RESULT, TRUE
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_19
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_5:
-	checkitem ITEM_DOME_FOSSIL
-	compare VAR_RESULT, TRUE
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_22
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_6:
-	checkitem ITEM_OLD_AMBER
-	compare VAR_RESULT, TRUE
-	goto_if_eq RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_25
-	msgbox RustboroCity_DevonCorp_2F_Text_OhIsThatSo, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_13:
-	bufferitemname STR_VAR_1, ITEM_ROOT_FOSSIL
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
-	removeitem ITEM_ROOT_FOSSIL
-	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
-	setvar VAR_WHICH_FOSSIL_REVIVED, 1
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_16:
-	bufferitemname STR_VAR_1, ITEM_CLAW_FOSSIL
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
-	removeitem ITEM_CLAW_FOSSIL
-	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
-	setvar VAR_WHICH_FOSSIL_REVIVED, 2
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_19:
-	bufferitemname STR_VAR_1, ITEM_HELIX_FOSSIL
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
-	removeitem ITEM_HELIX_FOSSIL
-	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
-	setvar VAR_WHICH_FOSSIL_REVIVED, 3
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_22:
-	bufferitemname STR_VAR_1, ITEM_DOME_FOSSIL
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
-	removeitem ITEM_DOME_FOSSIL
-	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
-	setvar VAR_WHICH_FOSSIL_REVIVED, 4
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_25:
-	bufferitemname STR_VAR_1, ITEM_OLD_AMBER
-	msgbox RustboroCity_DevonCorp_2F_Text_HandedFossilToResearcher, MSGBOX_DEFAULT
-	removeitem ITEM_OLD_AMBER
-	setvar VAR_FOSSIL_RESURRECTION_STATE, 1
-	setvar VAR_WHICH_FOSSIL_REVIVED, 5
-	goto RustboroCity_DevonCorp_2F_EventScript_FossilScientistBetter_1
-
-
-RustboroCity_DevonCorp_2F_EventScript_Ready::
-	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 1, RustboroCity_DevonCorp_2F_EventScript_LileepReady
-	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 2, RustboroCity_DevonCorp_2F_EventScript_AnorithReady
-	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 3, RustboroCity_DevonCorp_2F_EventScript_OmanyteReady
-	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 4, RustboroCity_DevonCorp_2F_EventScript_KabutoReady
-	goto_if_eq VAR_WHICH_FOSSIL_REVIVED, 5, RustboroCity_DevonCorp_2F_EventScript_AerodactylReady
+script RustboroCity_DevonCorp_2F_EventScript_Ready {
+    goto_if_eq(VAR_WHICH_FOSSIL_REVIVED, 1, RustboroCity_DevonCorp_2F_EventScript_LileepReady)
+	goto_if_eq(VAR_WHICH_FOSSIL_REVIVED, 2, RustboroCity_DevonCorp_2F_EventScript_AnorithReady)
+	goto_if_eq(VAR_WHICH_FOSSIL_REVIVED, 3, RustboroCity_DevonCorp_2F_EventScript_OmanyteReady)
+	goto_if_eq(VAR_WHICH_FOSSIL_REVIVED, 4, RustboroCity_DevonCorp_2F_EventScript_KabutoReady)
+	goto_if_eq(VAR_WHICH_FOSSIL_REVIVED, 5, RustboroCity_DevonCorp_2F_EventScript_AerodactylReady)
 	end
+}
 
-
-RustboroCity_DevonCorp_2F_EventScript_OmanyteReady::
-	bufferspeciesname STR_VAR_2, SPECIES_OMANYTE
-	bufferspeciesname STR_VAR_1, SPECIES_OMANYTE
-	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte
+script RustboroCity_DevonCorp_2F_EventScript_OmanyteReady {
+	bufferspeciesname(STR_VAR_2, SPECIES_OMANYTE)
+	bufferspeciesname(STR_VAR_1, SPECIES_OMANYTE)
+	msgbox(RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT)
+	goto(RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte)
 	end
+}
 
-
-RustboroCity_DevonCorp_2F_EventScript_KabutoReady::
-	bufferspeciesname STR_VAR_2, SPECIES_KABUTO
-	bufferspeciesname STR_VAR_1, SPECIES_KABUTO
-	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto
+script RustboroCity_DevonCorp_2F_EventScript_KabutoReady {
+	bufferspeciesname(STR_VAR_2, SPECIES_KABUTO)
+	bufferspeciesname(STR_VAR_1, SPECIES_KABUTO)
+	msgbox(RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT)
+	goto(RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto)
 	end
+}
 
-
-RustboroCity_DevonCorp_2F_EventScript_AerodactylReady::
-	bufferspeciesname STR_VAR_2, SPECIES_AERODACTYL
-	bufferspeciesname STR_VAR_1, SPECIES_AERODACTYL
-	msgbox RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT
-	goto RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl
+script RustboroCity_DevonCorp_2F_EventScript_AerodactylReady {
+	bufferspeciesname(STR_VAR_2, SPECIES_AERODACTYL)
+	bufferspeciesname(STR_VAR_1, SPECIES_AERODACTYL)
+	msgbox(RustboroCity_DevonCorp_2F_Text_FossilizedMonBroughtBackToLife, MSGBOX_DEFAULT)
+	goto(RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl)
 	end
+}
 
-
-RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte::
-	setvar VAR_TEMP_1, SPECIES_OMANYTE
-	givemon SPECIES_OMANYTE, 20
-	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithParty
-	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC
-	goto Common_EventScript_NoMoreRoomForPokemon
+script RustboroCity_DevonCorp_2F_EventScript_ReceiveOmanyte{
+	setvar(VAR_TEMP_1, SPECIES_OMANYTE)
+	givemon(SPECIES_OMANYTE, 20)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithParty)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC)
+	goto(Common_EventScript_NoMoreRoomForPokemon)
 	end
-
-
-RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto::
-	setvar VAR_TEMP_1, SPECIES_KABUTO
-	givemon SPECIES_KABUTO, 20
-	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithParty
-	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC
-	goto Common_EventScript_NoMoreRoomForPokemon
+}
+	
+script RustboroCity_DevonCorp_2F_EventScript_ReceiveKabuto{
+	setvar(VAR_TEMP_1, SPECIES_KABUTO)
+	givemon(SPECIES_KABUTO, 20)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithParty)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC)
+	goto(Common_EventScript_NoMoreRoomForPokemon)
 	end
+}
 
-
-RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl::
-	setvar VAR_TEMP_1, SPECIES_AERODACTYL
-	givemon SPECIES_AERODACTYL, 20
-	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithParty
-	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC
-	goto Common_EventScript_NoMoreRoomForPokemon
+script RustboroCity_DevonCorp_2F_EventScript_ReceiveAerodactyl{
+	setvar(VAR_TEMP_1, SPECIES_AERODACTYL)
+	givemon(SPECIES_AERODACTYL, 20)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PARTY, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithParty)
+	goto_if_eq(VAR_RESULT, MON_GIVEN_TO_PC, RustboroCity_DevonCorp_2F_EventScript_ReceiveAnorithPC)
+	goto(Common_EventScript_NoMoreRoomForPokemon)
 	end
-
+}

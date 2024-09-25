@@ -2394,12 +2394,12 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_AERODACTYL"
+                "species": "SPECIES_ALTARIA"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_AERODACTYL"
+                "species": "SPECIES_MILOTIC"
               }
             ]
           },
