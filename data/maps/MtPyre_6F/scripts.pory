@@ -72,14 +72,35 @@ MtPyre_6F_Text_CedricPostBattle:
 
 script MtPyre_GhostEncounter {
     lockall
+	setflag(FLAG_UNUSED_0x04F)
 	msgbox("A vengeful spirit emerged from the bag!")
 	waitmessage
 	closemessage
-    playmoncry(SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER)
-    delay(40)
-	waitmoncry
-	setflag(FLAG_UNUSED_0x04F)
-    setwildbattle(SPECIES_MISDREAVUS, 50, ITEM_SALAC_BERRY)
+	random(4)
+	if(var(VAR_RESULT) == 0){
+        playmoncry(SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER)
+   		delay(40)
+		waitmoncry
+    	setwildbattle(SPECIES_MISDREAVUS, 50, ITEM_SALAC_BERRY)
+    }
+    elif(var(VAR_RESULT) == 1){
+        playmoncry(SPECIES_GENGAR, CRY_MODE_ENCOUNTER)
+        delay(40)
+	    waitmoncry
+        setwildbattle(SPECIES_GENGAR, 50, ITEM_SALAC_BERRY)
+    }
+    elif(var(VAR_RESULT) == 2){
+        playmoncry(SPECIES_DUSCLOPS, CRY_MODE_ENCOUNTER)
+        delay(40)
+	    waitmoncry
+        setwildbattle(SPECIES_DUSCLOPS, 50, ITEM_SALAC_BERRY)
+    }
+	elif(var(VAR_RESULT) == 3){
+        playmoncry(SPECIES_BANETTE, CRY_MODE_ENCOUNTER)
+        delay(40)
+	    waitmoncry
+        setwildbattle(SPECIES_BANETTE, 50, ITEM_SALAC_BERRY)
+    }
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
 	if(var(VAR_RESULT) == B_OUTCOME_CAUGHT){

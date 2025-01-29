@@ -175,7 +175,8 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "He's either chasing LATIOS on\n"
 	.string "ROUTE 123 or ROUTE 134. I'm not sure.\p"
 	.string "I trust your judgment to determine\n"
-	.string "where he is. Good luck {PLAYER}.$"
+	.string "where he is.\l"
+	.string "Good luck, {PLAYER}."
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "STEVEN: Check either ROUTE 123 or\n"

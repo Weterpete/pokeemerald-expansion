@@ -83,7 +83,7 @@ Route113_EventScript_ItemMaxEther::
 	end
 
 Route113_EventScript_ItemSuperRepel::
-	finditem ITEM_THICK_CLUB
+	finditem ITEM_LUCKY_PUNCH
 	end
 
 Route113_EventScript_ItemHyperPotion::
@@ -95,7 +95,7 @@ Route114_EventScript_ItemRareCandy::
 	end
 
 Route114_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_PP_UP
 	end
 
 Route114_EventScript_ItemEnergyPowder::
@@ -211,19 +211,19 @@ Route120_EventScript_ItemRevive::
 	end
 
 Route121_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_MAX_ELIXIR
 	end
 
 Route121_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+	finditem ITEM_POWER_HERB
 	end
 
 Route121_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_ROCKY_HELMET
 	end
 
 Route123_EventScript_ItemCalcium::
-	finditem ITEM_CALCIUM
+	finditem ITEM_ENERGY_POWDER
 	end
 
 Route123_EventScript_ItemUltraBall::
@@ -239,7 +239,7 @@ Route123_EventScript_ItemPPUp::
 	end
 
 Route123_EventScript_ItemRevivalHerb::
-	finditem ITEM_REVIVAL_HERB
+	finditem ITEM_ENERGY_ROOT
 	end
 
 Route124_EventScript_ItemRedShard::
@@ -291,7 +291,7 @@ Route133_EventScript_ItemStarPiece::
 	end
 
 Route133_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+	finditem ITEM_BIG_NUGGET
 	end
 
 Route134_EventScript_ItemCarbos::
@@ -303,7 +303,7 @@ Route134_EventScript_ItemStarPiece::
 	end
 
 PetalburgCity_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+	finditem ITEM_BIG_NUGGET
 	end
 
 PetalburgCity_EventScript_ItemEther::
@@ -435,7 +435,7 @@ AbandonedShip_Room_B1F_EventScript_ItemTM13::
 	end
 
 AbandonedShip_Rooms2_1F_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+	finditem ITEM_NUGGET
 	end
 
 AbandonedShip_CaptainsOffice_EventScript_ItemStorageKey::
@@ -619,7 +619,7 @@ VictoryRoad_B1F_EventScript_ItemFullRestore::
 	end
 
 VictoryRoad_B2F_EventScript_ItemFullHeal::
-	finditem ITEM_FULL_HEAL
+	finditem ITEM_TM46
 	end
 
 ArtisanCave_B1F_EventScript_ItemHPUp::
@@ -643,7 +643,7 @@ MagmaHideout_2F_2R_EventScript_ItemFullRestore::
 	end
 
 MagmaHideout_3F_1R_EventScript_ItemNugget::
-	finditem ITEM_NUGGET
+	finditem ITEM_PP_UP
 	end
 
 MagmaHideout_3F_2R_EventScript_ItemPPMax::
@@ -651,7 +651,7 @@ MagmaHideout_3F_2R_EventScript_ItemPPMax::
 	end
 
 MagmaHideout_4F_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+	finditem ITEM_PP_UP
 	end
 
 MagmaHideout_3F_3R_EventScript_ItemEscapeRope::

@@ -235,7 +235,7 @@ LavaridgeTown_EventScript_ExpertF::
 LavaridgeTown_EventScript_EggWoman::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_LAVARIDGE_EGG, LavaridgeTown_EventScript_ReceivedEgg
+	goto LavaridgeTown_EventScript_ReceivedEgg
 	msgbox LavaridgeTown_Text_HaveEggWillYouTakeIt, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, LavaridgeTown_EventScript_DeclineEgg
 	getpartysize

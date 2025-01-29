@@ -1,0 +1,24 @@
+raw `
+GraniteCave_B2F_MapScripts::
+	.byte 0
+
+`
+
+script BrawlyIsInACave {
+    lockall
+    msgbox("Oh!\pAre you a challenger?\nI knew I shouldn't have left the\lGYM early today.\pI'll head back now.", MSGBOX_DEFAULT)
+    fadescreen(FADE_TO_BLACK)
+    playse(SE_EXIT)
+	removeobject(10)
+	clearflag(FLAG_UNUSED_0x02F)
+	setflag(FLAG_UNUSED_0x030)
+	delay(40)
+	fadescreen(FADE_FROM_BLACK)
+    releaseall
+    end
+}
+
+script WallyIsInAGym {
+    msgbox("{PLAYER}!\nAre you looking for BRAWLY too?\pHe must've gone off somewhere.\nMaybe check GRANITE CAVE?", MSGBOX_NPC)
+    end
+}

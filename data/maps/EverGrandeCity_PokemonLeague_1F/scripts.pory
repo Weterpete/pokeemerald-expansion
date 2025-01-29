@@ -1,3 +1,4 @@
+raw`
 .set LOCALID_NURSE, 1
 .set LOCALID_GUARD_1, 3
 .set LOCALID_GUARD_2, 4
@@ -141,211 +142,135 @@ EverGrandeCity_PokemonLeague_1F_Text_GoForth:
 	.string "TRAINER! Believe in yourself and your\n"
 	.string "POKéMON, and go forth!$"
 
-EverGrandeCity_WannabeGauntlet::
+`
+
+script EverGrandeCity_WannabeGauntlet {
 	lockall
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
-	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
-	playse SE_PIN
+	turnobject(OBJ_EVENT_ID_PLAYER, DIR_SOUTH)
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	playse(SE_PIN)
 	waitse
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	applymovement 5, EverGrandeCity_WannabeGauntletMoveSorrel1
-	waitmovement 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_0, MSGBOX_DEFAULT
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+	applymovement(5, EverGrandeCity_WannabeGauntletMoveSorrel1)
+	waitmovement(0)
+	msgbox("SORREL: Hey, {PLAYER}!\pYou thought you could just graze past\nthe four of us?", MSGBOX_DEFAULT)
 	closemessage
 	waitmessage
-	applymovement 6, EverGrandeCity_WannabeGauntletMoveArthur1
-	waitmovement 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_1, MSGBOX_DEFAULT
+	applymovement(6, EverGrandeCity_WannabeGauntletMoveArthur1)
+	waitmovement(0)
+	msgbox("ARTHUR: You've squashed our plans for\nthe final time.\pNow we'll squash you together!", MSGBOX_DEFAULT)
 	closemessage
 	waitmessage
-	applymovement 8, EverGrandeCity_WannabeGauntletMoveAlecia1
-	waitmovement 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_2, MSGBOX_DEFAULT
+	applymovement(8, EverGrandeCity_WannabeGauntletMoveAlecia1)
+	waitmovement(0)
+	msgbox("ALECIA: It's truly vile what you did to\nus for merely being ambitious.", MSGBOX_DEFAULT)
 	closemessage
 	waitmessage
-	applymovement 7, EverGrandeCity_WannabeGauntletMoveTerrance1
-	waitmovement 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_3, MSGBOX_DEFAULT
+	applymovement(7, EverGrandeCity_WannabeGauntletMoveTerrance1)
+	waitmovement(0)
+	msgbox("TERRANCE: And we have a groundbreaking\ntrick up our sleeves…\pTWO LEGENDARY POKéMON!!", MSGBOX_DEFAULT)
 	closemessage
 	waitmessage
-	applymovement 5, EverGrandeCity_WannabeGauntletMoveSorrel2
-	waitmovement 0
-	msgbox MtChimney_Text_SheilaIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SHEILA, MtChimney_Text_SheilaDefeat
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_4, MSGBOX_DEFAULT
+	//battles
+	applymovement(5, EverGrandeCity_WannabeGauntletMoveSorrel2)
+	waitmovement(0)
+	msgbox(MtChimney_Text_SheilaIntro, MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_SHEILA, MtChimney_Text_SheilaDefeat)
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+	msgbox("SORREL: Maybe even CELEBI isn't worthy\nenough for you, {PLAYER}.", MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 5, left
-	waitmovement 0
-	applymovement 5, EverGrandeCity_WannabeGauntletMoveLeave
-	waitmovement 0
-	removeobject 5
-	applymovement 6, up
-	waitmovement 0
-	msgbox MtChimney_Text_ShirleyIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SHIRLEY, MtChimney_Text_ShirleyDefeat
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_5, MSGBOX_DEFAULT
+	applymovement(5, left)
+	waitmovement(0)
+	applymovement(5, EverGrandeCity_WannabeGauntletMoveLeave)
+	waitmovement(0)
+	removeobject(5)
+	applymovement(6, up)
+	waitmovement(0)
+	msgbox(MtChimney_Text_ShirleyIntro, MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_SHIRLEY, MtChimney_Text_ShirleyDefeat)
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+	msgbox("ARTHUR: Damn…\pYou know all the best POKéMON to catch.", MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 6, EverGrandeCity_WannabeGauntletMoveLeave
-	waitmovement 0
-	removeobject 6
-	applymovement 8, up
-	waitmovement 0
-	msgbox MtChimney_Text_MelissaIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_MELISSA, MtChimney_Text_MelissaDefeat
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_6, MSGBOX_DEFAULT
+	applymovement(6, EverGrandeCity_WannabeGauntletMoveLeave)
+	waitmovement(0)
+	removeobject(6)
+	applymovement(8, up)
+	waitmovement(0)
+	msgbox(MtChimney_Text_MelissaIntro, MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_MELISSA, MtChimney_Text_MelissaDefeat)
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+	msgbox("ALECIA: Y'know what, kiddo?\nMaybe we're not quite cut out for this\lbattling stuff.\pBut I bet you could do it.", MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 8, EverGrandeCity_WannabeGauntletMoveLeave
-	waitmovement 0
-	removeobject 8
-	applymovement 7, EverGrandeCity_WannabeGauntletMoveTerrance2
-	waitmovement 0
-	msgbox MtChimney_Text_SawyerIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_SAWYER_1, MtChimney_Text_SawyerDefeat
-	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
-	msgbox EverGrandeCity_WannabeGauntlet_Text_7, MSGBOX_DEFAULT
+	applymovement(8, EverGrandeCity_WannabeGauntletMoveLeave)
+	waitmovement(0)
+	removeobject(8)
+	applymovement(7, EverGrandeCity_WannabeGauntletMoveTerrance2)
+	waitmovement(0)
+	msgbox(MtChimney_Text_SawyerIntro, MSGBOX_DEFAULT)
+	trainerbattle_no_intro(TRAINER_SAWYER_1, MtChimney_Text_SawyerDefeat)
+	playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+	msgbox("TERRANCE: Before I leave too, I need you\nto promise me something…\pMess up those posers in the ELITE FOUR.\nI know you can do it.", MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
-	applymovement 7, right
-	waitmovement 0
-	applymovement 7, EverGrandeCity_WannabeGauntletMoveLeave
-	waitmovement 0
-	removeobject 7
-	setvar VAR_UNUSED_0x40BB, 1
-	setflag FLAG_UNUSED_0x031
-	playbgm MUS_POKE_CENTER, 1
+	applymovement(7, right)
+	waitmovement(0)
+	applymovement(7, EverGrandeCity_WannabeGauntletMoveLeave)
+	waitmovement(0)
+	removeobject(7)
+	setvar(VAR_UNUSED_0x40BB, 1)
+	setflag(FLAG_UNUSED_0x031)
+	playbgm(MUS_POKE_CENTER, 1)
 	releaseall
-	return
+}
 
-
-EverGrandeCity_WannabeGauntletMoveSorrel1:
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
+movement EverGrandeCity_WannabeGauntletMoveSorrel1 {
+	walk_faster_left * 9
+	walk_up * 7
 	face_right
-	step_end
+}
 
-EverGrandeCity_WannabeGauntletMoveArthur1:
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
+movement EverGrandeCity_WannabeGauntletMoveArthur1 {
+	walk_faster_left * 9
+	walk_up * 6
+}
 
-EverGrandeCity_WannabeGauntletMoveAlecia1:
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	step_end
+movement EverGrandeCity_WannabeGauntletMoveAlecia1 {
+	walk_faster_left * 8
+	walk_up * 5
+}
 
-EverGrandeCity_WannabeGauntletMoveTerrance1:
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_faster_left
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
+movement EverGrandeCity_WannabeGauntletMoveTerrance1 {
+	walk_faster_left * 6
+	walk_up * 6
 	face_left
-	step_end
+}
 
-EverGrandeCity_WannabeGauntletMoveLeave:
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	step_end
+movement EverGrandeCity_WannabeGauntletMoveLeave {
+	walk_down * 7
+}
 
-EverGrandeCity_WannabeGauntletMoveSorrel2:
+movement EverGrandeCity_WannabeGauntletMoveSorrel2 {
 	walk_right
 	face_up
-	step_end
+}
 
-EverGrandeCity_WannabeGauntletMoveTerrance2:
+movement EverGrandeCity_WannabeGauntletMoveTerrance2 {
 	walk_left
 	face_up
-	step_end
+}
 
-left:
+movement left {
 	walk_left
-	step_end
+}
 
-right:
+movement right {
 	walk_right
-	step_end
+}
 
-up:
+movement up {
 	walk_up
-	step_end
-
-EverGrandeCity_WannabeGauntlet_Text_0:
-	.string "SORREL: Hey, {PLAYER}!\pYou thought you could just graze past\nthe four of us?$"
-
-EverGrandeCity_WannabeGauntlet_Text_1:
-	.string "ARTHUR: You've squashed our plans for\nthe final time.\pNow we'll squash you together!$"
-
-EverGrandeCity_WannabeGauntlet_Text_2:
-	.string "ALECIA: It's truly vile what you did to\nus for merely being ambitious.$"
-
-EverGrandeCity_WannabeGauntlet_Text_3:
-	.string "TERRANCE: And we have a groundbreaking\ntrick up our sleeves…\pTWO LEGENDARY POKéMON!!$"
-
-EverGrandeCity_WannabeGauntlet_Text_4:
-	.string "SORREL: Maybe even CELEBI isn't worthy\nenough for you, {PLAYER}.$"
-
-EverGrandeCity_WannabeGauntlet_Text_5:
-	.string "ARTHUR: Damn…\pYou know all the best POKéMON to catch.$"
-
-EverGrandeCity_WannabeGauntlet_Text_6:
-	.string "ALECIA: Y'know what, kiddo?\nMaybe we're not quite cut out for this\lbattling stuff.\pBut I bet you could do it.$"
-
-EverGrandeCity_WannabeGauntlet_Text_7:
-	.string "TERRANCE: Before I leave too, I need you\nto promise me something…\pMess up those posers in the ELITE FOUR.\nI know you can do it.$"
+}

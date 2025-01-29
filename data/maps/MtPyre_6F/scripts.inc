@@ -69,25 +69,31 @@ MtPyre_6F_Text_CedricPostBattle:
 
 MtPyre_GhostEncounter::
 	lockall
+	setflag FLAG_UNUSED_0x04F
 	msgbox MtPyre_GhostEncounter_Text_0
 	waitmessage
 	closemessage
-	playmoncry SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER
-	delay 40
-	waitmoncry
-	setflag FLAG_UNUSED_0x04F
-	setwildbattle SPECIES_MISDREAVUS, 50, ITEM_SALAC_BERRY
+	random 4
+	compare VAR_RESULT, 0
+	goto_if_eq MtPyre_GhostEncounter_2
+	compare VAR_RESULT, 1
+	goto_if_eq MtPyre_GhostEncounter_3
+	compare VAR_RESULT, 2
+	goto_if_eq MtPyre_GhostEncounter_4
+	compare VAR_RESULT, 3
+	goto_if_eq MtPyre_GhostEncounter_5
+MtPyre_GhostEncounter_1:
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
-	goto_if_eq MtPyre_GhostEncounter_2
+	goto_if_eq MtPyre_GhostEncounter_11
 	compare VAR_RESULT, B_OUTCOME_WON
-	goto_if_eq MtPyre_GhostEncounter_3
+	goto_if_eq MtPyre_GhostEncounter_12
 	compare VAR_RESULT, B_OUTCOME_RAN
-	goto_if_eq MtPyre_GhostEncounter_4
+	goto_if_eq MtPyre_GhostEncounter_13
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
-	goto_if_eq MtPyre_GhostEncounter_5
-MtPyre_GhostEncounter_1:
+	goto_if_eq MtPyre_GhostEncounter_14
+MtPyre_GhostEncounter_10:
 	waitmessage
 	clearflag FLAG_UNUSED_0x04F
 	setflag FLAG_ITEM_MT_PYRE_6F_TM30
@@ -95,20 +101,48 @@ MtPyre_GhostEncounter_1:
 	return
 
 MtPyre_GhostEncounter_2:
-	call DefeatedOrCaptured_Wild_Pokemon
+	playmoncry SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_MISDREAVUS, 50, ITEM_SALAC_BERRY
 	goto MtPyre_GhostEncounter_1
 
 MtPyre_GhostEncounter_3:
-	call DefeatedOrCaptured_Wild_Pokemon
+	playmoncry SPECIES_GENGAR, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_GENGAR, 50, ITEM_SALAC_BERRY
 	goto MtPyre_GhostEncounter_1
 
 MtPyre_GhostEncounter_4:
-	call RanAway_Wild_Pokemon
+	playmoncry SPECIES_DUSCLOPS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_DUSCLOPS, 50, ITEM_SALAC_BERRY
 	goto MtPyre_GhostEncounter_1
 
 MtPyre_GhostEncounter_5:
-	call RanAway_Wild_Pokemon
+	playmoncry SPECIES_BANETTE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setwildbattle SPECIES_BANETTE, 50, ITEM_SALAC_BERRY
 	goto MtPyre_GhostEncounter_1
+
+MtPyre_GhostEncounter_11:
+	call DefeatedOrCaptured_Wild_Pokemon
+	goto MtPyre_GhostEncounter_10
+
+MtPyre_GhostEncounter_12:
+	call DefeatedOrCaptured_Wild_Pokemon
+	goto MtPyre_GhostEncounter_10
+
+MtPyre_GhostEncounter_13:
+	call RanAway_Wild_Pokemon
+	goto MtPyre_GhostEncounter_10
+
+MtPyre_GhostEncounter_14:
+	call RanAway_Wild_Pokemon
+	goto MtPyre_GhostEncounter_10
 
 
 DefeatedOrCaptured_Wild_Pokemon::

@@ -26,6 +26,9 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_SILVER_POWDER
 	.2byte ITEM_METAL_COAT
 	.2byte ITEM_RARE_CANDY
+	.2byte ITEM_EXP_CANDY_XS
+	.2byte ITEM_EXP_CANDY_S
+	.2byte ITEM_EXP_CANDY_M
 	.2byte ITEM_NONE
 	release
 	end

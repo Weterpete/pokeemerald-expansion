@@ -1179,7 +1179,24 @@ Route104_Trigger_FirstMeeting_FakeEliteFour::
 	applymovement 37, GoForward
 	applymovement 38, GoForward
 	waitmovement 0
-	msgbox FirstMeeting, MSGBOX_DEFAULT
+	applymovement 35, left
+	waitmovement 0
+	msgbox FirstMeeting_Terrance, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	applymovement 36, left
+	waitmovement 0
+	msgbox FirstMeeting_Alecia, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	applymovement 37, left
+	waitmovement 0
+	msgbox FirstMeeting_Arthur, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	applymovement 38, left
+	waitmovement 0
+	msgbox FirstMeeting_Sorrel, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
 	applymovement 35, LeaveFirstMeeting
@@ -1210,7 +1227,17 @@ LeaveFirstMeeting:
 	walk_right
 	walk_right
 	walk_right
+	walk_right
 	step_end
 
-FirstMeeting::
-	.string "Aha! A traveler!\pTERRANCE: We are the ELITE FAUX...\nit's a working title.\pALECIA: But don't be fooled, kiddo, we\ncan still pack quite the punch.\pARTHUR: One day we'll defeat and\nreplace the ELITE FOUR!\pSORREL: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!$"
+FirstMeeting_Terrance::
+	.string "TERRANCE: Aha! A traveler!\pWe are the ELITE FAUX!\n…It's a working title.$"
+
+FirstMeeting_Alecia::
+	.string "ALECIA: But don't be fooled, kiddo.\nWe can still pack quite the punch.$"
+
+FirstMeeting_Arthur::
+	.string "ARTHUR: One day we'll defeat and\nreplace the ELITE FOUR!$"
+
+FirstMeeting_Sorrel::
+	.string "SORREL: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!$"

@@ -784,23 +784,26 @@ MtChimney_Text_ShelbyPostRematch:
 	.string "with the hearts of your POKéMON.$"
 
 MtChimney_Text_MelissaIntro:
-	.string "I've got the fire in me, baby.\n"
-	.string "I can't stand it! I have to battle!$"
+	.string "ALECIA: Some ogre scared away my\n"
+	.string "legendaries, but that's no issue.$"
 
 MtChimney_Text_MelissaDefeat:
-	.string "Ooh, that was a scorching-hot match!$"
+	.string "I've taught you something, haven't I?\p"
+	.string "There's a virulence in your battling,\n"
+	.string "undeniably.$"
 
 MtChimney_Text_MelissaPostBattle:
 	.string "The heat of MT. CHIMNEY warms\n"
 	.string "me up, baby!$"
 
 MtChimney_Text_SheilaIntro:
-	.string "I've finally made it to MT. CHIMNEY.\n"
-	.string "I want to make my POKéMON battle!$"
+	.string "SORREL: Speaking of which, should I go\n"
+	.string "back in time to before you beat me?\p"
+	.string "Or should I give you a chance to grow?$"
 
 MtChimney_Text_SheilaDefeat:
-	.string "The way you battle…\n"
-	.string "It's like a MT. CHIMNEY eruption!$"
+	.string "CELEBI! No…\n"
+	.string "Its powers are wilting…$"
 
 MtChimney_Text_SheilaPostBattle:
 	.string "Like I said, I've finally made it to\n"
@@ -810,13 +813,12 @@ MtChimney_Text_SheilaPostBattle:
 	.string "COOKIES as souvenirs.$"
 
 MtChimney_Text_ShirleyIntro:
-	.string "Since I bathed in the hot springs,\n"
-	.string "I've been feeling great!\l"
-	.string "I'm sure I'm going to win!$"
+	.string "ARTHUR: Unlike some of my friends, I\n"
+	.string "don't need a legendary to beat you!$"
 
 MtChimney_Text_ShirleyDefeat:
-	.string "Yowch!\n"
-	.string "I'm getting a chill out of the water.$"
+	.string "Who am I kidding?\n"
+	.string "I could've won with PHEROMOSA.$"
 
 MtChimney_Text_ShirleyPostBattle:
 	.string "I'll have to take another dip in the\n"
@@ -824,11 +826,15 @@ MtChimney_Text_ShirleyPostBattle:
 	.string "Just joking!$"
 
 MtChimney_Text_SawyerIntro:
-	.string "This is one fine mountain! Plenty of\n"
-	.string "hot people around for company!$"
+	.string "TERRANCE: It wasn't long ago that I\n"
+	.string "brawled you, was it?\p"
+	.string "But now I've achieved something even\n"
+	.string "MAXIE couldn't do!$"
 
 MtChimney_Text_SawyerDefeat:
-	.string "Oh, you're a real firebrand, too!$"
+	.string "I realize now…\n"
+	.string "One of us is a poser, and it's\l"
+	.string "definitely not you.$"
 
 MtChimney_Text_SawyerPostBattle:
 	.string "I think I need a dip in LAVARIDGE\n"

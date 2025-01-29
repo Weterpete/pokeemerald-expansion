@@ -1181,8 +1181,25 @@ script Route104_Trigger_FirstMeeting_FakeEliteFour{
 	applymovement(36, GoForward)
 	applymovement(37, GoForward)
 	applymovement(38, GoForward)
-	waitmovement(0) 
-	msgbox(FirstMeeting, MSGBOX_DEFAULT)
+	waitmovement(0)
+	applymovement(35, left)
+	waitmovement(0)
+	msgbox(FirstMeeting_Terrance, MSGBOX_DEFAULT)
+	waitmessage
+	closemessage
+	applymovement(36, left)
+	waitmovement(0)
+	msgbox(FirstMeeting_Alecia, MSGBOX_DEFAULT)
+	waitmessage
+	closemessage
+	applymovement(37, left)
+	waitmovement(0)
+	msgbox(FirstMeeting_Arthur, MSGBOX_DEFAULT)
+	waitmessage
+	closemessage
+	applymovement(38, left)
+	waitmovement(0)
+	msgbox(FirstMeeting_Sorrel, MSGBOX_DEFAULT)
 	waitmessage
 	closemessage
 	applymovement(35, LeaveFirstMeeting)
@@ -1205,9 +1222,21 @@ movement GoForward {
 }
 
 movement LeaveFirstMeeting {
-	walk_right * 4
+	walk_right * 5
 }
 
-text FirstMeeting{
-    "Aha! A traveler!\pTERRANCE: We are the ELITE FAUX...\nit's a working title.\pALECIA: But don't be fooled, kiddo, we\ncan still pack quite the punch.\pARTHUR: One day we'll defeat and\nreplace the ELITE FOUR!\pSORREL: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!"
+text FirstMeeting_Terrance{
+    "TERRANCE: Aha! A traveler!\pWe are the ELITE FAUX!\n…It's a working title."
+}
+
+text FirstMeeting_Alecia {
+	"ALECIA: But don't be fooled, kiddo.\nWe can still pack quite the punch."
+}
+
+text FirstMeeting_Arthur {
+	"ARTHUR: One day we'll defeat and\nreplace the ELITE FOUR!"
+}
+
+text FirstMeeting_Sorrel {
+	"SORREL: If we meet again, you can bet\nyou'll be in for a whooping.\pToodaloo!"
 }

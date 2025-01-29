@@ -771,7 +771,7 @@
       "x": 75,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_SUPER_REPEL",
+      "item": "ITEM_MAX_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_SUPER_REPEL"
     },
     {
@@ -794,7 +794,7 @@
       "x": 12,
       "y": 1,
       "elevation": 3,
-      "item": "ITEM_REVIVE",
+      "item": "ITEM_BIG_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_REVIVE"
     },
     {
