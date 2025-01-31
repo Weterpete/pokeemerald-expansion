@@ -62,6 +62,9 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_LATIOS] = 6,
     [SPECIES_JIRACHI] = 12,
     [SPECIES_DEOXYS] = 8,
+    [SPECIES_DEOXYS_ATTACK] = 3,
+    [SPECIES_DEOXYS_DEFENSE] = 2,
+    [SPECIES_DEOXYS_SPEED] = 1,
     [SPECIES_CHIMECHO] = 12,
     // Gen 4
     [SPECIES_MOTHIM] = 10,
