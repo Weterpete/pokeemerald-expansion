@@ -5873,7 +5873,7 @@ const struct Item gItems[] =
     {
         .name = _("METAL COAT"),
         .itemId = ITEM_METAL_COAT,
-        .price = 2000,
+        .price = 1000,
         .holdEffect = HOLD_EFFECT_STEEL_POWER,
         .holdEffectParam = 20,
         .description = sMetalCoatDesc,

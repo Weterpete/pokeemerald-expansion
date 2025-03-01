@@ -9569,7 +9569,7 @@ static const struct TrainerMonCustomized sParty_Andrew[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_THUNDER_WAVE, MOVE_PSYCHIC, MOVE_WATER_PULSE, MOVE_SHOCK_WAVE},
     .nature = TRAINER_PARTY_NATURE(NATURE_TIMID)
     },
@@ -9582,7 +9582,7 @@ static const struct TrainerMonCustomized sParty_Andrew[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_THUNDER_WAVE, MOVE_HEADBUTT, MOVE_BELLY_DRUM, MOVE_SLACK_OFF},
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH)
     },
@@ -9595,7 +9595,7 @@ static const struct TrainerMonCustomized sParty_Andrew[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_CALM_MIND, MOVE_PSYCHIC, MOVE_BUBBLE_BEAM, MOVE_ICY_WIND},
     .nature = TRAINER_PARTY_NATURE(NATURE_CALM)
     }
@@ -9733,7 +9733,7 @@ static const struct TrainerMonCustomized sParty_Dale[] = {
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
     .lvl = 26,
-    .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_YAWN, MOVE_DOUBLE_EDGE},
+    .moves = {MOVE_ROCK_TOMB, MOVE_ASTONISH, MOVE_WATERFALL, MOVE_DOUBLE_EDGE},
     .nature = TRAINER_PARTY_NATURE(NATURE_IMPISH)
     }
 };
@@ -11706,7 +11706,7 @@ static const struct TrainerMonCustomized sParty_Kyla[] = {
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
     .lvl = 17,
     .moves = {MOVE_WRAP, MOVE_LICK, MOVE_ROCK_SMASH, MOVE_DISABLE},
-    .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
+    .nature = TRAINER_PARTY_NATURE(NATURE_BOLD)
     },
     {
     .species = SPECIES_PORYGON,
@@ -13563,7 +13563,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Mudkip[] = {
     .isShiny = TRUE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_HYPER_VOICE, MOVE_STEEL_WING, MOVE_SUBMISSION},
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY)
     },
@@ -13577,7 +13577,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WILD_CHARGE, MOVE_HELPING_HAND, MOVE_NUZZLE, MOVE_RETURN},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     },
@@ -13591,7 +13591,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WATERFALL, MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_AQUA_JET},
     .nature = TRAINER_PARTY_NATURE(NATURE_NAUGHTY)
     },
@@ -13605,7 +13605,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_FIRE_FANG, MOVE_AERIAL_ACE, MOVE_DIG, MOVE_PROTECT},
     .nature = TRAINER_PARTY_NATURE(NATURE_NAIVE)
     },
@@ -13619,7 +13619,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 25,
+    .lvl = 26,
     .moves = {MOVE_GIGA_DRAIN, MOVE_BODY_SLAM, MOVE_HELPING_HAND, MOVE_LIGHT_SCREEN},
     .nature = TRAINER_PARTY_NATURE(NATURE_BOLD)
     }
@@ -13732,7 +13732,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Treecko[] = {
     .isShiny = TRUE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_HYPER_VOICE, MOVE_STEEL_WING, MOVE_SUBMISSION},
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY)
     },
@@ -13746,7 +13746,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WILD_CHARGE, MOVE_HELPING_HAND, MOVE_NUZZLE, MOVE_RETURN},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     },
@@ -13760,7 +13760,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_GIGA_DRAIN, MOVE_EXTRASENSORY, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
     },
@@ -13774,7 +13774,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_SCALD, MOVE_ICE_FANG, MOVE_CRUNCH, MOVE_PROTECT},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
     },
@@ -13788,7 +13788,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 25,
+    .lvl = 26,
     .moves = {MOVE_FIRE_PUNCH, MOVE_BRICK_BREAK, MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     }
@@ -13901,7 +13901,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Torchic[] = {
     .isShiny = TRUE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_HYPER_VOICE, MOVE_STEEL_WING, MOVE_SUBMISSION},
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY)
     },
@@ -13915,7 +13915,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WILD_CHARGE, MOVE_HELPING_HAND, MOVE_NUZZLE, MOVE_RETURN},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     },
@@ -13929,7 +13929,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_FIRE_PUNCH, MOVE_BRICK_BREAK, MOVE_THUNDER_PUNCH, MOVE_WILL_O_WISP},
     .nature = TRAINER_PARTY_NATURE(NATURE_HASTY)
     },
@@ -13943,7 +13943,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_GIGA_DRAIN, MOVE_PURSUIT, MOVE_X_SCISSOR, MOVE_PROTECT},
     .nature = TRAINER_PARTY_NATURE(NATURE_HASTY)
     },
@@ -13957,7 +13957,7 @@ static const struct TrainerMonCustomized sParty_BrendanRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 25,
+    .lvl = 26,
     .moves = {MOVE_BUBBLE_BEAM, MOVE_ICE_PUNCH, MOVE_FAKE_OUT, MOVE_FLASH_CANNON},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
     }
@@ -14070,7 +14070,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Mudkip[] = {
     .isShiny = TRUE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_HYPER_VOICE, MOVE_STEEL_WING, MOVE_SUBMISSION},
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY)
     },
@@ -14084,7 +14084,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WILD_CHARGE, MOVE_HELPING_HAND, MOVE_NUZZLE, MOVE_RETURN},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     },
@@ -14098,7 +14098,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WATERFALL, MOVE_DRILL_PECK, MOVE_DRILL_RUN, MOVE_AQUA_JET},
     .nature = TRAINER_PARTY_NATURE(NATURE_NAUGHTY)
     },
@@ -14112,7 +14112,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_FLAME_WHEEL, MOVE_EXTRASENSORY, MOVE_EARTH_POWER, MOVE_PROTECT},
     .nature = TRAINER_PARTY_NATURE(NATURE_TIMID)
     },
@@ -14126,7 +14126,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Mudkip[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 25,
+    .lvl = 26,
     .moves = {MOVE_GIGA_DRAIN, MOVE_BODY_SLAM, MOVE_HELPING_HAND, MOVE_LIGHT_SCREEN},
     .nature = TRAINER_PARTY_NATURE(NATURE_BOLD)
     }
@@ -14239,7 +14239,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Treecko[] = {
     .isShiny = TRUE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_HYPER_VOICE, MOVE_STEEL_WING, MOVE_SUBMISSION},
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY)
     },
@@ -14253,7 +14253,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WILD_CHARGE, MOVE_HELPING_HAND, MOVE_NUZZLE, MOVE_RETURN},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     },
@@ -14267,7 +14267,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_GIGA_DRAIN, MOVE_EXTRASENSORY, MOVE_SLEEP_POWDER, MOVE_LIGHT_SCREEN},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
     },
@@ -14281,7 +14281,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_WATER_PULSE, MOVE_MUD_SHOT, MOVE_ROCK_SLIDE, MOVE_PROTECT},
     .nature = TRAINER_PARTY_NATURE(NATURE_BRAVE)
     },
@@ -14295,7 +14295,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Treecko[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 25,
+    .lvl = 26,
     .moves = {MOVE_FIRE_PUNCH, MOVE_BRICK_BREAK, MOVE_AERIAL_ACE, MOVE_QUICK_ATTACK},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     }
@@ -14408,7 +14408,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Torchic[] = {
     .isShiny = TRUE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_DUAL_WINGBEAT, MOVE_HYPER_VOICE, MOVE_STEEL_WING, MOVE_SUBMISSION},
     .nature = TRAINER_PARTY_NATURE(NATURE_JOLLY)
     },
@@ -14422,7 +14422,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_WILD_CHARGE, MOVE_HELPING_HAND, MOVE_NUZZLE, MOVE_RETURN},
     .nature = TRAINER_PARTY_NATURE(NATURE_ADAMANT)
     },
@@ -14436,7 +14436,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 23,
+    .lvl = 24,
     .moves = {MOVE_FIRE_PUNCH, MOVE_BRICK_BREAK, MOVE_THUNDER_PUNCH, MOVE_WILL_O_WISP},
     .nature = TRAINER_PARTY_NATURE(NATURE_HASTY)
     },
@@ -14450,7 +14450,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 24,
+    .lvl = 25,
     .moves = {MOVE_GIGA_DRAIN, MOVE_DOUBLE_EDGE, MOVE_SLEEP_POWDER, MOVE_PROTECT},
     .nature = TRAINER_PARTY_NATURE(NATURE_QUIET)
     },
@@ -14464,7 +14464,7 @@ static const struct TrainerMonCustomized sParty_MayRoute110Torchic[] = {
     .isShiny = FALSE,
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
-    .lvl = 25,
+    .lvl = 26,
     .moves = {MOVE_BUBBLE_BEAM, MOVE_ICE_PUNCH, MOVE_FAKE_OUT, MOVE_FLASH_CANNON},
     .nature = TRAINER_PARTY_NATURE(NATURE_MODEST)
     }
@@ -19137,7 +19137,7 @@ static const struct TrainerMonCustomized sParty_Chandler[] = {
     .iv = TRAINER_PARTY_IVS(31,31,31,31,31,31),
     .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
     .lvl = 23,
-    .moves = {MOVE_SLUDGE, MOVE_REVENGE, MOVE_AQUA_JET, MOVE_SPIKES},
+    .moves = {MOVE_SLUDGE, MOVE_SHOCK_WAVE, MOVE_AQUA_JET, MOVE_SPIKES},
     .nature = TRAINER_PARTY_NATURE(NATURE_LAX)
     },
     {

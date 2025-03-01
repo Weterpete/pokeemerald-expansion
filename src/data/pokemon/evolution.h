@@ -46,7 +46,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_POLIWHIRL]             = {{EVO_ITEM, ITEM_WATER_STONE, SPECIES_POLIWRATH},
                                        {EVO_LEVEL, 34, SPECIES_POLITOED}},
     [SPECIES_ABRA]                  = {{EVO_LEVEL, 16, SPECIES_KADABRA}},
-    [SPECIES_KADABRA]               = {{EVO_LEVEL, 39, SPECIES_ALAKAZAM}},
+    [SPECIES_KADABRA]               = {{EVO_LEVEL, 40, SPECIES_ALAKAZAM}},
     [SPECIES_ALAKAZAM]              = {{EVO_MEGA_EVOLUTION, ITEM_ALAKAZITE, SPECIES_ALAKAZAM_MEGA}},
     [SPECIES_MACHOP]                = {{EVO_LEVEL, 25, SPECIES_MACHOKE}},
     [SPECIES_MACHOKE]               = {{EVO_LEVEL, 38, SPECIES_MACHAMP}},
@@ -65,11 +65,11 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
                                        {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_MAGNEZONE}},
 #endif
     [SPECIES_DODUO]                 = {{EVO_LEVEL, 31, SPECIES_DODRIO}},
-    [SPECIES_SEEL]                  = {{EVO_LEVEL, 29, SPECIES_DEWGONG}},
+    [SPECIES_SEEL]                  = {{EVO_LEVEL, 34, SPECIES_DEWGONG}},
     [SPECIES_GRIMER]                = {{EVO_LEVEL, 38, SPECIES_MUK}},
     [SPECIES_SHELLDER]              = {{EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}},
     [SPECIES_GASTLY]                = {{EVO_LEVEL, 25, SPECIES_HAUNTER}},
-    [SPECIES_HAUNTER]               = {{EVO_LEVEL, 39, SPECIES_GENGAR}},
+    [SPECIES_HAUNTER]               = {{EVO_LEVEL, 40, SPECIES_GENGAR}},
     [SPECIES_GENGAR]                = {{EVO_MEGA_EVOLUTION, ITEM_GENGARITE, SPECIES_GENGAR_MEGA}},
     [SPECIES_ONIX]                  = {{EVO_ITEM, ITEM_FIRE_STONE, SPECIES_STEELIX}},
     [SPECIES_DROWZEE]               = {{EVO_LEVEL, 26, SPECIES_HYPNO}},
@@ -168,7 +168,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_GLIGAR]                = {{EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR}},
 #endif
     [SPECIES_STEELIX]               = {{EVO_MEGA_EVOLUTION, ITEM_STEELIXITE, SPECIES_STEELIX_MEGA}},
-    [SPECIES_SNUBBULL]              = {{EVO_LEVEL, 23, SPECIES_GRANBULL}},
+    [SPECIES_SNUBBULL]              = {{EVO_LEVEL, 28, SPECIES_GRANBULL}},
     [SPECIES_SCIZOR]                = {{EVO_MEGA_EVOLUTION, ITEM_SCIZORITE, SPECIES_SCIZOR_MEGA}},
     [SPECIES_HERACROSS]             = {{EVO_MEGA_EVOLUTION, ITEM_HERACRONITE, SPECIES_HERACROSS_MEGA}},
 #if P_GEN_4_POKEMON == TRUE
@@ -242,7 +242,7 @@ const struct Evolution gEvolutionTable[NUM_SPECIES][EVOS_PER_MON] =
     [SPECIES_NUMEL]                 = {{EVO_LEVEL, 33, SPECIES_CAMERUPT}},
     [SPECIES_CAMERUPT]              = {{EVO_MEGA_EVOLUTION, ITEM_CAMERUPTITE, SPECIES_CAMERUPT_MEGA}},
     [SPECIES_SPHEAL]                = {{EVO_LEVEL, 20, SPECIES_SEALEO}},
-    [SPECIES_SEALEO]                = {{EVO_LEVEL, 39, SPECIES_WALREIN}},
+    [SPECIES_SEALEO]                = {{EVO_LEVEL, 40, SPECIES_WALREIN}},
     [SPECIES_CACNEA]                = {{EVO_LEVEL, 32, SPECIES_CACTURNE}},
     [SPECIES_SNORUNT]               = {{EVO_LEVEL, 42, SPECIES_GLALIE},
                                     #if P_GEN_4_POKEMON == TRUE

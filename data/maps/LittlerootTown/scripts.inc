@@ -967,8 +967,8 @@ LittlerootTown_Text_IAmTheCreatorOfThisROMHack:
 	.string "ROM hack, I hope you enjoy what I have\l"
 	.string "done with the balancing.\p"
 	.string "If you want to, talk with me at\n"
-	.string "discord.gg/(filler), all the cool kids\l"
-	.string "hang out there.$"
+	.string "discord.gg/(filler).\p"
+	.string "All the cool kids hang out there.$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
 	.string "Um, um, um!\p"
