@@ -1209,6 +1209,7 @@ Route104_Trigger_FirstMeeting_FakeEliteFour::
 	removeobject 37
 	removeobject 38
 	setflag FLAG_UNUSED_0x021
+	setflag FLAG_UNUSED_0x032
 	setvar VAR_UNUSED_0x404E, 1
 	playbgm MUS_ROUTE104, 0
 	releaseall

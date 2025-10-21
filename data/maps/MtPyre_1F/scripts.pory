@@ -71,6 +71,7 @@ script PyreGauntletEntry {
                 waitmovement(0)
                 msgbox("Now you're stuck here.\pHehehe… good luck!", MSGBOX_DEFAULT)
                 setflag(FLAG_UNUSED_0x027)
+                clearflag(FLAG_UNUSED_0x032)
             }
             else{
                 msgbox("A wise decision, maybe.\nYet it still displays utter cowardice.", MSGBOX_DEFAULT)

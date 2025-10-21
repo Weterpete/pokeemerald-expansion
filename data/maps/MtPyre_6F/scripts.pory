@@ -129,12 +129,12 @@ script DefeatedOrCaptured_Wild_Pokemon {
 }
  
 script RanAway_Wild_Pokemon {
-	playmoncry(SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER)
-	msgbox("Reavuss…", MSGBOX_AUTOCLOSE)
+	playmoncry(SPECIES_UNOWN, CRY_MODE_ENCOUNTER)
+	msgbox("OooooOoooO…", MSGBOX_AUTOCLOSE)
 	delay(20)
 	fadescreen(FADE_TO_BLACK)
 	removeobject(2)
 	fadescreen(FADE_FROM_BLACK)
-	msgbox("The MISDREAVUS flew away ethereally.")
+	msgbox("The GHOST flew away ethereally.")
 	return
 }

@@ -59,7 +59,7 @@
 #define FLAG_UNUSED_0x02F    0x2F // Brawly
 #define FLAG_UNUSED_0x030    0x30 // Wally & Brawly Cave
 #define FLAG_UNUSED_0x031    0x31 // Wannabes Again
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_UNUSED_0x032    0x32 // Lavaridge Egg Lady
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

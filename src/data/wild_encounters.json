@@ -3679,28 +3679,28 @@
                 "species": "SPECIES_FEEBAS"
               },
               {
-                "min_level": 25,
-                "max_level": 30,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_FEEBAS"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_FEEBAS"
               },
               {
-                "min_level": 20,
-                "max_level": 25,
-                "species": "SPECIES_MILOTIC"
-              },
-              {
-                "min_level": 35,
+                "min_level": 40,
                 "max_level": 40,
                 "species": "SPECIES_MILOTIC"
               },
               {
                 "min_level": 40,
-                "max_level": 45,
+                "max_level": 40,
+                "species": "SPECIES_MILOTIC"
+              },
+              {
+                "min_level": 40,
+                "max_level": 40,
                 "species": "SPECIES_MILOTIC"
               }
             ]
@@ -5621,7 +5621,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_RELICANTH"
+                "species": "SPECIES_GYARADOS"
               },
               {
                 "min_level": 40,
@@ -5710,7 +5710,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_RELICANTH"
+                "species": "SPECIES_GYARADOS"
               },
               {
                 "min_level": 40,
@@ -5799,7 +5799,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_RELICANTH"
+                "species": "SPECIES_GYARADOS"
               },
               {
                 "min_level": 40,

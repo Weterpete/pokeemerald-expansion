@@ -153,7 +153,7 @@ DefeatedOrCaptured_Wild_Pokemon::
 
 
 RanAway_Wild_Pokemon::
-	playmoncry SPECIES_MISDREAVUS, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_UNOWN, CRY_MODE_ENCOUNTER
 	msgbox RanAway_Wild_Pokemon_Text_0, MSGBOX_AUTOCLOSE
 	delay 20
 	fadescreen FADE_TO_BLACK
@@ -167,7 +167,7 @@ MtPyre_GhostEncounter_Text_0:
 	.string "A vengeful spirit emerged from the bag!$"
 
 RanAway_Wild_Pokemon_Text_0:
-	.string "Reavuss…$"
+	.string "OooooOoooO…$"
 
 RanAway_Wild_Pokemon_Text_1:
-	.string "The MISDREAVUS flew away ethereally.$"
+	.string "The GHOST flew away ethereally.$"

@@ -780,13 +780,13 @@ struct
         .nature = NATURE_BRAVE,
         .heldItem = ITEM_SHUCA_BERRY,
         .evs = {0, 0, 0, 0, 0, 0},
-        .moves = {MOVE_METEOR_MASH, MOVE_PSYCHIC, MOVE_EARTH_POWER, MOVE_SHADOW_BALL}
+        .moves = {MOVE_METEOR_MASH, MOVE_CROSS_CHOP, MOVE_EARTH_POWER, MOVE_SHADOW_PUNCH}
     },
     {
         .species = SPECIES_CRADILY,
         .fixedIV = MAX_PER_STAT_IVS,
         .level = 58,
-        .nature = NATURE_MODEST,
+        .nature = NATURE_SASSY,
         .heldItem = ITEM_TANGA_BERRY,
         .evs = {0, 0, 0, 0, 0, 0},
         .moves = {MOVE_GIGA_DRAIN, MOVE_EARTH_POWER, MOVE_RECOVER, MOVE_MIRROR_COAT}
@@ -795,7 +795,7 @@ struct
         .species = SPECIES_DEOXYS_DEFENSE,
         .fixedIV = MAX_PER_STAT_IVS,
         .level = 59,
-        .nature = NATURE_SASSY,
+        .nature = NATURE_MODEST,
         .heldItem = ITEM_LEFTOVERS,
         .evs = {0, 0, 0, 0, 0, 0},
         .moves = {MOVE_PSYCHIC, MOVE_ICE_BEAM, MOVE_PROTECT, MOVE_RECOVER}

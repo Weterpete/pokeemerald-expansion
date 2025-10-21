@@ -3541,10 +3541,6 @@ static s16 AI_CheckViability(u8 battlerAtk, u8 battlerDef, u16 move, s16 score)
           || TestMoveFlagsInMoveset(battlerAtk, FLAG_HIGH_CRIT))
             score += 2;
         break;
-    case EFFECT_CONFUSE_HIT:
-        if (sereneGraceBoost)
-            score++;
-        //fallthrough
     case EFFECT_CONFUSE:
         IncreaseConfusionScore(battlerAtk, battlerDef, move, &score);
         break;

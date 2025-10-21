@@ -142,7 +142,6 @@ MtChimney_EventScript_NotEnoughMoney::
 
 MtChimney_EventScript_PoryPC::
 	lockall
-	setvar VAR_UNUSED_0x409D, 1
 	msgbox PoryPC_GoodVersion, MSGBOX_DEFAULT
 	goto EventScript_PC
 	releaseall

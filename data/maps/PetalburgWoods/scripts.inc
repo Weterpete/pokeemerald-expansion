@@ -241,7 +241,12 @@ PetalburgWoods_Movement_AquaApproachPlayer:
 	step_end
 
 PetalburgWoods_EventScript_Boy1::
-	msgbox PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_NPC
+	lock
+	faceplayer
+	msgbox PetalburgWoods_Text_StayOutOfTallGrass, MSGBOX_DEFAULT
+	playse SE_USE_ITEM
+	special HealPlayerParty
+	release
 	end
 
 PetalburgWoods_EventScript_Boy2::
@@ -251,7 +256,7 @@ PetalburgWoods_EventScript_Boy2::
 PetalburgWoods_EventScript_Girl::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_MIRACLE_SEED, PetalburgWoods_EventScript_ExplainMiracleSeed
+	goto PetalburgWoods_EventScript_ExplainMiracleSeed
 	msgbox PetalburgWoods_Text_TryUsingThisItem, MSGBOX_DEFAULT
 	giveitem ITEM_MIRACLE_SEED
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -433,8 +438,7 @@ PetalburgWoods_Text_StayOutOfTallGrass:
 	.string "Yo, there!\n"
 	.string "Your POKéMON doing okay?\p"
 	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you should stay out\l"
-	.string "of tall grass.$"
+	.string "to avoid battles, I can heal them!$"
 
 PetalburgWoods_Text_HiddenItemsExplanation:
 	.string "Sometimes, there are things on the\n"
@@ -449,9 +453,8 @@ PetalburgWoods_Text_TryUsingThisItem:
 	.string "You should try using this item.$"
 
 PetalburgWoods_Text_MiracleSeedExplanation:
-	.string "It's a MIRACLE SEED.\n"
-	.string "If a POKéMON holds that item, its\l"
-	.string "GRASS-type moves become stronger.\p"
+	.string "If a POKéMON holds a MIRACLE SEED item,\n"
+	.string "its GRASS-type moves become stronger.\p"
 	.string "Besides MIRACLE SEED, I think there are\n"
 	.string "other convenient items for POKéMON\l"
 	.string "to hold.$"

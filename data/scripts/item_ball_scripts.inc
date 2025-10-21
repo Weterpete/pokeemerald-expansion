@@ -19,7 +19,7 @@ Route104_EventScript_ItemPokeBall::
 	end
 
 Route104_EventScript_ItemXAccuracy::
-	finditem ITEM_X_ACCURACY
+	finditem ITEM_GREAT_BALL
 	end
 
 Route104_EventScript_ItemPotion::
@@ -27,7 +27,7 @@ Route104_EventScript_ItemPotion::
 	end
 
 Route105_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_PEARL
 	end
 
 Route106_EventScript_ItemProtein::
@@ -111,7 +111,7 @@ Route115_EventScript_ItemTM01::
 	end
 
 Route115_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_ULTRA_BALL
 	end
 
 Route115_EventScript_ItemGreatBall::
@@ -127,7 +127,7 @@ Route115_EventScript_ItemPPUp::
 	end
 
 Route116_EventScript_ItemXSpecial::
-	finditem ITEM_X_SP_ATK
+	finditem ITEM_POKE_BALL
 	end
 
 Route116_EventScript_ItemEther::
@@ -139,7 +139,7 @@ Route116_EventScript_ItemRepel::
 	end
 
 Route116_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+	finditem ITEM_SMOKE_BALL
 	end
 
 Route116_EventScript_ItemPotion::
@@ -163,7 +163,7 @@ Route119_EventScript_ItemSuperRepel::
 	end
 
 Route119_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_RARE_CANDY
 	end
 
 Route119_EventScript_ItemElixir::
@@ -263,7 +263,7 @@ Route126_EventScript_ItemGreenShard::
 	end
 
 Route127_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+	finditem ITEM_PEARL
 	end
 
 Route127_EventScript_ItemCarbos::
@@ -279,7 +279,7 @@ Route132_EventScript_ItemRareCandy::
 	end
 
 Route132_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+	finditem ITEM_RARE_CANDY
 	end
 
 Route133_EventScript_ItemBigPearl::
@@ -295,7 +295,7 @@ Route133_EventScript_ItemMaxRevive::
 	end
 
 Route134_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+	finditem ITEM_PEARL
 	end
 
 Route134_EventScript_ItemStarPiece::
@@ -311,11 +311,11 @@ PetalburgCity_EventScript_ItemEther::
 	end
 
 MauvilleCity_EventScript_ItemXSpeed::
-	finditem ITEM_X_SPEED
+	finditem ITEM_MAX_REPEL
 	end
 
 RustboroCity_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFENSE
+	finditem ITEM_MAX_ETHER
 	end
 
 LilycoveCity_EventScript_ItemMaxRepel::
@@ -327,7 +327,7 @@ MossdeepCity_EventScript_ItemNetBall::
 	end
 
 PetalburgWoods_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_MENTAL_HERB
 	end
 
 PetalburgWoods_EventScript_ItemGreatBall::

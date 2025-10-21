@@ -82,6 +82,7 @@ PyreGauntletEntry_8:
 	waitmovement 0
 	msgbox PyreGauntletEntry_Text_2, MSGBOX_DEFAULT
 	setflag FLAG_UNUSED_0x027
+	clearflag FLAG_UNUSED_0x032
 	goto PyreGauntletEntry_1
 
 
