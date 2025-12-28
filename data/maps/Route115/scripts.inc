@@ -135,6 +135,18 @@ Route115_EventScript_RegiStatue::
 	release
 	end
 
+Route115_EventScript_Teala::
+	lockall
+	faceplayer
+	msgbox Route115_Text_Teala, MSGBOX_DEFAULT
+	release
+	end
+
+Route115_Text_Teala:
+	.string "STOP!\p"
+	.string "This place is too perilous for\n"
+	.string "anyone with less than eight badges.$"
+
 Route115_Text_RegiStatue:
 	.string "Go! Find the kings in METEOR FALLS.\n"
 	.string "Nothing guards them any longer.$"

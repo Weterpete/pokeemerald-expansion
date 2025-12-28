@@ -39,7 +39,7 @@
 #define B_STEEL_RESISTANCES         GEN_3 // In Gen6+, Steel-type Pokémon are no longer resistant to Dark-type and Ghost-type moves.
 #define B_PRANKSTER_DARK_TYPES      GEN_4 // In Gen7+, Prankster-elevated status moves do not affect Dark type Pokémon.
 #define B_SHEER_COLD_IMMUNITY       GEN_3 // In Gen7+, Ice-types are immune to Sheer Cold
-#define B_ROOST_PURE_FLYING         GEN_LATEST // In Gen5+, Roost makes pure Flying-types into Normal-type.
+#define B_ROOST_PURE_FLYING         GEN_4 // In Gen5+, Roost makes pure Flying-types into Normal-type.
 
 // Turn settings
 #define B_BINDING_TURNS             GEN_3 // In Gen5+, binding moves last for 4-5 turns instead of 2-5 turns. (With Grip Claw, 7 and 5 turns respectively.)
@@ -169,7 +169,7 @@
 #define B_FAST_INTRO                FALSE  // If set to TRUE, battle intro texts print at the same time as animation of a Pokémon, as opposing to waiting for the animation to end.
 #define B_FAST_HP_DRAIN             FALSE  // If set to TRUE, HP bars will move faster to accomodate higher max HP amounts.
 #define B_SHOW_TARGETS              TRUE  // If set to TRUE, all available targets, for moves hitting 2 or 3 Pokémon, will be shown before selecting a move.
-#define B_SHOW_SPLIT_ICON           TRUE  // If set to TRUE, it will show an icon in the summary showing the move's category split.
+#define B_SHOW_SPLIT_ICON           FALSE  // If set to TRUE, it will show an icon in the summary showing the move's category split.
 #define B_HIDE_HEALTHBOX_IN_ANIMS   FALSE  // If set to TRUE, hides healthboxes during move animations.
 #define B_EXPANDED_MOVE_NAMES       FALSE // If set to TRUE, move names are increased from 12 characters to 16 characters.
 #define B_WAIT_TIME_MULTIPLIER      16    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.

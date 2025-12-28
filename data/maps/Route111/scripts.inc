@@ -736,7 +736,7 @@ Route111_ArthurBattle::
 	lockall
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 	msgbox Arthur_Norman_Argue, MSGBOX_DEFAULT
-	applymovement 50, Arthur_Turn
+	applymovement 49, Arthur_Turn
 	playse SE_PIN
 	waitmovement 0
 	msgbox Arthur_Battle_Start, MSGBOX_DEFAULT
@@ -745,15 +745,15 @@ Route111_ArthurBattle::
 	waitmessage
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Step_Backwards_Two
-	applymovement 50, Arthur_Leave
+	applymovement 49, Arthur_Leave
 	waitmovement 0
 	msgbox Norman_Thanks, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
-	applymovement 51, Norman_Leave
+	applymovement 50, Norman_Leave
 	waitmovement 0
+	removeobject 49
 	removeobject 50
-	removeobject 51
 	setflag FLAG_UNUSED_0x025
 	releaseall
 	return
@@ -812,10 +812,10 @@ Arthur_Battle_Start::
 	.string "It's you! I heard you beat SORREL!\pWell 1/4 is as far as you'll get!\nYou can't screw up our plans!$"
 
 Arthur_Outro::
-	.string "What could I be doing wrong with\nmy team?\pIs it the whole BUG-TYPE thing?$"
+	.string "What could I be doing wrong with\nmy team?\pIs it the whole BUG-type thing?$"
 
 Arthur_Defeat::
 	.string "ARTHUR: Well damn.\pI can't stick around here, can I?\pBut you still haven't seen the last of me!$"
 
 Norman_Thanks::
-	.string "NORMAN: Thanks kiddo.\pI didn't have my strongest Pokemon on\nme, so I ended up losing to that wannabe.\pYou have 4 BADGES now do you?\pCome see me at the gym in that case.$"
+	.string "NORMAN: Thanks kiddo.\pI didn't have my strongest POKéMON on\nme, so I ended up losing to that wannabe.\pYou have 4 BADGES now do you?\pCome see me at the gym in that case.$"

@@ -137,13 +137,16 @@ AbandonedShip_Rooms2_1F_Text_JaniPostBattle:
 	.string "is kind of gross.$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonIntro:
-	.string "Strength and compassion…\n"
-	.string "Those are a TRAINER's treasures!$"
+	.string "You again, {PLAYER}?\p"
+	.string "Did you come looking for the ship's\n"
+	.string "LEGENDARY treasures?\p"
+	.string "Battle me for them!$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonDefeat:
 	.string "Ah, there is something about you\n"
-	.string "that sparkles.$"
+	.string "that's worthy.$"
 
 AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle:
 	.string "In a cabin somewhere on board,\n"
-	.string "I saw something sparkle.$"
+	.string "I saw a mysterious couple.\p"
+	.string "They might know something.$"

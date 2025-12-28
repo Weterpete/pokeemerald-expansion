@@ -5601,6 +5601,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TERRANCE"),
         .items = {},
         .doubleBattle = TRUE,
+        .mugshotEnabled = TRUE,
+        .mugshotColor = MUGSHOT_COLOR_YELLOW,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = EVERYTHING_CUSTOMIZED(sParty_Terrance),
     },
@@ -8541,6 +8543,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ALECIA"),
         .items = {},
         .doubleBattle = TRUE,
+        .mugshotEnabled = TRUE,
+        .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = EVERYTHING_CUSTOMIZED(sParty_Alecia),
     },
@@ -8554,7 +8558,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = TRUE,
         .mugshotEnabled = TRUE,
-        .mugshotColor = MUGSHOT_COLOR_PURPLE,
+        .mugshotColor = MUGSHOT_COLOR_BLUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .party = EVERYTHING_CUSTOMIZED(sParty_Arthur),
     },
@@ -9310,7 +9314,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Myles),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Myles),
     },
 
     [TRAINER_PAT] =
@@ -9322,7 +9326,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Pat),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Pat),
     },
 
     [TRAINER_CRISTIN_1] =

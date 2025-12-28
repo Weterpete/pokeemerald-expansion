@@ -2030,17 +2030,21 @@ Route115_Text_TimothyPostRematch:
 	.string "effort!$"
 
 Route115_Text_KoichiIntro:
-	.string "You!\p"
-	.string "My MACHOP!\p"
-	.string "Demand a battle!$"
+	.string "{PLAYER}!\p"
+	.string "What are you doing out here?\n"
+	.string "This is where LEGENDARY POKéMON are\l"
+	.string "hanging out!\p"
+	.string "If you can beat me I'll know you're\n"
+	.string "good enough to battle them.$"
 
 Route115_Text_KoichiDefeat:
-	.string "Ouch, ouch, ouch!$"
+	.string "Defeated yet again…\n"
+	.string "You're worthy of them."
 
 Route115_Text_KoichiPostBattle:
-	.string "My MACHOP crew!\p"
-	.string "So long as they seek power, I will\n"
-	.string "grow strong with them!$"
+	.string "My ROCK-type crew!\p"
+	.string "They might have been helped to have a\n"
+	.string "LEGENDARY POKéMON join them.$"
 
 Route115_Text_NobIntro:
 	.string "My strongest skill is busting bricks\n"
