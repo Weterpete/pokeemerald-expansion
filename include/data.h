@@ -28,60 +28,24 @@ struct MonCoords
     u8 y_offset;
 };
 
-#define MON_COORDS_SIZE(width, height)(DIV_ROUND_UP(width, 8) << 4 | DIV_ROUND_UP(height, 8))
-#define GET_MON_COORDS_WIDTH(size)((size >> 4) * 8)
-#define GET_MON_COORDS_HEIGHT(size)((size & 0xF) * 8)
-#define TRAINER_PARTY_IVS(hp, atk, def, speed, spatk, spdef) (hp | (atk << 5) | (def << 10) | (speed << 15) | (spatk << 20) | (spdef << 25))
-#define TRAINER_PARTY_EVS(hp, atk, def, speed, spatk, spdef) ((const u8[6]){hp,atk,def,spatk,spdef,speed})
-#define TRAINER_PARTY_NATURE(nature) (nature+1)
-
-struct TrainerMonCustomized
+struct TrainerMon
 {
-    const u8 *nickname;
-    const u8 *ev;
-    u32 iv;
-    u16 moves[4];
+    u16 iv;
+    u8 nickname[POKEMON_NAME_LENGTH + 1];
+    u8 ivs[NUM_STATS];
+    u8 evs[NUM_STATS];
+    u8 lvl;
     u16 species;
     u16 heldItem;
-    u16 ability;
-    u8 lvl;
+    u16 moves[MAX_MON_MOVES];
     u8 ball;
-    u8 friendship;
-    u8 nature : 5;
-    bool8 gender : 2;
-    bool8 isShiny : 1;
-};
-
-struct TrainerMonNoItemDefaultMoves
-{
-    u16 iv;
-    u8 lvl;
-    u16 species;
-};
-
-struct TrainerMonItemDefaultMoves
-{
-    u16 iv;
-    u8 lvl;
-    u16 species;
-    u16 heldItem;
-};
-
-struct TrainerMonNoItemCustomMoves
-{
-    u16 iv;
-    u8 lvl;
-    u16 species;
-    u16 moves[MAX_MON_MOVES];
-};
-
-struct TrainerMonItemCustomMoves
-{
-    u16 iv;
-    u8 lvl;
-    u16 species;
-    u16 heldItem;
-    u16 moves[MAX_MON_MOVES];
+    u16 ability:2;
+    u16 friendship:2;
+    u16 gender:2;
+    u16 build:3;
+    u16 shiny:1;
+    u16 nature:5;
+    u16 unused:1;
 };
 
 #define NO_ITEM_DEFAULT_MOVES(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = 0
@@ -92,12 +56,9 @@ struct TrainerMonItemCustomMoves
 
 union TrainerMonPtr
 {
-    const struct TrainerMonNoItemDefaultMoves *NoItemDefaultMoves;
-    const struct TrainerMonNoItemCustomMoves *NoItemCustomMoves;
-    const struct TrainerMonItemDefaultMoves *ItemDefaultMoves;
-    const struct TrainerMonItemCustomMoves *ItemCustomMoves;
-    const struct TrainerMonCustomized *EverythingCustomized;
+    const struct TrainerMon *TrainerMon;
 };
+
 
 struct Trainer
 {
